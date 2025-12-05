@@ -542,4 +542,10 @@ Public Class AdminForm1
     Private Sub LabelBox2_TextChanged(sender As Object, e As EventArgs) Handles LabelBox2.TextChanged
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim LOGIN As New LOGIN
+        LOGIN.Show()
+        Hide()
+    End Sub
 End Class

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "dSKkFH2cAxU=",
+  "dgSpecHash": "sbL+kYak+hM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\personal\\Documents\\GitHub\\Group3_MuyaRentingSystem\\g3_project.vbproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\codes\\repositories\\Group3-OOP-Version_-Muya-Hardware-Store\\ADMINUI\\g3_project.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc care\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\pc care\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\pc care\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512",
+    "C:\\Users\\pc care\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.22\\microsoft.netcore.app.host.win-x64.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

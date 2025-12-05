@@ -127,6 +127,9 @@
   <data name="05dd3501-2199-49e3-8034-57d5582d7809-removebg-preview1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\05dd3501-2199-49e3-8034-57d5582d7809-removebg-preview1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="file (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\file (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cover1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cover1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="banned (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\banned (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="logoutoutlinedsymbol_81103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoutoutlinedsymbol_811031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cranes-construction-site" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cranes-construction-site.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -180,6 +186,9 @@
   </data>
   <data name="576825842_1335610788354022_2752363819616472036_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\576825842_1335610788354022_2752363819616472036_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logoutoutlinedsymbol_81103 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logoutoutlinedsymbol_81103 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="576825842_1335610788354022_2752363819616472036_n1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\576825842_1335610788354022_2752363819616472036_n1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,7 +220,7 @@
   <data name="05dd3501-2199-49e3-8034-57d5582d78091" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\05dd3501-2199-49e3-8034-57d5582d78091.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="file (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\file (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="toppng.com-login-log..._imresizer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toppng.com-login-log..._imresizer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

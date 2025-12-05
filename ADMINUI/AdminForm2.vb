@@ -46,4 +46,14 @@ Public Class AdminForm2
         End Using
         ViewHistory.DefaultCellStyle.ForeColor = Color.Black
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim LOGIN As New LOGIN
+        LOGIN.Show()
+        Hide()
+    End Sub
 End Class

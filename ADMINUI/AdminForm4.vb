@@ -62,4 +62,10 @@ Public Class AdminForm4
             MessageBox.Show("The Ban has been canceled.")
         End If
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim LOGIN As New LOGIN
+        LOGIN.Show()
+        Hide()
+    End Sub
 End Class

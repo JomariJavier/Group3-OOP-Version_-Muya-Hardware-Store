@@ -26,6 +26,7 @@ Partial Class AdminForm4
         Label7 = New Label()
         TableLayoutPanel2 = New TableLayoutPanel()
         PnlSidebar = New Panel()
+        Button2 = New Button()
         btnHistory = New Button()
         PictureBox1 = New PictureBox()
         btnBannedList = New Button()
@@ -52,10 +53,10 @@ Partial Class AdminForm4
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Arial Black", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Label7.Location = New Point(595, 20)
-        Label7.Margin = New Padding(0, 20, 0, 0)
+        Label7.Location = New Point(539, 15)
+        Label7.Margin = New Padding(0, 15, 0, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(416, 62)
+        Label7.Size = New Size(329, 50)
         Label7.TabIndex = 80
         Label7.Text = "BANNING FORM"
         Label7.TextAlign = ContentAlignment.MiddleCenter
@@ -69,17 +70,17 @@ Partial Class AdminForm4
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 44.0051F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.42347F))
         TableLayoutPanel2.Controls.Add(Label7, 1, 0)
-        TableLayoutPanel2.Location = New Point(193, 13)
-        TableLayoutPanel2.Margin = New Padding(3, 4, 3, 4)
+        TableLayoutPanel2.Location = New Point(169, 10)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 1
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel2.Size = New Size(1593, 89)
+        TableLayoutPanel2.Size = New Size(1394, 67)
         TableLayoutPanel2.TabIndex = 99
         ' 
         ' PnlSidebar
         ' 
         PnlSidebar.BackColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
+        PnlSidebar.Controls.Add(Button2)
         PnlSidebar.Controls.Add(btnHistory)
         PnlSidebar.Controls.Add(PictureBox1)
         PnlSidebar.Controls.Add(btnBannedList)
@@ -87,10 +88,28 @@ Partial Class AdminForm4
         PnlSidebar.Dock = DockStyle.Left
         PnlSidebar.ForeColor = Color.White
         PnlSidebar.Location = New Point(0, 0)
-        PnlSidebar.Margin = New Padding(3, 4, 3, 4)
         PnlSidebar.Name = "PnlSidebar"
-        PnlSidebar.Size = New Size(187, 853)
+        PnlSidebar.Size = New Size(164, 562)
         PnlSidebar.TabIndex = 106
+        ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.Top
+        Button2.BackColor = Color.Transparent
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        Button2.ForeColor = Color.White
+        Button2.Image = My.Resources.Resources.toppng_com_login_log____imresizer
+        Button2.ImageAlign = ContentAlignment.MiddleLeft
+        Button2.Location = New Point(12, 319)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(139, 47)
+        Button2.TabIndex = 117
+        Button2.Text = "Log Out"
+        Button2.TextAlign = ContentAlignment.MiddleRight
+        Button2.UseMnemonic = False
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' btnHistory
         ' 
@@ -101,10 +120,9 @@ Partial Class AdminForm4
         btnHistory.ForeColor = Color.White
         btnHistory.Image = My.Resources.Resources.file__2_
         btnHistory.ImageAlign = ContentAlignment.MiddleLeft
-        btnHistory.Location = New Point(14, 284)
-        btnHistory.Margin = New Padding(3, 4, 3, 4)
+        btnHistory.Location = New Point(12, 213)
         btnHistory.Name = "btnHistory"
-        btnHistory.Size = New Size(159, 63)
+        btnHistory.Size = New Size(139, 47)
         btnHistory.TabIndex = 5
         btnHistory.Text = "History"
         btnHistory.UseVisualStyleBackColor = False
@@ -114,10 +132,10 @@ Partial Class AdminForm4
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = My.Resources.Resources._578935847_1627970941508389_3020005775530561214_n_removebg_preview
-        PictureBox1.Location = New Point(19, 21)
-        PictureBox1.Margin = New Padding(29, 12, 0, 4)
+        PictureBox1.Location = New Point(17, 16)
+        PictureBox1.Margin = New Padding(25, 9, 0, 3)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(139, 151)
+        PictureBox1.Size = New Size(122, 113)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
@@ -132,10 +150,9 @@ Partial Class AdminForm4
         btnBannedList.ForeColor = Color.White
         btnBannedList.Image = My.Resources.Resources.banned__3_
         btnBannedList.ImageAlign = ContentAlignment.MiddleLeft
-        btnBannedList.Location = New Point(14, 355)
-        btnBannedList.Margin = New Padding(3, 4, 3, 4)
+        btnBannedList.Location = New Point(12, 266)
         btnBannedList.Name = "btnBannedList"
-        btnBannedList.Size = New Size(159, 63)
+        btnBannedList.Size = New Size(139, 47)
         btnBannedList.TabIndex = 6
         btnBannedList.Text = "Banned List"
         btnBannedList.TextAlign = ContentAlignment.MiddleRight
@@ -152,10 +169,9 @@ Partial Class AdminForm4
         btnStocks.ForeColor = Color.White
         btnStocks.Image = My.Resources.Resources.in_stock__2_
         btnStocks.ImageAlign = ContentAlignment.MiddleLeft
-        btnStocks.Location = New Point(14, 213)
-        btnStocks.Margin = New Padding(3, 4, 3, 4)
+        btnStocks.Location = New Point(12, 160)
         btnStocks.Name = "btnStocks"
-        btnStocks.Size = New Size(159, 63)
+        btnStocks.Size = New Size(139, 47)
         btnStocks.TabIndex = 4
         btnStocks.Text = "Stocks"
         btnStocks.UseVisualStyleBackColor = False
@@ -164,9 +180,9 @@ Partial Class AdminForm4
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(193, 126)
+        Label1.Location = New Point(169, 94)
         Label1.Name = "Label1"
-        Label1.Size = New Size(558, 46)
+        Label1.Size = New Size(441, 37)
         Label1.TabIndex = 108
         Label1.Text = "Enter the Client ID of person to ban:"
         ' 
@@ -174,27 +190,29 @@ Partial Class AdminForm4
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 19.8000011F)
-        Label2.Location = New Point(193, 263)
+        Label2.Location = New Point(169, 197)
         Label2.Name = "Label2"
-        Label2.Size = New Size(331, 46)
+        Label2.Size = New Size(262, 37)
         Label2.TabIndex = 109
         Label2.Text = "Enter reason for ban:"
         ' 
         ' IDTextBox
         ' 
         IDTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        IDTextBox.Location = New Point(202, 186)
+        IDTextBox.Location = New Point(177, 140)
+        IDTextBox.Margin = New Padding(3, 2, 3, 2)
         IDTextBox.Name = "IDTextBox"
-        IDTextBox.Size = New Size(543, 43)
+        IDTextBox.Size = New Size(476, 36)
         IDTextBox.TabIndex = 110
         ' 
         ' ReasonTextBox
         ' 
         ReasonTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ReasonTextBox.Location = New Point(208, 312)
+        ReasonTextBox.Location = New Point(182, 234)
+        ReasonTextBox.Margin = New Padding(3, 2, 3, 2)
         ReasonTextBox.Multiline = True
         ReasonTextBox.Name = "ReasonTextBox"
-        ReasonTextBox.Size = New Size(543, 324)
+        ReasonTextBox.Size = New Size(476, 244)
         ReasonTextBox.TabIndex = 111
         ' 
         ' Button3
@@ -203,9 +221,10 @@ Partial Class AdminForm4
         Button3.BackColor = Color.Lime
         Button3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button3.ForeColor = SystemColors.ActiveCaptionText
-        Button3.Location = New Point(1431, 109)
+        Button3.Location = New Point(1252, 82)
+        Button3.Margin = New Padding(3, 2, 3, 2)
         Button3.Name = "Button3"
-        Button3.Size = New Size(350, 70)
+        Button3.Size = New Size(306, 52)
         Button3.TabIndex = 112
         Button3.Text = "REFRESH"
         Button3.UseVisualStyleBackColor = False
@@ -215,9 +234,10 @@ Partial Class AdminForm4
         ConfirmButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         ConfirmButton.BackColor = Color.Red
         ConfirmButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        ConfirmButton.Location = New Point(226, 688)
+        ConfirmButton.Location = New Point(198, 516)
+        ConfirmButton.Margin = New Padding(3, 2, 3, 2)
         ConfirmButton.Name = "ConfirmButton"
-        ConfirmButton.Size = New Size(220, 70)
+        ConfirmButton.Size = New Size(192, 52)
         ConfirmButton.TabIndex = 113
         ConfirmButton.Text = "CONFIRM BAN"
         ConfirmButton.UseVisualStyleBackColor = False
@@ -226,9 +246,10 @@ Partial Class AdminForm4
         ' 
         CancelButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         CancelButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CancelButton.Location = New Point(482, 688)
+        CancelButton.Location = New Point(422, 516)
+        CancelButton.Margin = New Padding(3, 2, 3, 2)
         CancelButton.Name = "CancelButton"
-        CancelButton.Size = New Size(220, 70)
+        CancelButton.Size = New Size(192, 52)
         CancelButton.TabIndex = 114
         CancelButton.Text = "CANCEL"
         CancelButton.UseVisualStyleBackColor = True
@@ -246,13 +267,14 @@ Partial Class AdminForm4
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewClientsToBan.DefaultCellStyle = DataGridViewCellStyle1
-        ViewClientsToBan.Location = New Point(788, 186)
+        ViewClientsToBan.Location = New Point(690, 140)
+        ViewClientsToBan.Margin = New Padding(3, 2, 3, 2)
         ViewClientsToBan.Name = "ViewClientsToBan"
         ViewClientsToBan.ReadOnly = True
         ViewClientsToBan.RowHeadersWidth = 51
         ViewClientsToBan.RowTemplate.Height = 100
         ViewClientsToBan.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewClientsToBan.Size = New Size(993, 655)
+        ViewClientsToBan.Size = New Size(869, 491)
         ViewClientsToBan.TabIndex = 115
         ' 
         ' Label3
@@ -260,18 +282,18 @@ Partial Class AdminForm4
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.Red
-        Label3.Location = New Point(800, 155)
+        Label3.Location = New Point(700, 116)
         Label3.Name = "Label3"
-        Label3.Size = New Size(358, 28)
+        Label3.Size = New Size(289, 21)
         Label3.TabIndex = 116
         Label3.Text = "*List of allowed people (not banned)"
         ' 
         ' AdminForm4
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1793, 853)
+        ClientSize = New Size(1199, 562)
         Controls.Add(Label3)
         Controls.Add(ViewClientsToBan)
         Controls.Add(CancelButton)
@@ -284,7 +306,6 @@ Partial Class AdminForm4
         Controls.Add(PnlSidebar)
         Controls.Add(TableLayoutPanel2)
         DoubleBuffered = True
-        Margin = New Padding(3, 4, 3, 4)
         Name = "AdminForm4"
         Text = "Form1"
         WindowState = FormWindowState.Maximized
@@ -312,4 +333,5 @@ Partial Class AdminForm4
     Friend WithEvents CancelButton As Button
     Friend WithEvents ViewClientsToBan As DataGridView
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button2 As Button
 End Class
