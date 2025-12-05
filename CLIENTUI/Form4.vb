@@ -72,6 +72,7 @@ Public Class Form4
             End If
 
             MessageBox.Show("Record Saved!")
+            Dim Agreement As New Agreement
             Agreement.Show()
             Me.Hide()
         Catch ex As Exception
