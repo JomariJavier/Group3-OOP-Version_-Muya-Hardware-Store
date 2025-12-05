@@ -1,0 +1,268 @@
+C:\Users\jimuel\Downloads\dito po\g3_project\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\jimuel\Downloads\dito po\g3_project\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\jimuel\Downloads\dito po\g3_project\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\jimuel\Downloads\dito po\g3_project\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\jimuel\Downloads\dito po\g3_project\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\jimuel\Downloads\dito po\g3_project\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\Jomari\Downloads\new_g3p\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\Jomari\Downloads\new_g3p\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\Jomari\Downloads\new_g3p\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\Jomari\Downloads\new_g3p\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\Jomari\Downloads\new_g3p\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\Jomari\Downloads\new_g3p\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\OneQCU\Downloads\reposiuser\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\OneQCU\Downloads\reposiuser\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\OneQCU\Downloads\reposiuser\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\OneQCU\Downloads\reposiuser\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\OneQCU\Downloads\reposiuser\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.sourcelink.json
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\OneQCU\Downloads\reposiuser\obj\Debug\net8.0-windows\g3_project.Form6.resources
+D:\New folder (2)\bin\Debug\net8.0-windows\g3_project.exe
+D:\New folder (2)\bin\Debug\net8.0-windows\g3_project.deps.json
+D:\New folder (2)\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+D:\New folder (2)\bin\Debug\net8.0-windows\g3_project.dll
+D:\New folder (2)\bin\Debug\net8.0-windows\g3_project.pdb
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form1.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form2.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form3.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form4.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form5.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form6.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.Resources.resources
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.dll
+D:\New folder (2)\obj\Debug\net8.0-windows\refint\g3_project.dll
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.pdb
+D:\New folder (2)\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+D:\New folder (2)\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\jimuel\Downloads\New folder (2)\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\jimuel\Downloads\New folder (2)\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\jimuel\Downloads\New folder (2)\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\jimuel\Downloads\New folder (2)\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\jimuel\Downloads\New folder (2)\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\jimuel\Downloads\New folder (2)\obj\Debug\net8.0-windows\g3_project.Agreement.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Agreement.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.sourcelink.json
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Agreement.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.sourcelink.json
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.AssemblyReference.cache
+C:\Users\Jobert\OneDrive\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.Up2Date
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.AssemblyReference.cache
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Agreement.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.sourcelink.json
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.Up2Date
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.AssemblyReference.cache
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\prince\Documents\GitHub\Group3_MuyaRentingSystem\obj\Debug\net8.0-windows\g3_project.vbproj.Up2Date
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\g3_project.exe
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\g3_project.deps.json
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\g3_project.runtimeconfig.json
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\g3_project.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\g3_project.pdb
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.vbproj.AssemblyReference.cache
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Agreement.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Form1.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Form2.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Form3.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Form4.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Form5.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.Resources.resources
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.AssemblyInfoInputs.cache
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.AssemblyInfo.vb
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.vbproj.CoreCompileInputs.cache
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.sourcelink.json
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.vbproj.Up2Date
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\refint\g3_project.dll
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.pdb
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
+C:\Users\jimuel\Downloads\NEW CLIENT UI\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\OpenCvSharp.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\OpenCvSharp.Extensions.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\System.Drawing.Common.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\OpenCvSharpExtern.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x64\native\opencv_videoio_ffmpeg4110_64.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x86\native\OpenCvSharpExtern.dll
+C:\Users\personal\Documents\GitHub\Group3_MuyaRentingSystem\bin\Debug\net8.0-windows\runtimes\win-x86\native\opencv_videoio_ffmpeg4110.dll
