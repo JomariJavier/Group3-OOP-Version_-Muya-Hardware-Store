@@ -1,0 +1,338 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class AdminForm4
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Label7 = New Label()
+        TableLayoutPanel2 = New TableLayoutPanel()
+        PnlSidebar = New Panel()
+        Button2 = New Button()
+        btnHistory = New Button()
+        PictureBox1 = New PictureBox()
+        btnBannedList = New Button()
+        btnStocks = New Button()
+        Label1 = New Label()
+        Label2 = New Label()
+        IDTextBox = New TextBox()
+        ReasonTextBox = New TextBox()
+        Button3 = New Button()
+        ConfirmButton = New Button()
+        CancelButton = New Button()
+        ViewClientsToBan = New DataGridView()
+        Label3 = New Label()
+        TableLayoutPanel2.SuspendLayout()
+        PnlSidebar.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ViewClientsToBan, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' Label7
+        ' 
+        Label7.Anchor = AnchorStyles.Top
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Transparent
+        Label7.Font = New Font("Arial Black", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label7.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
+        Label7.Location = New Point(595, 20)
+        Label7.Margin = New Padding(0, 20, 0, 0)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(416, 62)
+        Label7.TabIndex = 80
+        Label7.Text = "BANNING FORM"
+        Label7.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' TableLayoutPanel2
+        ' 
+        TableLayoutPanel2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        TableLayoutPanel2.BackColor = Color.Transparent
+        TableLayoutPanel2.ColumnCount = 3
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 28.4438782F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 44.0051F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.42347F))
+        TableLayoutPanel2.Controls.Add(Label7, 1, 0)
+        TableLayoutPanel2.Location = New Point(193, 13)
+        TableLayoutPanel2.Margin = New Padding(3, 4, 3, 4)
+        TableLayoutPanel2.Name = "TableLayoutPanel2"
+        TableLayoutPanel2.RowCount = 1
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
+        TableLayoutPanel2.Size = New Size(1593, 89)
+        TableLayoutPanel2.TabIndex = 99
+        ' 
+        ' PnlSidebar
+        ' 
+        PnlSidebar.BackColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
+        PnlSidebar.Controls.Add(Button2)
+        PnlSidebar.Controls.Add(btnHistory)
+        PnlSidebar.Controls.Add(PictureBox1)
+        PnlSidebar.Controls.Add(btnBannedList)
+        PnlSidebar.Controls.Add(btnStocks)
+        PnlSidebar.Dock = DockStyle.Left
+        PnlSidebar.ForeColor = Color.White
+        PnlSidebar.Location = New Point(0, 0)
+        PnlSidebar.Margin = New Padding(3, 4, 3, 4)
+        PnlSidebar.Name = "PnlSidebar"
+        PnlSidebar.Size = New Size(187, 749)
+        PnlSidebar.TabIndex = 106
+        ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.Top
+        Button2.BackColor = Color.Transparent
+        Button2.Cursor = Cursors.Hand
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        Button2.ForeColor = Color.White
+        Button2.Image = My.Resources.Resources.toppng_com_login_log____imresizer
+        Button2.ImageAlign = ContentAlignment.MiddleLeft
+        Button2.Location = New Point(14, 425)
+        Button2.Margin = New Padding(3, 4, 3, 4)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(159, 63)
+        Button2.TabIndex = 117
+        Button2.Text = "Log Out"
+        Button2.TextAlign = ContentAlignment.MiddleRight
+        Button2.UseMnemonic = False
+        Button2.UseVisualStyleBackColor = False
+        ' 
+        ' btnHistory
+        ' 
+        btnHistory.BackColor = Color.Transparent
+        btnHistory.Cursor = Cursors.Hand
+        btnHistory.FlatStyle = FlatStyle.Flat
+        btnHistory.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        btnHistory.ForeColor = Color.White
+        btnHistory.Image = My.Resources.Resources.file__2_
+        btnHistory.ImageAlign = ContentAlignment.MiddleLeft
+        btnHistory.Location = New Point(14, 284)
+        btnHistory.Margin = New Padding(3, 4, 3, 4)
+        btnHistory.Name = "btnHistory"
+        btnHistory.Size = New Size(159, 63)
+        btnHistory.TabIndex = 5
+        btnHistory.Text = "History"
+        btnHistory.UseVisualStyleBackColor = False
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.BackColor = Color.Transparent
+        PictureBox1.Cursor = Cursors.Hand
+        PictureBox1.Image = My.Resources.Resources._578935847_1627970941508389_3020005775530561214_n_removebg_preview
+        PictureBox1.Location = New Point(19, 21)
+        PictureBox1.Margin = New Padding(29, 12, 0, 4)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(139, 151)
+        PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+        PictureBox1.TabIndex = 3
+        PictureBox1.TabStop = False
+        ' 
+        ' btnBannedList
+        ' 
+        btnBannedList.Anchor = AnchorStyles.Top
+        btnBannedList.BackColor = Color.Transparent
+        btnBannedList.Cursor = Cursors.Hand
+        btnBannedList.FlatStyle = FlatStyle.Flat
+        btnBannedList.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        btnBannedList.ForeColor = Color.White
+        btnBannedList.Image = My.Resources.Resources.banned__3_
+        btnBannedList.ImageAlign = ContentAlignment.MiddleLeft
+        btnBannedList.Location = New Point(14, 355)
+        btnBannedList.Margin = New Padding(3, 4, 3, 4)
+        btnBannedList.Name = "btnBannedList"
+        btnBannedList.Size = New Size(159, 63)
+        btnBannedList.TabIndex = 6
+        btnBannedList.Text = "Banned List"
+        btnBannedList.TextAlign = ContentAlignment.MiddleRight
+        btnBannedList.UseMnemonic = False
+        btnBannedList.UseVisualStyleBackColor = False
+        ' 
+        ' btnStocks
+        ' 
+        btnStocks.BackColor = Color.Transparent
+        btnStocks.BackgroundImageLayout = ImageLayout.None
+        btnStocks.Cursor = Cursors.Hand
+        btnStocks.FlatStyle = FlatStyle.Flat
+        btnStocks.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        btnStocks.ForeColor = Color.White
+        btnStocks.Image = My.Resources.Resources.in_stock__2_
+        btnStocks.ImageAlign = ContentAlignment.MiddleLeft
+        btnStocks.Location = New Point(14, 213)
+        btnStocks.Margin = New Padding(3, 4, 3, 4)
+        btnStocks.Name = "btnStocks"
+        btnStocks.Size = New Size(159, 63)
+        btnStocks.TabIndex = 4
+        btnStocks.Text = "Stocks"
+        btnStocks.UseVisualStyleBackColor = False
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(193, 125)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(558, 46)
+        Label1.TabIndex = 108
+        Label1.Text = "Enter the Client ID of person to ban:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Segoe UI", 19.8000011F)
+        Label2.Location = New Point(193, 263)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(331, 46)
+        Label2.TabIndex = 109
+        Label2.Text = "Enter reason for ban:"
+        ' 
+        ' IDTextBox
+        ' 
+        IDTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        IDTextBox.Location = New Point(202, 187)
+        IDTextBox.Name = "IDTextBox"
+        IDTextBox.Size = New Size(543, 43)
+        IDTextBox.TabIndex = 110
+        ' 
+        ' ReasonTextBox
+        ' 
+        ReasonTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        ReasonTextBox.Location = New Point(208, 312)
+        ReasonTextBox.Multiline = True
+        ReasonTextBox.Name = "ReasonTextBox"
+        ReasonTextBox.Size = New Size(543, 324)
+        ReasonTextBox.TabIndex = 111
+        ' 
+        ' Button3
+        ' 
+        Button3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button3.BackColor = Color.Lime
+        Button3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button3.ForeColor = SystemColors.ActiveCaptionText
+        Button3.Location = New Point(1431, 109)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(350, 69)
+        Button3.TabIndex = 112
+        Button3.Text = "REFRESH"
+        Button3.UseVisualStyleBackColor = False
+        ' 
+        ' ConfirmButton
+        ' 
+        ConfirmButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        ConfirmButton.BackColor = Color.Red
+        ConfirmButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        ConfirmButton.Location = New Point(226, 635)
+        ConfirmButton.Name = "ConfirmButton"
+        ConfirmButton.Size = New Size(219, 69)
+        ConfirmButton.TabIndex = 113
+        ConfirmButton.Text = "CONFIRM BAN"
+        ConfirmButton.UseVisualStyleBackColor = False
+        ' 
+        ' CancelButton
+        ' 
+        CancelButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
+        CancelButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        CancelButton.Location = New Point(482, 635)
+        CancelButton.Name = "CancelButton"
+        CancelButton.Size = New Size(219, 69)
+        CancelButton.TabIndex = 114
+        CancelButton.Text = "CANCEL"
+        CancelButton.UseVisualStyleBackColor = True
+        ' 
+        ' ViewClientsToBan
+        ' 
+        ViewClientsToBan.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Right
+        ViewClientsToBan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        ViewClientsToBan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Window
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.ControlLightLight
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
+        ViewClientsToBan.DefaultCellStyle = DataGridViewCellStyle1
+        ViewClientsToBan.Location = New Point(789, 187)
+        ViewClientsToBan.Name = "ViewClientsToBan"
+        ViewClientsToBan.ReadOnly = True
+        ViewClientsToBan.RowHeadersWidth = 51
+        ViewClientsToBan.RowTemplate.Height = 100
+        ViewClientsToBan.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        ViewClientsToBan.Size = New Size(993, 655)
+        ViewClientsToBan.TabIndex = 115
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.Red
+        Label3.Location = New Point(800, 155)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(358, 28)
+        Label3.TabIndex = 116
+        Label3.Text = "*List of allowed people (not banned)"
+        ' 
+        ' AdminForm4
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(1370, 749)
+        Controls.Add(Label3)
+        Controls.Add(ViewClientsToBan)
+        Controls.Add(CancelButton)
+        Controls.Add(ConfirmButton)
+        Controls.Add(Button3)
+        Controls.Add(ReasonTextBox)
+        Controls.Add(IDTextBox)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Controls.Add(PnlSidebar)
+        Controls.Add(TableLayoutPanel2)
+        DoubleBuffered = True
+        Margin = New Padding(3, 4, 3, 4)
+        Name = "AdminForm4"
+        Text = "Form1"
+        WindowState = FormWindowState.Maximized
+        TableLayoutPanel2.ResumeLayout(False)
+        TableLayoutPanel2.PerformLayout()
+        PnlSidebar.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(ViewClientsToBan, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
+    End Sub
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents PnlSidebar As Panel
+    Friend WithEvents btnHistory As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnBannedList As Button
+    Friend WithEvents btnStocks As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents IDTextBox As TextBox
+    Friend WithEvents ReasonTextBox As TextBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents ConfirmButton As Button
+    Friend WithEvents CancelButton As Button
+    Friend WithEvents ViewClientsToBan As DataGridView
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button2 As Button
+End Class
