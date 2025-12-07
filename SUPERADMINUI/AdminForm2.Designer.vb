@@ -24,6 +24,7 @@ Partial Class AdminForm2
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         TableLayoutPanel2 = New TableLayoutPanel()
+        Button1 = New Button()
         Label7 = New Label()
         PnlSidebar = New Panel()
         Button4 = New Button()
@@ -32,7 +33,6 @@ Partial Class AdminForm2
         btnBannedList = New Button()
         btnStocks = New Button()
         ViewHistory = New DataGridView()
-        Button1 = New Button()
         Button3 = New Button()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
@@ -44,25 +44,40 @@ Partial Class AdminForm2
         ' 
         TableLayoutPanel2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel2.BackColor = Color.Transparent
-        TableLayoutPanel2.ColumnCount = 2
-        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel2.Controls.Add(Label7, 0, 0)
-        TableLayoutPanel2.Location = New Point(180, 10)
+        TableLayoutPanel2.ColumnCount = 3
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel2.Controls.Add(Button1, 2, 0)
+        TableLayoutPanel2.Controls.Add(Label7, 1, 0)
+        TableLayoutPanel2.Location = New Point(170, 3)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 1
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 67F))
-        TableLayoutPanel2.Size = New Size(555, 67)
+        TableLayoutPanel2.Size = New Size(1632, 67)
         TableLayoutPanel2.TabIndex = 98
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.Lime
+        Button1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = SystemColors.ActiveCaptionText
+        Button1.Location = New Point(1089, 2)
+        Button1.Margin = New Padding(3, 2, 3, 2)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(306, 52)
+        Button1.TabIndex = 109
+        Button1.Text = "REFRESH"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Label7
         ' 
+        Label7.Anchor = AnchorStyles.None
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Arial Black", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Label7.Location = New Point(0, 20)
+        Label7.Location = New Point(717, 20)
         Label7.Margin = New Padding(0, 20, 0, 0)
         Label7.Name = "Label7"
         Label7.Size = New Size(195, 47)
@@ -73,6 +88,7 @@ Partial Class AdminForm2
         ' PnlSidebar
         ' 
         PnlSidebar.BackColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
+        PnlSidebar.Controls.Add(Button3)
         PnlSidebar.Controls.Add(Button4)
         PnlSidebar.Controls.Add(btnHistory)
         PnlSidebar.Controls.Add(PictureBox1)
@@ -82,7 +98,7 @@ Partial Class AdminForm2
         PnlSidebar.ForeColor = Color.White
         PnlSidebar.Location = New Point(0, 0)
         PnlSidebar.Name = "PnlSidebar"
-        PnlSidebar.Size = New Size(164, 562)
+        PnlSidebar.Size = New Size(164, 947)
         PnlSidebar.TabIndex = 105
         ' 
         ' Button4
@@ -118,6 +134,7 @@ Partial Class AdminForm2
         btnHistory.Size = New Size(139, 47)
         btnHistory.TabIndex = 5
         btnHistory.Text = "History"
+        btnHistory.TextAlign = ContentAlignment.MiddleRight
         btnHistory.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
@@ -166,12 +183,13 @@ Partial Class AdminForm2
         btnStocks.Name = "btnStocks"
         btnStocks.Size = New Size(139, 47)
         btnStocks.TabIndex = 4
-        btnStocks.Text = "Stocks"
+        btnStocks.Text = "Inventory"
+        btnStocks.TextAlign = ContentAlignment.MiddleRight
         btnStocks.UseVisualStyleBackColor = False
         ' 
         ' ViewHistory
         ' 
-        ViewHistory.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        ViewHistory.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ViewHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         ViewHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -182,32 +200,19 @@ Partial Class AdminForm2
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewHistory.DefaultCellStyle = DataGridViewCellStyle1
-        ViewHistory.Location = New Point(180, 92)
+        ViewHistory.Location = New Point(183, 213)
         ViewHistory.Margin = New Padding(3, 2, 3, 2)
         ViewHistory.Name = "ViewHistory"
         ViewHistory.ReadOnly = True
         ViewHistory.RowHeadersWidth = 51
         ViewHistory.RowTemplate.Height = 100
         ViewHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewHistory.Size = New Size(1374, 549)
+        ViewHistory.Size = New Size(1610, 723)
         ViewHistory.TabIndex = 108
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.Lime
-        Button1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ActiveCaptionText
-        Button1.Location = New Point(1224, 25)
-        Button1.Margin = New Padding(3, 2, 3, 2)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(306, 52)
-        Button1.TabIndex = 109
-        Button1.Text = "REFRESH"
-        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
-        Button3.Location = New Point(913, 21)
+        Button3.Location = New Point(41, 485)
         Button3.Name = "Button3"
         Button3.Size = New Size(98, 56)
         Button3.TabIndex = 110
@@ -219,12 +224,10 @@ Partial Class AdminForm2
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1199, 562)
-        Controls.Add(Button3)
-        Controls.Add(Button1)
-        Controls.Add(ViewHistory)
+        ClientSize = New Size(1805, 947)
         Controls.Add(PnlSidebar)
         Controls.Add(TableLayoutPanel2)
+        Controls.Add(ViewHistory)
         Name = "AdminForm2"
         Text = "Form7"
         WindowState = FormWindowState.Maximized

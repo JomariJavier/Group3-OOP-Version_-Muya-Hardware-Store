@@ -21,7 +21,7 @@ Public Class AdminForm1
     Public Function LoadTools() As DataTable
         MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
-        Dim query As String = "SELECT Tool_ID, Tool_Name, is_Available, Price, Stocks, Tool_Image  FROM tbl_tools"
+        Dim query As String = "SELECT Tool_ID, Tool_Name, is_Available, Price, Stocks, Tool_Image  FROM tbl_tools WHERE is_Deleted = '0'"
         Dim dt As New DataTable()
         Using conn As New MySqlConnection(ConnectionString)
             Using cmd As New MySqlCommand(query, conn)
@@ -254,6 +254,21 @@ Public Class AdminForm1
                 End Using
             End Using
         End Function
+
+        Public Function DeleteTool(tool As ToolItem) As Boolean
+            Using conn As New MySqlConnection(connectionString)
+                conn.Open()
+                Dim query As String = "
+                UPDATE tbl_tools
+                SET is_Deleted= '1'
+                WHERE Tool_ID=@id"
+                Using cmd As New MySqlCommand(query, conn)
+                    cmd.Parameters.AddWithValue("@id", tool.ToolID)
+                    cmd.ExecuteNonQuery()
+                    Return True
+                End Using
+            End Using
+        End Function
     End Class
 
     Private Function ImageToBytes(img As Image) As Byte()
@@ -332,43 +347,19 @@ Public Class AdminForm1
         End If
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Delete.Click
-        MySqlConn = New MySqlConnection
-        MySqlConn.ConnectionString = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
-        Try
-            MySqlConn.Open()
-            Dim Query1 As String = "DELETE FROM db_rent.tbl_tools WHERE Tool_Name=@ToolName"
-            Using Command1 As New MySqlCommand(Query1, MySqlConn)
-                Command1.Parameters.AddWithValue("@ToolName", ToolNameBox1.Text)
-                Command1.ExecuteNonQuery()
-            End Using
-            MySqlConn.Close()
-        Catch ex As Exception
-            MessageBox.Show("Error in Query number 1: " & ex.Message)
-            MySqlConn.Close()
-        End Try
+        Dim tool As New ToolItem With {
+        .ToolID = Integer.Parse(ToolID.Text)}
+        Dim repo As New ToolRepository
+        If repo.DeleteTool(tool) Then
+            MessageBox.Show("Tool Deleted Successfully")
+        End If
         LoadTools()
+        ClearInputs(Me)
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim scaleX As Single = Screen.PrimaryScreen.Bounds.Width / 1920.0F
         Dim scaleY As Single = Screen.PrimaryScreen.Bounds.Height / 1080.0F
         Me.Scale(New SizeF(scaleX, scaleY))
-    End Sub
-    Private Sub btnStocks_Click(sender As Object, e As EventArgs) Handles btnStocks.Click
-        Dim AdminForm1 As New AdminForm1
-        AdminForm1.Show()
-        Hide()
-    End Sub
-
-    Private Sub btnHistory_Click(sender As Object, e As EventArgs) Handles btnHistory.Click
-        Dim AdminForm2 As New AdminForm2
-        AdminForm2.Show()
-        Hide()
-    End Sub
-
-    Private Sub btnBannedList_Click_1(sender As Object, e As EventArgs) Handles btnBannedList.Click
-        Dim AdminForm3 As New AdminForm3
-        AdminForm3.Show()
-        Hide()
     End Sub
 
     Dim currentPic As PictureBox
@@ -430,5 +421,22 @@ Public Class AdminForm1
         Finally
             MySqlConn.Close()
         End Try
+    End Sub
+    Private Sub btnStocks_Click(sender As Object, e As EventArgs) Handles btnStocks.Click
+        Dim AdminForm1 As New AdminForm1
+        AdminForm1.Show()
+        Hide()
+    End Sub
+
+    Private Sub btnHistory_Click(sender As Object, e As EventArgs) Handles btnHistory.Click
+        Dim AdminForm2 As New AdminForm2
+        AdminForm2.Show()
+        Hide()
+    End Sub
+
+    Private Sub btnBannedList_Click_1(sender As Object, e As EventArgs) Handles btnBannedList.Click
+        Dim AdminForm3 As New AdminForm3
+        AdminForm3.Show()
+        Hide()
     End Sub
 End Class

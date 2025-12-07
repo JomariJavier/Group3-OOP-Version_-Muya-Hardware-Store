@@ -51,11 +51,11 @@ Partial Class AdminForm1
         Delete = New Button()
         ViewTools = New DataGridView()
         Panel1 = New Panel()
+        ToolID = New Label()
         Button3 = New Button()
         TableLayoutPanel1 = New TableLayoutPanel()
         Label3 = New Label()
         CurrentStocks = New Label()
-        ToolID = New Label()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel5.SuspendLayout()
@@ -425,14 +425,14 @@ Partial Class AdminForm1
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewTools.DefaultCellStyle = DataGridViewCellStyle1
-        ViewTools.Location = New Point(850, 87)
+        ViewTools.Location = New Point(846, 87)
         ViewTools.Margin = New Padding(3, 2, 3, 2)
         ViewTools.Name = "ViewTools"
         ViewTools.ReadOnly = True
         ViewTools.RowHeadersWidth = 51
         ViewTools.RowTemplate.Height = 100
         ViewTools.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewTools.Size = New Size(1042, 943)
+        ViewTools.Size = New Size(1046, 943)
         ViewTools.TabIndex = 107
         ' 
         ' Panel1
@@ -451,6 +451,16 @@ Partial Class AdminForm1
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(632, 943)
         Panel1.TabIndex = 115
+        ' 
+        ' ToolID
+        ' 
+        ToolID.AutoSize = True
+        ToolID.Location = New Point(167, 387)
+        ToolID.Name = "ToolID"
+        ToolID.Size = New Size(41, 15)
+        ToolID.TabIndex = 117
+        ToolID.Text = "Label2"
+        ToolID.Visible = False
         ' 
         ' Button3
         ' 
@@ -523,16 +533,6 @@ Partial Class AdminForm1
         CurrentStocks.Size = New Size(20, 24)
         CurrentStocks.TabIndex = 15
         CurrentStocks.Text = "#"
-        ' 
-        ' ToolID
-        ' 
-        ToolID.AutoSize = True
-        ToolID.Location = New Point(167, 387)
-        ToolID.Name = "ToolID"
-        ToolID.Size = New Size(41, 15)
-        ToolID.TabIndex = 117
-        ToolID.Text = "Label2"
-        ToolID.Visible = False
         ' 
         ' AdminForm1
         ' 

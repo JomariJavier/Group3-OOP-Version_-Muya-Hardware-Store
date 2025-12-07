@@ -36,6 +36,7 @@ Partial Class AdminForm3
         btnStocks = New Button()
         ViewBanned = New DataGridView()
         Button3 = New Button()
+        Button4 = New Button()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -47,12 +48,11 @@ Partial Class AdminForm3
         BannedSearchBox.Anchor = AnchorStyles.None
         BannedSearchBox.BackColor = SystemColors.HighlightText
         BannedSearchBox.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        BannedSearchBox.Location = New Point(467, 110)
-        BannedSearchBox.Margin = New Padding(3, 4, 3, 4)
+        BannedSearchBox.Location = New Point(408, 80)
         BannedSearchBox.MaxLength = 100
         BannedSearchBox.Name = "BannedSearchBox"
         BannedSearchBox.PlaceholderText = "(First Name, ex: Juan)"
-        BannedSearchBox.Size = New Size(655, 47)
+        BannedSearchBox.Size = New Size(574, 39)
         BannedSearchBox.TabIndex = 22
         ' 
         ' Label7
@@ -62,10 +62,10 @@ Partial Class AdminForm3
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Arial Black", 24F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Label7.Location = New Point(632, 20)
-        Label7.Margin = New Padding(0, 20, 0, 0)
+        Label7.Location = New Point(565, 15)
+        Label7.Margin = New Padding(0, 15, 0, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(325, 56)
+        Label7.Size = New Size(261, 45)
         Label7.TabIndex = 79
         Label7.Text = "BANNED LIST"
         Label7.TextAlign = ContentAlignment.MiddleCenter
@@ -77,10 +77,10 @@ Partial Class AdminForm3
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Arial Black", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Label3.Location = New Point(257, 109)
+        Label3.Location = New Point(237, 81)
         Label3.Margin = New Padding(0)
         Label3.Name = "Label3"
-        Label3.Size = New Size(197, 48)
+        Label3.Size = New Size(160, 38)
         Label3.TabIndex = 80
         Label3.Text = "SEARCH :"
         Label3.TextAlign = ContentAlignment.MiddleRight
@@ -91,10 +91,10 @@ Partial Class AdminForm3
         Button2.FlatStyle = FlatStyle.System
         Button2.Font = New Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button2.ForeColor = Color.Red
-        Button2.Location = New Point(1303, 99)
-        Button2.Margin = New Padding(20, 0, 0, 0)
+        Button2.Location = New Point(1140, 74)
+        Button2.Margin = New Padding(18, 0, 0, 0)
         Button2.Name = "Button2"
-        Button2.Size = New Size(134, 69)
+        Button2.Size = New Size(117, 52)
         Button2.TabIndex = 82
         Button2.Text = "ADD BAN"
         Button2.UseVisualStyleBackColor = False
@@ -113,13 +113,12 @@ Partial Class AdminForm3
         TableLayoutPanel2.Controls.Add(BannedSearchBox, 1, 1)
         TableLayoutPanel2.Controls.Add(SearchButton, 2, 1)
         TableLayoutPanel2.Controls.Add(Label3, 0, 1)
-        TableLayoutPanel2.Location = New Point(209, 21)
-        TableLayoutPanel2.Margin = New Padding(3, 4, 3, 4)
+        TableLayoutPanel2.Location = New Point(183, 16)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 2
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 69F))
-        TableLayoutPanel2.Size = New Size(1570, 168)
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 52F))
+        TableLayoutPanel2.Size = New Size(1374, 126)
         TableLayoutPanel2.TabIndex = 100
         ' 
         ' SearchButton
@@ -128,10 +127,10 @@ Partial Class AdminForm3
         SearchButton.FlatStyle = FlatStyle.System
         SearchButton.Font = New Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         SearchButton.ForeColor = Color.Red
-        SearchButton.Location = New Point(1136, 102)
-        SearchButton.Margin = New Padding(0, 3, 0, 0)
+        SearchButton.Location = New Point(994, 76)
+        SearchButton.Margin = New Padding(0, 2, 0, 0)
         SearchButton.Name = "SearchButton"
-        SearchButton.Size = New Size(147, 66)
+        SearchButton.Size = New Size(128, 50)
         SearchButton.TabIndex = 83
         SearchButton.Text = "SEARCH"
         SearchButton.UseVisualStyleBackColor = False
@@ -139,6 +138,7 @@ Partial Class AdminForm3
         ' PnlSidebar
         ' 
         PnlSidebar.BackColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
+        PnlSidebar.Controls.Add(Button4)
         PnlSidebar.Controls.Add(btnHistory)
         PnlSidebar.Controls.Add(PictureBox1)
         PnlSidebar.Controls.Add(btnBannedList)
@@ -146,9 +146,8 @@ Partial Class AdminForm3
         PnlSidebar.Dock = DockStyle.Left
         PnlSidebar.ForeColor = Color.White
         PnlSidebar.Location = New Point(0, 0)
-        PnlSidebar.Margin = New Padding(3, 4, 3, 4)
         PnlSidebar.Name = "PnlSidebar"
-        PnlSidebar.Size = New Size(187, 853)
+        PnlSidebar.Size = New Size(164, 640)
         PnlSidebar.TabIndex = 106
         ' 
         ' btnHistory
@@ -160,12 +159,12 @@ Partial Class AdminForm3
         btnHistory.ForeColor = Color.White
         btnHistory.Image = My.Resources.Resources.file__2_
         btnHistory.ImageAlign = ContentAlignment.MiddleLeft
-        btnHistory.Location = New Point(14, 284)
-        btnHistory.Margin = New Padding(3, 4, 3, 4)
+        btnHistory.Location = New Point(12, 213)
         btnHistory.Name = "btnHistory"
-        btnHistory.Size = New Size(159, 63)
+        btnHistory.Size = New Size(139, 47)
         btnHistory.TabIndex = 5
         btnHistory.Text = "History"
+        btnHistory.TextAlign = ContentAlignment.MiddleRight
         btnHistory.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
@@ -173,10 +172,10 @@ Partial Class AdminForm3
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = My.Resources.Resources._578935847_1627970941508389_3020005775530561214_n_removebg_preview
-        PictureBox1.Location = New Point(19, 21)
-        PictureBox1.Margin = New Padding(29, 12, 0, 4)
+        PictureBox1.Location = New Point(17, 16)
+        PictureBox1.Margin = New Padding(25, 9, 0, 3)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(139, 151)
+        PictureBox1.Size = New Size(122, 113)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
@@ -191,10 +190,9 @@ Partial Class AdminForm3
         btnBannedList.ForeColor = Color.White
         btnBannedList.Image = My.Resources.Resources.banned__3_
         btnBannedList.ImageAlign = ContentAlignment.MiddleLeft
-        btnBannedList.Location = New Point(14, 355)
-        btnBannedList.Margin = New Padding(3, 4, 3, 4)
+        btnBannedList.Location = New Point(12, 266)
         btnBannedList.Name = "btnBannedList"
-        btnBannedList.Size = New Size(159, 63)
+        btnBannedList.Size = New Size(139, 47)
         btnBannedList.TabIndex = 6
         btnBannedList.Text = "Banned List"
         btnBannedList.TextAlign = ContentAlignment.MiddleRight
@@ -211,12 +209,12 @@ Partial Class AdminForm3
         btnStocks.ForeColor = Color.White
         btnStocks.Image = My.Resources.Resources.in_stock__2_
         btnStocks.ImageAlign = ContentAlignment.MiddleLeft
-        btnStocks.Location = New Point(14, 213)
-        btnStocks.Margin = New Padding(3, 4, 3, 4)
+        btnStocks.Location = New Point(12, 160)
         btnStocks.Name = "btnStocks"
-        btnStocks.Size = New Size(159, 63)
+        btnStocks.Size = New Size(139, 47)
         btnStocks.TabIndex = 4
-        btnStocks.Text = "Stocks"
+        btnStocks.Text = "Inventory"
+        btnStocks.TextAlign = ContentAlignment.MiddleRight
         btnStocks.UseVisualStyleBackColor = False
         ' 
         ' ViewBanned
@@ -232,13 +230,14 @@ Partial Class AdminForm3
         DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
         ViewBanned.DefaultCellStyle = DataGridViewCellStyle3
-        ViewBanned.Location = New Point(209, 272)
+        ViewBanned.Location = New Point(183, 204)
+        ViewBanned.Margin = New Padding(3, 2, 3, 2)
         ViewBanned.Name = "ViewBanned"
         ViewBanned.ReadOnly = True
         ViewBanned.RowHeadersWidth = 51
         ViewBanned.RowTemplate.Height = 100
         ViewBanned.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewBanned.Size = New Size(1570, 569)
+        ViewBanned.Size = New Size(1374, 427)
         ViewBanned.TabIndex = 109
         ' 
         ' Button3
@@ -247,24 +246,43 @@ Partial Class AdminForm3
         Button3.BackColor = Color.Lime
         Button3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button3.ForeColor = SystemColors.ActiveCaptionText
-        Button3.Location = New Point(1429, 196)
+        Button3.Location = New Point(1250, 147)
+        Button3.Margin = New Padding(3, 2, 3, 2)
         Button3.Name = "Button3"
-        Button3.Size = New Size(350, 70)
+        Button3.Size = New Size(306, 52)
         Button3.TabIndex = 110
         Button3.Text = "REFRESH"
         Button3.UseVisualStyleBackColor = False
         ' 
+        ' Button4
+        ' 
+        Button4.Anchor = AnchorStyles.Top
+        Button4.BackColor = Color.Transparent
+        Button4.Cursor = Cursors.Hand
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        Button4.ForeColor = Color.White
+        Button4.Image = My.Resources.Resources.toppng_com_login_log____imresizer
+        Button4.ImageAlign = ContentAlignment.MiddleLeft
+        Button4.Location = New Point(12, 319)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(139, 47)
+        Button4.TabIndex = 8
+        Button4.Text = "Log Out"
+        Button4.TextAlign = ContentAlignment.MiddleRight
+        Button4.UseMnemonic = False
+        Button4.UseVisualStyleBackColor = False
+        ' 
         ' AdminForm3
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1793, 853)
+        ClientSize = New Size(1569, 640)
         Controls.Add(Button3)
         Controls.Add(ViewBanned)
         Controls.Add(PnlSidebar)
         Controls.Add(TableLayoutPanel2)
-        Margin = New Padding(3, 4, 3, 4)
         Name = "AdminForm3"
         Text = "Form6"
         WindowState = FormWindowState.Maximized
@@ -288,4 +306,5 @@ Partial Class AdminForm3
     Friend WithEvents btnStocks As Button
     Friend WithEvents ViewBanned As DataGridView
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
 End Class
