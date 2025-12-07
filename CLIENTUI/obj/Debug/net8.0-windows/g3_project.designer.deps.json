@@ -111,9 +111,6 @@
         }
       },
       "OpenCvSharp4/4.11.0.20250507": {
-        "dependencies": {
-          "System.Memory": "4.6.3"
-        },
         "runtime": {
           "lib/net6.0/OpenCvSharp.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -210,7 +207,6 @@
           }
         }
       },
-      "System.Memory/4.6.3": {},
       "System.Security.Cryptography.ProtectedData/8.0.0": {
         "runtime": {
           "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -354,13 +350,6 @@
       "sha512": "sha512-ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
       "path": "system.io.pipelines/6.0.3",
       "hashPath": "system.io.pipelines.6.0.3.nupkg.sha512"
-    },
-    "System.Memory/4.6.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
-      "path": "system.memory/4.6.3",
-      "hashPath": "system.memory.4.6.3.nupkg.sha512"
     },
     "System.Security.Cryptography.ProtectedData/8.0.0": {
       "type": "package",

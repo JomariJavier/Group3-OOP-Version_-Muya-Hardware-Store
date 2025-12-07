@@ -4,7 +4,7 @@ Public Class Agreement
 
     ' Go back button
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim frm As New Form5()
+        Dim frm As New Form2()
         frm.Show()
         Me.Hide()
     End Sub
@@ -13,7 +13,7 @@ Public Class Agreement
     ' Final confirmation button
     Private Sub btnFinalConfirm_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim con As New MySqlConnection("Server=localhost;Port=3306;Uid=root;Pwd=;Database=db_rent")
+        Dim con As New MySqlConnection("Server=localhost;Port=3306;Uid=;Pwd=;Database=db_rent")
         con.Open()
 
         ' Loop through the DataGridView

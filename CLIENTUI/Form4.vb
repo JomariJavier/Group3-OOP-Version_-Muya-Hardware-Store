@@ -7,6 +7,7 @@ Public Class Form4
     Public BorrowDate As Date = Date.Now
     Public ReturnDate As Date = Date.Now
     Public TotalPrice As Decimal = 0D
+
     Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
         Dim ofd As New OpenFileDialog With {
         .Title = "Select an Image",
