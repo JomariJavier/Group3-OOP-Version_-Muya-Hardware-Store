@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("g3_project"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc41f7b6ff57069b2f95215810dd212998e37b8e"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85239de863e62b023f8a9c0fa65e6f92b386a733"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("g3_project"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("g3_project"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
