@@ -196,4 +196,8 @@ Public Class Form4
         Me.Hide()
         frm1.Show()
     End Sub
+
+    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
 End Class

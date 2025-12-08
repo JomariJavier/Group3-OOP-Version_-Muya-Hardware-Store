@@ -355,3 +355,5 @@ D:\codes\repositories\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug
 D:\codes\repositories\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.pdb
 D:\codes\repositories\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
 D:\codes\repositories\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\ref\g3_project.dll
+D:\codes\repositories\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\bin\Debug\net8.0-windows\touchlesslib.dll
+D:\codes\repositories\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\bin\Debug\net8.0-windows\WebCamLib.dll
