@@ -4,10 +4,23 @@ Imports OpenCvSharp
 Imports OpenCvSharp.Extensions
 
 Public Class Form4
+    Public cammgr As TouchlessLib.TouchlessMgr
     Public BorrowDate As Date = Date.Now
     Public ReturnDate As Date = Date.Now
     Public TotalPrice As Decimal = 0D
 
+    Private Sub PictureBoc11_Load9(Sender As Object, e As EventArgs) Handles MyBase.Load
+        cammgr = New TouchlessLib.TouchlessMgr
+        For i As Integer = 0 To cammgr.Cameras.Count - 1
+            CmbCamera.Items.Add(cammgr.Cameras(i).ToString)
+
+        Next
+        If CmbCamera.Items.Count > 0 Then
+            CmbCamera.SelectedIndex = 0
+        Else
+            MsgBox("No Camera")
+        End If
+    End Sub
     Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
         Dim ofd As New OpenFileDialog With {
         .Title = "Select an Image",
@@ -173,8 +186,14 @@ Public Class Form4
 
     ' --- NAVIGATION BUTTON ---
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim Form3 As New Form3
-        Form3.Show()
+        Dim frm2 As New Form2
+        frm2.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim frm1 As New Form1
+        Me.Hide()
+        frm1.Show()
     End Sub
 End Class

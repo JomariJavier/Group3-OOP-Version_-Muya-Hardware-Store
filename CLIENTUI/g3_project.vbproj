@@ -28,6 +28,12 @@
     <Reference Include="MySql.Data">
       <HintPath>bin\Debug\net8.0-windows\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="TouchlessLib">
+      <HintPath>bin\touchlesslib.dll</HintPath>
+    </Reference>
+    <Reference Include="WebCamLib">
+      <HintPath>bin\WebCamLib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

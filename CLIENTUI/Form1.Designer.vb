@@ -64,14 +64,14 @@ Partial Class Form1
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 35.7955856F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 32.1022072F))
         TableLayoutPanel1.Controls.Add(PictureBox2, 0, 0)
-        TableLayoutPanel1.Location = New Point(0, 725)
+        TableLayoutPanel1.Location = New Point(0, 593)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 4
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 39.5348854F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 30.2325573F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 13.1782942F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 15.5038757F))
-        TableLayoutPanel1.Size = New Size(1370, 122)
+        TableLayoutPanel1.Size = New Size(1370, 158)
         TableLayoutPanel1.TabIndex = 24
         ' 
         ' PictureBox2
@@ -96,9 +96,9 @@ Partial Class Form1
         TableLayoutPanel3.Location = New Point(0, 0)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 1
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100.0F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 142.0F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 142.0F))
         TableLayoutPanel3.Size = New Size(1370, 142)
         TableLayoutPanel3.TabIndex = 70
         ' 
@@ -139,9 +139,9 @@ Partial Class Form1
         Panel1.Controls.Add(Label3)
         Panel1.Controls.Add(Usernametxt)
         Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(527, 299)
+        Panel1.Location = New Point(527, 241)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(278, 303)
+        Panel1.Size = New Size(278, 305)
         Panel1.TabIndex = 71
         ' 
         ' Login
@@ -188,7 +188,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI Black", 15F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Segoe UI Black", 15.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.Location = New Point(91, 14)
         Label1.Name = "Label1"
         Label1.Size = New Size(75, 28)
@@ -197,17 +197,17 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 17F)
+        AutoScaleDimensions = New SizeF(7.0F, 17.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources._576825842_1335610788354022_2752363819616472036_n1
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1370, 749)
+        ClientSize = New Size(1200, 749)
         Controls.Add(Panel1)
         Controls.Add(TableLayoutPanel3)
         Controls.Add(TableLayoutPanel1)
         Controls.Add(Label2)
         DoubleBuffered = True
-        Font = New Font("Segoe UI", 10F)
+        Font = New Font("Segoe UI", 10.0F)
         Name = "Form1"
         Text = "Form1"
         WindowState = FormWindowState.Maximized

@@ -292,6 +292,9 @@ Public Class Form2
 
     End Sub
 
+    Private Sub Logout_Click(sender As Object, e As EventArgs) Handles Logout.Click
+        Dim frm1 As New Form1
+        Me.Hide()
 
-
+    End Sub
 End Class

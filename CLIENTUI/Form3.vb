@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports Org.BouncyCastle.Pqc.Crypto.Frodo
 
 Public Class Form3
     Private Sub btnConfirm_Click(sender As Object, e As EventArgs) Handles btnConfirm.Click
@@ -79,4 +80,9 @@ Public Class Form3
         CalculateTotalPrice()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim frm1 As New Form1
+        Me.Hide()
+        frm1.Show()
+    End Sub
 End Class
