@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Form1
-    Private connectionstring As String = "Server=localhost;Database=db_rent Uid=; Password=;"
+    Private connectionstring As String = "Server=localhost;Port=3306;Uid=root;Pwd=;Database=db_rent;"
     Private Sub Login_Click(sender As Object, e As EventArgs) Handles Login.Click
         Dim username As String = Usernametxt.Text
         Dim password As String = Passwordtxt.Text
@@ -15,7 +15,7 @@ Public Class Form1
             Try
                 conn.Open()
 
-                Dim query As String = "SELECT COUNT(*) FROM users
+                Dim query As String = "SELECT COUNT(*) FROM tbl_admin
                                        WHERE username=@username
                                        AND password=@password"
 
