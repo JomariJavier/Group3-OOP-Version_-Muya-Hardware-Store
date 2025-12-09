@@ -4,22 +4,13 @@ Imports OpenCvSharp
 Imports OpenCvSharp.Extensions
 
 Public Class Form4
-    Public cammgr As TouchlessLib.TouchlessMgr
+
     Public BorrowDate As Date = Date.Now
     Public ReturnDate As Date = Date.Now
     Public TotalPrice As Decimal = 0D
 
     Private Sub PictureBoc11_Load9(Sender As Object, e As EventArgs) Handles MyBase.Load
-        cammgr = New TouchlessLib.TouchlessMgr
-        For i As Integer = 0 To cammgr.Cameras.Count - 1
-            CmbCamera.Items.Add(cammgr.Cameras(i).ToString)
 
-        Next
-        If CmbCamera.Items.Count > 0 Then
-            CmbCamera.SelectedIndex = 0
-        Else
-            MsgBox("No Camera")
-        End If
     End Sub
     Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
         Dim ofd As New OpenFileDialog With {

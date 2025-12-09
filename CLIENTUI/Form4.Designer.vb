@@ -65,7 +65,6 @@ Partial Class Form4
         colPrice = New DataGridViewTextBoxColumn()
         colQty = New DataGridViewTextBoxColumn()
         Button3 = New Button()
-        CmbCamera = New ComboBox()
         Label6 = New Label()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel3.SuspendLayout()
@@ -126,11 +125,11 @@ Partial Class Form4
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 23.8095245F))
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 22.7513237F))
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 22.2222214F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
         TableLayoutPanel3.Size = New Size(293, 132)
         TableLayoutPanel3.TabIndex = 73
         ' 
@@ -236,8 +235,8 @@ Partial Class Form4
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 36.8421059F))
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 34.2105255F))
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 28.6609764F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 27.0F))
-        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 14.0F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 27F))
+        TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 14F))
         TableLayoutPanel4.Size = New Size(293, 132)
         TableLayoutPanel4.TabIndex = 74
         ' 
@@ -347,7 +346,7 @@ Partial Class Form4
         TableLayoutPanel1.RowCount = 2
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 66.6666641F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
         TableLayoutPanel1.Size = New Size(1496, 273)
         TableLayoutPanel1.TabIndex = 78
         ' 
@@ -367,8 +366,8 @@ Partial Class Form4
         TableLayoutPanel7.RowCount = 3
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 36.9140663F))
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 31.2F))
-        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 32.0F))
-        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 20.0F))
+        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 32F))
+        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 20F))
         TableLayoutPanel7.Size = New Size(315, 132)
         TableLayoutPanel7.TabIndex = 80
         ' 
@@ -436,15 +435,15 @@ Partial Class Form4
         ' 
         TableLayoutPanel5.Anchor = AnchorStyles.Top
         TableLayoutPanel5.ColumnCount = 2
-        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
-        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50.0F))
+        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
+        TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel5.Controls.Add(Button2, 1, 0)
         TableLayoutPanel5.Controls.Add(Button1, 0, 0)
         TableLayoutPanel5.Location = New Point(614, 185)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
         TableLayoutPanel5.RowCount = 1
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 100.0F))
-        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Absolute, 61.0F))
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
+        TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Absolute, 61F))
         TableLayoutPanel5.Size = New Size(239, 61)
         TableLayoutPanel5.TabIndex = 81
         ' 
@@ -477,8 +476,8 @@ Partial Class Form4
         TableLayoutPanel9.Anchor = AnchorStyles.Bottom
         TableLayoutPanel9.BackColor = Color.AliceBlue
         TableLayoutPanel9.ColumnCount = 1
-        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
-        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
+        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
+        TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
         TableLayoutPanel9.Controls.Add(Label1, 0, 0)
         TableLayoutPanel9.Controls.Add(PictureBox11, 0, 1)
         TableLayoutPanel9.Location = New Point(653, 290)
@@ -494,8 +493,8 @@ Partial Class Form4
         TableLayoutPanel6.Anchor = AnchorStyles.Top
         TableLayoutPanel6.BackColor = Color.Transparent
         TableLayoutPanel6.ColumnCount = 1
-        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100.0F))
-        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20.0F))
+        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
+        TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
         TableLayoutPanel6.Controls.Add(Label4, 0, 1)
         TableLayoutPanel6.Controls.Add(Label26, 0, 0)
         TableLayoutPanel6.Location = New Point(0, 168)
@@ -527,7 +526,7 @@ Partial Class Form4
         Label26.Anchor = AnchorStyles.Top
         Label26.AutoSize = True
         Label26.BackColor = Color.Transparent
-        Label26.Font = New Font("Arial Black", 48.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label26.Font = New Font("Arial Black", 48F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label26.ForeColor = Color.White
         Label26.ImageAlign = ContentAlignment.TopCenter
         Label26.Location = New Point(452, 0)
@@ -552,9 +551,9 @@ Partial Class Form4
         TableLayoutPanel2.Location = New Point(0, 0)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 1
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100.0F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 125.0F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 125.0F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 125F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 125F))
         TableLayoutPanel2.Size = New Size(1496, 125)
         TableLayoutPanel2.TabIndex = 82
         ' 
@@ -595,7 +594,7 @@ Partial Class Form4
         dgvFinal.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9.0F)
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
         DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
@@ -605,7 +604,7 @@ Partial Class Form4
         dgvFinal.Columns.AddRange(New DataGridViewColumn() {colName, colPrice, colQty})
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter
         DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9.0F)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
         DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
         DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
@@ -649,21 +648,13 @@ Partial Class Form4
         Button3.Text = "Log out"
         Button3.UseVisualStyleBackColor = True
         ' 
-        ' CmbCamera
-        ' 
-        CmbCamera.FormattingEnabled = True
-        CmbCamera.Location = New Point(670, 142)
-        CmbCamera.Name = "CmbCamera"
-        CmbCamera.Size = New Size(121, 23)
-        CmbCamera.TabIndex = 93
-        ' 
         ' Label6
         ' 
         Label6.AutoSize = True
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.White
-        Label6.Location = New Point(557, 142)
+        Label6.Location = New Point(566, 146)
         Label6.Name = "Label6"
         Label6.Size = New Size(107, 20)
         Label6.TabIndex = 94
@@ -671,13 +662,12 @@ Partial Class Form4
         ' 
         ' Form4
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources._576825842_1335610788354022_2752363819616472036_n1
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1199, 562)
         Controls.Add(Label6)
-        Controls.Add(CmbCamera)
         Controls.Add(Button3)
         Controls.Add(dgvFinal)
         Controls.Add(TableLayoutPanel2)
@@ -749,6 +739,5 @@ Partial Class Form4
     Friend WithEvents colPrice As DataGridViewTextBoxColumn
     Friend WithEvents colQty As DataGridViewTextBoxColumn
     Friend WithEvents Button3 As Button
-    Friend WithEvents CmbCamera As ComboBox
     Friend WithEvents Label6 As Label
 End Class

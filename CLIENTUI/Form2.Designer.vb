@@ -22,7 +22,6 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Size = New Size(1024, 768)
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         btnRefresh = New Button()
@@ -747,7 +746,7 @@ Partial Class Form2
         ' Logout
         ' 
         Logout.Anchor = AnchorStyles.Right
-        Logout.Location = New Point(1077, 131)
+        Logout.Location = New Point(1086, 129)
         Logout.Name = "Logout"
         Logout.Size = New Size(111, 46)
         Logout.TabIndex = 5
