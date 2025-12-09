@@ -360,6 +360,7 @@ Public Class AdminForm1
         Dim scaleX As Single = Screen.PrimaryScreen.Bounds.Width / 1920.0F
         Dim scaleY As Single = Screen.PrimaryScreen.Bounds.Height / 1080.0F
         Me.Scale(New SizeF(scaleX, scaleY))
+        LoadTools()
     End Sub
 
     Dim currentPic As PictureBox

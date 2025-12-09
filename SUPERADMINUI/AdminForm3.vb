@@ -68,4 +68,8 @@ Public Class AdminForm3
         AdminForm4.Show()
         Hide()
     End Sub
+
+    Private Sub BannedSearchBox_TextChanged(sender As Object, e As EventArgs) Handles BannedSearchBox.TextChanged
+
+    End Sub
 End Class

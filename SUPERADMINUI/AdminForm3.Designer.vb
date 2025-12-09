@@ -22,7 +22,7 @@ Partial Class AdminForm3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         BannedSearchBox = New TextBox()
         Label7 = New Label()
         Label3 = New Label()
@@ -30,13 +30,13 @@ Partial Class AdminForm3
         TableLayoutPanel2 = New TableLayoutPanel()
         SearchButton = New Button()
         PnlSidebar = New Panel()
+        Button4 = New Button()
         btnHistory = New Button()
         PictureBox1 = New PictureBox()
         btnBannedList = New Button()
         btnStocks = New Button()
         ViewBanned = New DataGridView()
         Button3 = New Button()
-        Button4 = New Button()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -150,6 +150,25 @@ Partial Class AdminForm3
         PnlSidebar.Size = New Size(164, 640)
         PnlSidebar.TabIndex = 106
         ' 
+        ' Button4
+        ' 
+        Button4.Anchor = AnchorStyles.Top
+        Button4.BackColor = Color.Transparent
+        Button4.Cursor = Cursors.Hand
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        Button4.ForeColor = Color.White
+        Button4.Image = My.Resources.Resources.toppng_com_login_log____imresizer
+        Button4.ImageAlign = ContentAlignment.MiddleLeft
+        Button4.Location = New Point(12, 319)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(139, 47)
+        Button4.TabIndex = 8
+        Button4.Text = "Log Out"
+        Button4.TextAlign = ContentAlignment.MiddleRight
+        Button4.UseMnemonic = False
+        Button4.UseVisualStyleBackColor = False
+        ' 
         ' btnHistory
         ' 
         btnHistory.BackColor = Color.Transparent
@@ -163,7 +182,7 @@ Partial Class AdminForm3
         btnHistory.Name = "btnHistory"
         btnHistory.Size = New Size(139, 47)
         btnHistory.TabIndex = 5
-        btnHistory.Text = "History"
+        btnHistory.Text = "Rent History"
         btnHistory.TextAlign = ContentAlignment.MiddleRight
         btnHistory.UseVisualStyleBackColor = False
         ' 
@@ -222,14 +241,14 @@ Partial Class AdminForm3
         ViewBanned.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ViewBanned.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         ViewBanned.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = SystemColors.Window
-        DataGridViewCellStyle3.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle3.ForeColor = SystemColors.ControlLightLight
-        DataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
-        ViewBanned.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = SystemColors.Window
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle1.ForeColor = SystemColors.ControlLightLight
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
+        ViewBanned.DefaultCellStyle = DataGridViewCellStyle1
         ViewBanned.Location = New Point(183, 204)
         ViewBanned.Margin = New Padding(3, 2, 3, 2)
         ViewBanned.Name = "ViewBanned"
@@ -253,25 +272,6 @@ Partial Class AdminForm3
         Button3.TabIndex = 110
         Button3.Text = "REFRESH"
         Button3.UseVisualStyleBackColor = False
-        ' 
-        ' Button4
-        ' 
-        Button4.Anchor = AnchorStyles.Top
-        Button4.BackColor = Color.Transparent
-        Button4.Cursor = Cursors.Hand
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Button4.ForeColor = Color.White
-        Button4.Image = My.Resources.Resources.toppng_com_login_log____imresizer
-        Button4.ImageAlign = ContentAlignment.MiddleLeft
-        Button4.Location = New Point(12, 319)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(139, 47)
-        Button4.TabIndex = 8
-        Button4.Text = "Log Out"
-        Button4.TextAlign = ContentAlignment.MiddleRight
-        Button4.UseMnemonic = False
-        Button4.UseVisualStyleBackColor = False
         ' 
         ' AdminForm3
         ' 

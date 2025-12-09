@@ -24,7 +24,6 @@ Partial Class AdminForm2
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         TableLayoutPanel2 = New TableLayoutPanel()
-        Button1 = New Button()
         Label7 = New Label()
         PnlSidebar = New Panel()
         Button4 = New Button()
@@ -33,11 +32,20 @@ Partial Class AdminForm2
         btnBannedList = New Button()
         btnStocks = New Button()
         ViewHistory = New DataGridView()
-        Button3 = New Button()
+        LateButton = New Button()
+        NotReturnedButton = New Button()
+        ReturnedButton = New Button()
+        Panel1 = New Panel()
+        Button1 = New Button()
+        FilterBox = New GroupBox()
+        Button2 = New Button()
+        SearchTextBox = New TextBox()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(ViewHistory, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        FilterBox.SuspendLayout()
         SuspendLayout()
         ' 
         ' TableLayoutPanel2
@@ -48,27 +56,13 @@ Partial Class AdminForm2
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel2.Controls.Add(Button1, 2, 0)
         TableLayoutPanel2.Controls.Add(Label7, 1, 0)
         TableLayoutPanel2.Location = New Point(170, 3)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 1
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel2.Size = New Size(1632, 67)
+        TableLayoutPanel2.Size = New Size(1731, 67)
         TableLayoutPanel2.TabIndex = 98
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.Lime
-        Button1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = SystemColors.ActiveCaptionText
-        Button1.Location = New Point(1089, 2)
-        Button1.Margin = New Padding(3, 2, 3, 2)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(306, 52)
-        Button1.TabIndex = 109
-        Button1.Text = "REFRESH"
-        Button1.UseVisualStyleBackColor = False
         ' 
         ' Label7
         ' 
@@ -77,18 +71,17 @@ Partial Class AdminForm2
         Label7.BackColor = Color.Transparent
         Label7.Font = New Font("Arial Black", 26.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Label7.Location = New Point(717, 20)
+        Label7.Location = New Point(683, 20)
         Label7.Margin = New Padding(0, 20, 0, 0)
         Label7.Name = "Label7"
-        Label7.Size = New Size(195, 47)
+        Label7.Size = New Size(361, 47)
         Label7.TabIndex = 98
-        Label7.Text = "HISTORY"
+        Label7.Text = "RENTAL HISTORY"
         Label7.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' PnlSidebar
         ' 
         PnlSidebar.BackColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        PnlSidebar.Controls.Add(Button3)
         PnlSidebar.Controls.Add(Button4)
         PnlSidebar.Controls.Add(btnHistory)
         PnlSidebar.Controls.Add(PictureBox1)
@@ -98,7 +91,7 @@ Partial Class AdminForm2
         PnlSidebar.ForeColor = Color.White
         PnlSidebar.Location = New Point(0, 0)
         PnlSidebar.Name = "PnlSidebar"
-        PnlSidebar.Size = New Size(164, 947)
+        PnlSidebar.Size = New Size(164, 1041)
         PnlSidebar.TabIndex = 105
         ' 
         ' Button4
@@ -133,7 +126,7 @@ Partial Class AdminForm2
         btnHistory.Name = "btnHistory"
         btnHistory.Size = New Size(139, 47)
         btnHistory.TabIndex = 5
-        btnHistory.Text = "History"
+        btnHistory.Text = "Rent History"
         btnHistory.TextAlign = ContentAlignment.MiddleRight
         btnHistory.UseVisualStyleBackColor = False
         ' 
@@ -200,35 +193,119 @@ Partial Class AdminForm2
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewHistory.DefaultCellStyle = DataGridViewCellStyle1
-        ViewHistory.Location = New Point(183, 213)
+        ViewHistory.Location = New Point(180, 213)
         ViewHistory.Margin = New Padding(3, 2, 3, 2)
+        ViewHistory.MaximumSize = New Size(1712, 817)
         ViewHistory.Name = "ViewHistory"
         ViewHistory.ReadOnly = True
         ViewHistory.RowHeadersWidth = 51
         ViewHistory.RowTemplate.Height = 100
         ViewHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewHistory.Size = New Size(1610, 723)
+        ViewHistory.Size = New Size(1712, 817)
         ViewHistory.TabIndex = 108
         ' 
-        ' Button3
+        ' LateButton
         ' 
-        Button3.Location = New Point(41, 485)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(98, 56)
-        Button3.TabIndex = 110
-        Button3.Text = "Returned"
-        Button3.UseVisualStyleBackColor = True
+        LateButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
+        LateButton.Location = New Point(633, 17)
+        LateButton.Name = "LateButton"
+        LateButton.Size = New Size(200, 70)
+        LateButton.TabIndex = 113
+        LateButton.Text = "Show ""Late"""
+        LateButton.UseVisualStyleBackColor = True
+        ' 
+        ' NotReturnedButton
+        ' 
+        NotReturnedButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
+        NotReturnedButton.Location = New Point(427, 17)
+        NotReturnedButton.Name = "NotReturnedButton"
+        NotReturnedButton.Size = New Size(200, 70)
+        NotReturnedButton.TabIndex = 112
+        NotReturnedButton.Text = "Show ""Not Returned"""
+        NotReturnedButton.UseVisualStyleBackColor = True
+        ' 
+        ' ReturnedButton
+        ' 
+        ReturnedButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
+        ReturnedButton.Location = New Point(15, 17)
+        ReturnedButton.Name = "ReturnedButton"
+        ReturnedButton.Size = New Size(200, 70)
+        ReturnedButton.TabIndex = 110
+        ReturnedButton.Text = "Show All History"
+        ReturnedButton.UseVisualStyleBackColor = True
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Right
+        Panel1.BackColor = SystemColors.GradientActiveCaption
+        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(LateButton)
+        Panel1.Controls.Add(NotReturnedButton)
+        Panel1.Controls.Add(ReturnedButton)
+        Panel1.Location = New Point(1046, 89)
+        Panel1.MaximumSize = New Size(846, 102)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(846, 102)
+        Panel1.TabIndex = 114
+        ' 
+        ' Button1
+        ' 
+        Button1.Font = New Font("Arial Black", 12F, FontStyle.Bold)
+        Button1.Location = New Point(221, 17)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(200, 70)
+        Button1.TabIndex = 114
+        Button1.Text = "Show ""Returned"""
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' FilterBox
+        ' 
+        FilterBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
+        FilterBox.BackColor = SystemColors.GradientInactiveCaption
+        FilterBox.Controls.Add(Button2)
+        FilterBox.Controls.Add(SearchTextBox)
+        FilterBox.Font = New Font("Arial", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        FilterBox.Location = New Point(180, 89)
+        FilterBox.MaximumSize = New Size(911, 102)
+        FilterBox.Name = "FilterBox"
+        FilterBox.Size = New Size(846, 102)
+        FilterBox.TabIndex = 115
+        FilterBox.TabStop = False
+        FilterBox.Text = "SEARCH BY NAME"
+        ' 
+        ' Button2
+        ' 
+        Button2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Right
+        Button2.Font = New Font("Arial Black", 12F, FontStyle.Bold)
+        Button2.Location = New Point(709, 17)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(123, 70)
+        Button2.TabIndex = 114
+        Button2.Text = "Search"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' SearchTextBox
+        ' 
+        SearchTextBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        SearchTextBox.Font = New Font("Arial", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        SearchTextBox.Location = New Point(15, 35)
+        SearchTextBox.Name = "SearchTextBox"
+        SearchTextBox.Size = New Size(674, 44)
+        SearchTextBox.TabIndex = 0
         ' 
         ' AdminForm2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1805, 947)
+        ClientSize = New Size(1904, 1041)
+        Controls.Add(FilterBox)
         Controls.Add(PnlSidebar)
+        Controls.Add(Panel1)
         Controls.Add(TableLayoutPanel2)
         Controls.Add(ViewHistory)
         Name = "AdminForm2"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Form7"
         WindowState = FormWindowState.Maximized
         TableLayoutPanel2.ResumeLayout(False)
@@ -236,6 +313,9 @@ Partial Class AdminForm2
         PnlSidebar.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(ViewHistory, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        FilterBox.ResumeLayout(False)
+        FilterBox.PerformLayout()
         ResumeLayout(False)
     End Sub
     Friend WithEvents Label26 As Label
@@ -250,14 +330,18 @@ Partial Class AdminForm2
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PnlSidebar As Panel
     Friend WithEvents btnHistory As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnBannedList As Button
     Friend WithEvents btnStocks As Button
     Friend WithEvents ViewHistory As DataGridView
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents NotReturnedButton As Button
+    Friend WithEvents ReturnedButton As Button
+    Friend WithEvents LateButton As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents FilterBox As GroupBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents SearchTextBox As TextBox
 End Class

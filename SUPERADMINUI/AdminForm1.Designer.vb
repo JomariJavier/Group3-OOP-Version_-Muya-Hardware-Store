@@ -116,7 +116,7 @@ Partial Class AdminForm1
         btnHistory.Name = "btnHistory"
         btnHistory.Size = New Size(139, 47)
         btnHistory.TabIndex = 5
-        btnHistory.Text = "History"
+        btnHistory.Text = "Rent History"
         btnHistory.TextAlign = ContentAlignment.MiddleRight
         btnHistory.UseVisualStyleBackColor = False
         ' 
@@ -438,7 +438,7 @@ Partial Class AdminForm1
         ' Panel1
         ' 
         Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        Panel1.BackColor = SystemColors.GradientInactiveCaption
+        Panel1.BackColor = SystemColors.GradientActiveCaption
         Panel1.Controls.Add(ToolID)
         Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(TableLayoutPanel1)
