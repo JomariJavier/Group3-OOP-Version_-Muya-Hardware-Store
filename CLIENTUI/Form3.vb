@@ -85,4 +85,8 @@ Public Class Form3
         Hide()
         frm1.Show()
     End Sub
+
+    Private Sub dgvConfirm_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
 End Class

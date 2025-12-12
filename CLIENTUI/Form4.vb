@@ -191,4 +191,8 @@ Public Class Form4
     Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
 
     End Sub
+
+    Private Sub dgvFinal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvFinal.CellContentClick
+
+    End Sub
 End Class

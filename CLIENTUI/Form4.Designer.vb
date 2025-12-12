@@ -22,8 +22,8 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label1 = New Label()
         PictureBox11 = New PictureBox()
         TableLayoutPanel3 = New TableLayoutPanel()
@@ -35,11 +35,11 @@ Partial Class Form4
         TextBox2 = New TextBox()
         TextBox3 = New TextBox()
         TableLayoutPanel4 = New TableLayoutPanel()
-        Label10 = New Label()
         Label9 = New Label()
         TextBox5 = New TextBox()
         TextBox6 = New TextBox()
         TextBox7 = New TextBox()
+        Label10 = New Label()
         Label11 = New Label()
         Label18 = New Label()
         OpenFileDialog1 = New OpenFileDialog()
@@ -239,20 +239,6 @@ Partial Class Form4
         TableLayoutPanel4.Size = New Size(293, 132)
         TableLayoutPanel4.TabIndex = 74
         ' 
-        ' Label10
-        ' 
-        Label10.Anchor = AnchorStyles.Top
-        Label10.AutoSize = True
-        Label10.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label10.ForeColor = Color.Black
-        Label10.Location = New Point(3, 48)
-        Label10.Margin = New Padding(0, 10, 0, 0)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(98, 16)
-        Label10.TabIndex = 74
-        Label10.Text = "Street address"
-        Label10.TextAlign = ContentAlignment.MiddleCenter
-        ' 
         ' Label9
         ' 
         Label9.Anchor = AnchorStyles.Top
@@ -293,6 +279,20 @@ Partial Class Form4
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(182, 23)
         TextBox7.TabIndex = 82
+        ' 
+        ' Label10
+        ' 
+        Label10.Anchor = AnchorStyles.Top
+        Label10.AutoSize = True
+        Label10.Font = New Font("Arial", 9.75F, FontStyle.Bold)
+        Label10.ForeColor = Color.Black
+        Label10.Location = New Point(3, 48)
+        Label10.Margin = New Padding(0, 10, 0, 0)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(98, 16)
+        Label10.TabIndex = 74
+        Label10.Text = "Street address"
+        Label10.TextAlign = ContentAlignment.MiddleCenter
         ' 
         ' Label11
         ' 
@@ -539,33 +539,33 @@ Partial Class Form4
         ' dgvFinal
         ' 
         dgvFinal.AccessibleName = ""
-        dgvFinal.Anchor = AnchorStyles.None
+        dgvFinal.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         dgvFinal.BackgroundColor = Color.White
         dgvFinal.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle7.BackColor = SystemColors.Control
-        DataGridViewCellStyle7.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle7.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.True
-        dgvFinal.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle1.BackColor = SystemColors.Control
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        dgvFinal.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         dgvFinal.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvFinal.Columns.AddRange(New DataGridViewColumn() {colName, colPrice, colQty})
-        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle8.BackColor = SystemColors.Window
-        DataGridViewCellStyle8.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle8.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
-        DataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.False
-        dgvFinal.DefaultCellStyle = DataGridViewCellStyle8
-        dgvFinal.Location = New Point(12, 347)
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle2.BackColor = SystemColors.Window
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
+        dgvFinal.DefaultCellStyle = DataGridViewCellStyle2
+        dgvFinal.Location = New Point(12, 398)
         dgvFinal.Margin = New Padding(3, 2, 3, 2)
         dgvFinal.Name = "dgvFinal"
         dgvFinal.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
         dgvFinal.RowHeadersWidth = 51
-        dgvFinal.Size = New Size(428, 104)
+        dgvFinal.Size = New Size(428, 85)
         dgvFinal.TabIndex = 91
         ' 
         ' colName
