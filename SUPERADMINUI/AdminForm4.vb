@@ -57,6 +57,7 @@ Public Class AdminForm4
         If e.RowIndex < 0 Then Exit Sub
         Dim selectedRow As DataGridViewRow = ViewClientsToBan.Rows(e.RowIndex)
         IDTextBox.Text = selectedRow.Cells("Client_ID").Value.ToString()
+        NameBox1.Text = selectedRow.Cells("Fullname").Value.ToString()
     End Sub
     Private Sub btnStocks_Click(sender As Object, e As EventArgs) Handles btnStocks.Click
         Dim AdminForm1 As New AdminForm1
@@ -83,5 +84,22 @@ Public Class AdminForm4
 
     Private Sub AdminForm4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadClientsToBan()
+    End Sub
+
+    Private Sub KeyPressValidation(sender As Object, e As KeyPressEventArgs) Handles NameBox1.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) Then
+            e.Handled = True
+            MessageBox.Show("Only letters and spaces are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
+    End Sub
+
+    Private Sub ReasonTextBox_Validation(sender As Object, e As KeyPressEventArgs) Handles ReasonTextBox.KeyPress
+        If Not Char.IsLetterOrDigit(e.KeyChar) AndAlso
+       Not Char.IsControl(e.KeyChar) AndAlso
+       Not Char.IsWhiteSpace(e.KeyChar) AndAlso
+       Not ". , - _ /".Contains(e.KeyChar) Then
+            e.Handled = True ' Reject the character
+            MessageBox.Show("Only letters, numbers, spaces, and basic punctuation (.,-_/ ) are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
     End Sub
 End Class

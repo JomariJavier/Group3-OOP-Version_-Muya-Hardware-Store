@@ -94,12 +94,10 @@ Public Class AdminForm3
     Private Sub AdminForm3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         LoadBannedList()
     End Sub
-
-    Private Sub BannedSearchBox_TextChanged(sender As Object, e As EventArgs) Handles BannedSearchBox.TextChanged
-
-    End Sub
-
-    Private Sub ViewBanned_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewBanned.CellContentClick
-
+    Private Sub BannedSearchBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles BannedSearchBox.KeyPress
+        If Not Char.IsLetter(e.KeyChar) AndAlso Not Char.IsControl(e.KeyChar) AndAlso Not Char.IsWhiteSpace(e.KeyChar) Then
+            e.Handled = True
+            MessageBox.Show("Only letters and spaces are allowed.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        End If
     End Sub
 End Class

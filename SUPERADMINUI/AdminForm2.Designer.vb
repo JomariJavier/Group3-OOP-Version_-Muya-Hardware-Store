@@ -34,13 +34,12 @@ Partial Class AdminForm2
         ViewHistory = New DataGridView()
         LateButton = New Button()
         NotReturnedButton = New Button()
-        ReturnedButton = New Button()
+        ChangeStatusButton = New Button()
         Panel1 = New Panel()
         Button1 = New Button()
         FilterBox = New GroupBox()
         Button2 = New Button()
         SearchTextBox = New TextBox()
-        Label1 = New Label()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -194,7 +193,7 @@ Partial Class AdminForm2
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewHistory.DefaultCellStyle = DataGridViewCellStyle1
-        ViewHistory.Location = New Point(180, 218)
+        ViewHistory.Location = New Point(180, 213)
         ViewHistory.Margin = New Padding(3, 2, 3, 2)
         ViewHistory.MaximumSize = New Size(1712, 817)
         ViewHistory.Name = "ViewHistory"
@@ -202,47 +201,48 @@ Partial Class AdminForm2
         ViewHistory.RowHeadersWidth = 51
         ViewHistory.RowTemplate.Height = 100
         ViewHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewHistory.Size = New Size(1712, 732)
+        ViewHistory.Size = New Size(1712, 737)
         ViewHistory.TabIndex = 108
         ' 
         ' LateButton
         ' 
         LateButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
-        LateButton.Location = New Point(633, 17)
+        LateButton.Location = New Point(400, 17)
         LateButton.Name = "LateButton"
-        LateButton.Size = New Size(200, 70)
+        LateButton.Size = New Size(186, 70)
         LateButton.TabIndex = 113
-        LateButton.Text = "Show ""Late"""
+        LateButton.Text = "Show Rentals Past Return Date"
         LateButton.UseVisualStyleBackColor = True
         ' 
         ' NotReturnedButton
         ' 
         NotReturnedButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
-        NotReturnedButton.Location = New Point(427, 17)
+        NotReturnedButton.Location = New Point(208, 17)
         NotReturnedButton.Name = "NotReturnedButton"
-        NotReturnedButton.Size = New Size(200, 70)
+        NotReturnedButton.Size = New Size(186, 70)
         NotReturnedButton.TabIndex = 112
         NotReturnedButton.Text = "Show ""Not Returned"""
         NotReturnedButton.UseVisualStyleBackColor = True
         ' 
-        ' ReturnedButton
+        ' ChangeStatusButton
         ' 
-        ReturnedButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
-        ReturnedButton.Location = New Point(15, 17)
-        ReturnedButton.Name = "ReturnedButton"
-        ReturnedButton.Size = New Size(200, 70)
-        ReturnedButton.TabIndex = 110
-        ReturnedButton.Text = "Show All History"
-        ReturnedButton.UseVisualStyleBackColor = True
+        ChangeStatusButton.BackColor = Color.Chartreuse
+        ChangeStatusButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
+        ChangeStatusButton.Location = New Point(631, 17)
+        ChangeStatusButton.Name = "ChangeStatusButton"
+        ChangeStatusButton.Size = New Size(203, 70)
+        ChangeStatusButton.TabIndex = 110
+        ChangeStatusButton.Text = "Change Return Status"
+        ChangeStatusButton.UseVisualStyleBackColor = False
         ' 
         ' Panel1
         ' 
         Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Right
         Panel1.BackColor = SystemColors.GradientActiveCaption
         Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(ChangeStatusButton)
         Panel1.Controls.Add(LateButton)
         Panel1.Controls.Add(NotReturnedButton)
-        Panel1.Controls.Add(ReturnedButton)
         Panel1.Location = New Point(1046, 89)
         Panel1.MaximumSize = New Size(846, 102)
         Panel1.Name = "Panel1"
@@ -252,9 +252,9 @@ Partial Class AdminForm2
         ' Button1
         ' 
         Button1.Font = New Font("Arial Black", 12F, FontStyle.Bold)
-        Button1.Location = New Point(221, 17)
+        Button1.Location = New Point(16, 17)
         Button1.Name = "Button1"
-        Button1.Size = New Size(200, 70)
+        Button1.Size = New Size(186, 70)
         Button1.TabIndex = 114
         Button1.Text = "Show ""Returned"""
         Button1.UseVisualStyleBackColor = True
@@ -294,25 +294,12 @@ Partial Class AdminForm2
         SearchTextBox.Size = New Size(674, 44)
         SearchTextBox.TabIndex = 0
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.BackColor = SystemColors.GradientInactiveCaption
-        Label1.Font = New Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Red
-        Label1.Location = New Point(853, 194)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(362, 24)
-        Label1.TabIndex = 116
-        Label1.Text = "*Double click to change Return Status"
-        ' 
         ' AdminForm2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1904, 961)
-        Controls.Add(Label1)
         Controls.Add(FilterBox)
         Controls.Add(PnlSidebar)
         Controls.Add(Panel1)
@@ -331,10 +318,8 @@ Partial Class AdminForm2
         FilterBox.ResumeLayout(False)
         FilterBox.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
     Friend WithEvents Label26 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
@@ -353,7 +338,7 @@ Partial Class AdminForm2
     Friend WithEvents ViewHistory As DataGridView
     Friend WithEvents Button4 As Button
     Friend WithEvents NotReturnedButton As Button
-    Friend WithEvents ReturnedButton As Button
+    Friend WithEvents ChangeStatusButton As Button
     Friend WithEvents LateButton As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents FilterBox As GroupBox

@@ -26,6 +26,7 @@ Partial Class AdminForm4
         Label7 = New Label()
         TableLayoutPanel2 = New TableLayoutPanel()
         Label3 = New Label()
+        IDTextBox = New TextBox()
         PnlSidebar = New Panel()
         Button2 = New Button()
         btnHistory = New Button()
@@ -34,13 +35,13 @@ Partial Class AdminForm4
         btnStocks = New Button()
         Label1 = New Label()
         Label2 = New Label()
-        IDTextBox = New TextBox()
         ReasonTextBox = New TextBox()
         Button3 = New Button()
         ConfirmButton = New Button()
         CancelButton = New Button()
         ViewClientsToBan = New DataGridView()
         Panel1 = New Panel()
+        NameBox1 = New TextBox()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -72,6 +73,7 @@ Partial Class AdminForm4
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.42347F))
         TableLayoutPanel2.Controls.Add(Label3, 1, 1)
         TableLayoutPanel2.Controls.Add(Label7, 1, 0)
+        TableLayoutPanel2.Controls.Add(IDTextBox, 0, 0)
         TableLayoutPanel2.Dock = DockStyle.Top
         TableLayoutPanel2.Location = New Point(164, 0)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -93,6 +95,17 @@ Partial Class AdminForm4
         Label3.TabIndex = 116
         Label3.Text = "*List of allowed people (not banned)"
         Label3.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' IDTextBox
+        ' 
+        IDTextBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        IDTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        IDTextBox.Location = New Point(3, 2)
+        IDTextBox.Margin = New Padding(3, 2, 3, 2)
+        IDTextBox.Name = "IDTextBox"
+        IDTextBox.Size = New Size(483, 36)
+        IDTextBox.TabIndex = 110
+        IDTextBox.Visible = False
         ' 
         ' PnlSidebar
         ' 
@@ -200,41 +213,33 @@ Partial Class AdminForm4
         Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(12, 16)
+        Label1.Location = New Point(6, 16)
         Label1.Name = "Label1"
-        Label1.Size = New Size(441, 37)
+        Label1.Size = New Size(255, 37)
         Label1.TabIndex = 108
-        Label1.Text = "Enter the Client ID of person to ban:"
+        Label1.Text = "Click a client to ban:"
+        Label1.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Label2
         ' 
         Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 19.8000011F)
-        Label2.Location = New Point(12, 119)
+        Label2.Location = New Point(6, 105)
         Label2.Name = "Label2"
         Label2.Size = New Size(262, 37)
         Label2.TabIndex = 109
         Label2.Text = "Enter reason for ban:"
         ' 
-        ' IDTextBox
-        ' 
-        IDTextBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        IDTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        IDTextBox.Location = New Point(12, 64)
-        IDTextBox.Margin = New Padding(3, 2, 3, 2)
-        IDTextBox.Name = "IDTextBox"
-        IDTextBox.Size = New Size(538, 36)
-        IDTextBox.TabIndex = 110
-        ' 
         ' ReasonTextBox
         ' 
         ReasonTextBox.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ReasonTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        ReasonTextBox.Location = New Point(12, 158)
+        ReasonTextBox.Location = New Point(12, 144)
         ReasonTextBox.Margin = New Padding(3, 2, 3, 2)
         ReasonTextBox.Multiline = True
         ReasonTextBox.Name = "ReasonTextBox"
+        ReasonTextBox.PlaceholderText = "ex: Not returning item on time"
         ReasonTextBox.Size = New Size(538, 487)
         ReasonTextBox.TabIndex = 111
         ' 
@@ -257,7 +262,7 @@ Partial Class AdminForm4
         ConfirmButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         ConfirmButton.BackColor = Color.Red
         ConfirmButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        ConfirmButton.Location = New Point(41, 671)
+        ConfirmButton.Location = New Point(41, 657)
         ConfirmButton.Margin = New Padding(3, 2, 3, 2)
         ConfirmButton.Name = "ConfirmButton"
         ConfirmButton.Size = New Size(192, 52)
@@ -269,7 +274,7 @@ Partial Class AdminForm4
         ' 
         CancelButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         CancelButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CancelButton.Location = New Point(313, 671)
+        CancelButton.Location = New Point(313, 657)
         CancelButton.Margin = New Padding(3, 2, 3, 2)
         CancelButton.Name = "CancelButton"
         CancelButton.Size = New Size(192, 52)
@@ -303,17 +308,27 @@ Partial Class AdminForm4
         ' Panel1
         ' 
         Panel1.BackColor = SystemColors.GradientInactiveCaption
+        Panel1.Controls.Add(NameBox1)
         Panel1.Controls.Add(ReasonTextBox)
         Panel1.Controls.Add(CancelButton)
         Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(ConfirmButton)
         Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(IDTextBox)
         Panel1.Dock = DockStyle.Fill
         Panel1.Location = New Point(164, 106)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(565, 855)
         Panel1.TabIndex = 117
+        ' 
+        ' NameBox1
+        ' 
+        NameBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        NameBox1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        NameBox1.Location = New Point(12, 54)
+        NameBox1.Margin = New Padding(3, 2, 3, 2)
+        NameBox1.Name = "NameBox1"
+        NameBox1.Size = New Size(538, 36)
+        NameBox1.TabIndex = 115
         ' 
         ' AdminForm4
         ' 
@@ -357,4 +372,5 @@ Partial Class AdminForm4
     Friend WithEvents Label3 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents NameBox1 As TextBox
 End Class

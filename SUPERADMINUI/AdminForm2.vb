@@ -28,7 +28,6 @@ Public Class AdminForm2
         ViewHistory.DefaultCellStyle.ForeColor = Color.Black
         FormatNotReturnedRows()
         FormatReturnedRows()
-        FormatLateRows()
         Return 0
     End Function
     Public Sub UpdateLateRentals()
@@ -144,7 +143,6 @@ Public Class AdminForm2
             End Using
         End Using
         ViewHistory.DefaultCellStyle.ForeColor = Color.Black
-        FormatLateRows()
     End Sub
     Public Sub SearchHistory()
         MySqlConn = New MySqlConnection
@@ -210,34 +208,63 @@ Public Class AdminForm2
     End Sub
     Private Sub FormatLateRows()
 
-        If Not ViewHistory.Columns.Contains("is_Late") Then Exit Sub
+        If Not ViewHistory.Columns.Contains("is_Late") Or Not ViewHistory.Columns.Contains("Date_Of_Return") Then Exit Sub
 
         For Each row As DataGridViewRow In ViewHistory.Rows
-
             If row.IsNewRow Then Continue For
 
             Dim val = row.Cells("is_Late").Value
 
             If val IsNot Nothing AndAlso val.ToString().Trim() = "1" Then
-                row.DefaultCellStyle.BackColor = Color.LightYellow
-                row.DefaultCellStyle.ForeColor = Color.Black
-            End If
+                row.Cells("Date_Of_Return").Style.ForeColor = Color.Red
 
+            Else
+
+                row.Cells("Date_Of_Return").Style.ForeColor = Color.Black
+            End If
         Next
 
     End Sub
     Private Sub AdminForm2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ChangeStatusButton.Enabled = False
         UpdateLateRentals()
         LoadHistory()
     End Sub
     Private Sub ViewHistory_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewHistory.CellContentClick, ViewHistory.CellClick
+        If e.RowIndex < 0 Then Exit Sub
 
+        ' Enable button when a row is selected
+        ChangeStatusButton.Enabled = True
+
+        Dim row As DataGridViewRow = ViewHistory.Rows(e.RowIndex)
+        If row Is Nothing Then Exit Sub
+
+        ' Get Rent_ID safely
+        Dim rentValue = row.Cells("Rent_ID").Value
+        If rentValue Is Nothing OrElse IsDBNull(rentValue) Then
+            Exit Sub
+        End If
+
+        Dim rentId As Integer = Convert.ToInt32(rentValue)
+
+        ' Get Return_Status safely
+        Dim statusValue = row.Cells("Return_Status").Value
+        Dim currentStatus As String = If(statusValue IsNot Nothing AndAlso Not IsDBNull(statusValue), statusValue.ToString().ToUpper(), "")
+
+        Dim isReturned As Integer = If(currentStatus = "RETURNED", 1, 0)
+
+        ' Now rentId and isReturned are safe to use
     End Sub
     Private Sub ViewHistory_DoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewHistory.CellDoubleClick, ViewHistory.CellContentDoubleClick
         If e.RowIndex < 0 Then Exit Sub
-
+        If e.RowIndex >= 0 Then
+            ChangeStatusButton.Enabled = True
+        End If
         Dim row As DataGridViewRow = ViewHistory.Rows(e.RowIndex)
-        Dim rentId As Integer = CInt(row.Cells("Rent_ID").Value)
+        Dim rentId = row.Cells("Rent_ID").Value
+        If rentId Is Nothing OrElse IsDBNull(rentId) Then
+            Exit Sub
+        End If
         Dim currentStatus As String = row.Cells("Return_Status").Value.ToString().ToUpper()
         Dim isReturned As Integer = If(currentStatus = "RETURNED", 1, 0)
         Dim newStatus As String
@@ -258,6 +285,38 @@ Public Class AdminForm2
         UpdateLateRentals()
         LoadHistory()
     End Sub
+    Private Sub btnToggleStatus_Click(sender As Object, e As EventArgs) Handles ChangeStatusButton.Click
+        If ViewHistory.CurrentRow Is Nothing Then
+            MessageBox.Show("Please select a record first.")
+            Exit Sub
+        End If
+
+        Dim row = ViewHistory.CurrentRow
+        Dim rentId As Integer = row.Cells("Rent_ID").Value
+        Dim currentStatus = row.Cells("Return_Status").Value.ToString.ToUpper
+        Dim newStatus As String
+        Dim isReturned As Integer
+
+        If currentStatus = "RETURNED" Then
+            newStatus = "NOT RETURNED"
+            isReturned = 0
+        Else
+            newStatus = "RETURNED"
+            isReturned = 1
+        End If
+
+        If MessageBox.Show("Change status to " & newStatus & "?",
+                       "Confirm Update",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question) = DialogResult.No Then
+            Exit Sub
+        End If
+
+        ToggleReturnStatus(rentId, newStatus, isReturned)
+        UpdateLateRentals()
+        LoadHistory()
+    End Sub
+
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim LOGIN As New LOGIN
         LOGIN.Show()
@@ -283,11 +342,14 @@ Public Class AdminForm2
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles NotReturnedButton.Click
         ShowNotReturned()
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles ReturnedButton.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         LoadHistory()
     End Sub
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles LateButton.Click
         ShowLate()
+        For Each col As DataGridViewColumn In ViewHistory.Columns
+            Debug.Print(col.Index & " - " & col.Name)
+        Next
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ShowReturned()
@@ -296,7 +358,20 @@ Public Class AdminForm2
         SearchHistory()
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    Private Sub HistoryFormat(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles ViewHistory.CellFormatting
 
+        If e.RowIndex < 0 Then Exit Sub
+        Dim colName = ViewHistory.Columns(e.ColumnIndex).Name
+
+        ' Replace "Date_Of_Return" with the actual name from Debug.Print
+        If colName = "Date_Of_Return" Then
+            Dim isLateVal = ViewHistory.Rows(e.RowIndex).Cells("is_Late").Value
+            If isLateVal IsNot Nothing AndAlso isLateVal.ToString().Trim() = "1" Then
+                e.CellStyle.ForeColor = Color.Red
+                e.CellStyle.Font = New Font(ViewHistory.Font, FontStyle.Bold)
+            Else
+                e.CellStyle.ForeColor = Color.Black
+            End If
+        End If
     End Sub
 End Class

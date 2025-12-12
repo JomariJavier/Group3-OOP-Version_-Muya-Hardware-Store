@@ -22,7 +22,7 @@ Partial Class AdminForm3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As DataGridViewCellStyle = New DataGridViewCellStyle()
         BannedSearchBox = New TextBox()
         Label7 = New Label()
         Label3 = New Label()
@@ -50,7 +50,7 @@ Partial Class AdminForm3
         BannedSearchBox.Location = New Point(408, 80)
         BannedSearchBox.MaxLength = 100
         BannedSearchBox.Name = "BannedSearchBox"
-        BannedSearchBox.PlaceholderText = "(First Name, ex: Juan)"
+        BannedSearchBox.PlaceholderText = "(First Name or Middle Name or Last Name)"
         BannedSearchBox.Size = New Size(574, 39)
         BannedSearchBox.TabIndex = 22
         ' 
@@ -240,14 +240,14 @@ Partial Class AdminForm3
         ViewBanned.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ViewBanned.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         ViewBanned.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = SystemColors.Window
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        DataGridViewCellStyle1.ForeColor = SystemColors.ControlLightLight
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
-        ViewBanned.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = SystemColors.Window
+        DataGridViewCellStyle4.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        DataGridViewCellStyle4.ForeColor = SystemColors.ControlLightLight
+        DataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = DataGridViewTriState.False
+        ViewBanned.DefaultCellStyle = DataGridViewCellStyle4
         ViewBanned.Location = New Point(183, 147)
         ViewBanned.Margin = New Padding(3, 2, 3, 2)
         ViewBanned.Name = "ViewBanned"

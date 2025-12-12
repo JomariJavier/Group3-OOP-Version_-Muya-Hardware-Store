@@ -234,12 +234,12 @@ Partial Class AdminForm1
         Price1.Anchor = AnchorStyles.Left
         Price1.AutoSize = True
         Price1.BackColor = Color.FloralWhite
-        Price1.Font = New Font("Microsoft Sans Serif", 14.25F)
+        Price1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold)
         Price1.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Price1.Location = New Point(212, 219)
+        Price1.Location = New Point(212, 217)
         Price1.Margin = New Padding(7, 8, 3, 0)
         Price1.Name = "Price1"
-        Price1.Size = New Size(20, 24)
+        Price1.Size = New Size(27, 29)
         Price1.TabIndex = 14
         Price1.Text = "#"
         Price1.TextAlign = ContentAlignment.MiddleLeft
@@ -260,11 +260,11 @@ Partial Class AdminForm1
         ' ToolNameBox1
         ' 
         ToolNameBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        ToolNameBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
-        ToolNameBox1.Location = New Point(212, 18)
+        ToolNameBox1.Font = New Font("Microsoft Sans Serif", 18F)
+        ToolNameBox1.Location = New Point(212, 15)
         ToolNameBox1.Margin = New Padding(7, 2, 3, 2)
         ToolNameBox1.Name = "ToolNameBox1"
-        ToolNameBox1.Size = New Size(367, 29)
+        ToolNameBox1.Size = New Size(367, 35)
         ToolNameBox1.TabIndex = 4
         ' 
         ' Label11
@@ -283,11 +283,11 @@ Partial Class AdminForm1
         ' UpdatePriceBox1
         ' 
         UpdatePriceBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        UpdatePriceBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
-        UpdatePriceBox1.Location = New Point(212, 148)
+        UpdatePriceBox1.Font = New Font("Microsoft Sans Serif", 18F)
+        UpdatePriceBox1.Location = New Point(212, 145)
         UpdatePriceBox1.Margin = New Padding(7, 2, 3, 2)
         UpdatePriceBox1.Name = "UpdatePriceBox1"
-        UpdatePriceBox1.Size = New Size(367, 29)
+        UpdatePriceBox1.Size = New Size(367, 35)
         UpdatePriceBox1.TabIndex = 12
         ' 
         ' Label1
@@ -457,24 +457,24 @@ Partial Class AdminForm1
         ' UpdateStocksBox1
         ' 
         UpdateStocksBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
-        UpdateStocksBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
-        UpdateStocksBox1.Location = New Point(212, 278)
+        UpdateStocksBox1.Font = New Font("Microsoft Sans Serif", 18F)
+        UpdateStocksBox1.Location = New Point(212, 275)
         UpdateStocksBox1.Margin = New Padding(7, 2, 3, 2)
         UpdateStocksBox1.Name = "UpdateStocksBox1"
-        UpdateStocksBox1.Size = New Size(367, 29)
+        UpdateStocksBox1.Size = New Size(367, 35)
         UpdateStocksBox1.TabIndex = 18
         ' 
         ' AvailabilityBox1
         ' 
         AvailabilityBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         AvailabilityBox1.AutoCompleteMode = AutoCompleteMode.Suggest
-        AvailabilityBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
+        AvailabilityBox1.Font = New Font("Microsoft Sans Serif", 18F)
         AvailabilityBox1.FormattingEnabled = True
         AvailabilityBox1.Items.AddRange(New Object() {"AVAILABLE", "NOT AVAILABLE"})
-        AvailabilityBox1.Location = New Point(212, 81)
+        AvailabilityBox1.Location = New Point(212, 79)
         AvailabilityBox1.Margin = New Padding(7, 2, 3, 2)
         AvailabilityBox1.Name = "AvailabilityBox1"
-        AvailabilityBox1.Size = New Size(367, 32)
+        AvailabilityBox1.Size = New Size(367, 37)
         AvailabilityBox1.TabIndex = 17
         ' 
         ' Label3
@@ -495,12 +495,12 @@ Partial Class AdminForm1
         CurrentStocks.Anchor = AnchorStyles.Left
         CurrentStocks.AutoSize = True
         CurrentStocks.BackColor = Color.FloralWhite
-        CurrentStocks.Font = New Font("Microsoft Sans Serif", 14.25F)
+        CurrentStocks.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold)
         CurrentStocks.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        CurrentStocks.Location = New Point(212, 350)
+        CurrentStocks.Location = New Point(212, 348)
         CurrentStocks.Margin = New Padding(7, 8, 3, 0)
         CurrentStocks.Name = "CurrentStocks"
-        CurrentStocks.Size = New Size(20, 24)
+        CurrentStocks.Size = New Size(27, 29)
         CurrentStocks.TabIndex = 15
         CurrentStocks.Text = "#"
         CurrentStocks.TextAlign = ContentAlignment.MiddleLeft
