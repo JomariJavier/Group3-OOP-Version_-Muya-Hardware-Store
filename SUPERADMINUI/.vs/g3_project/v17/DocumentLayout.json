@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:adminform4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:adminform3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:adminform4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:adminform3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:adminform1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:adminform3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\superadminui\\adminform1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,12 +74,11 @@
               "RelativeToolTip": "LOGIN.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-12-07T15:53:30.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T15:53:30.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AdminForm4.vb [Design]",
               "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm4.vb",
               "RelativeDocumentMoniker": "AdminForm4.vb",
@@ -91,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AdminForm3.vb [Design]",
               "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm3.vb",
               "RelativeDocumentMoniker": "AdminForm3.vb",
@@ -103,20 +102,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "AdminForm3.vb",
               "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm3.vb",
               "RelativeDocumentMoniker": "AdminForm3.vb",
               "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm3.vb",
               "RelativeToolTip": "AdminForm3.vb",
-              "ViewState": "AgIAAAEAAAAAAAAAAIAwwCcAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-07T15:46:51.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AdminForm2.vb [Design]",
               "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm2.vb",
               "RelativeDocumentMoniker": "AdminForm2.vb",
@@ -128,20 +127,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AdminForm2.vb",
               "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm2.vb",
               "RelativeDocumentMoniker": "AdminForm2.vb",
               "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm2.vb",
               "RelativeToolTip": "AdminForm2.vb",
-              "ViewState": "AgIAAL0AAAAAAAAAAIA7wNgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAIBAAAAAAAAAAArwCQBAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-07T15:46:14.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AdminForm1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm1.vb",
               "RelativeDocumentMoniker": "AdminForm1.vb",
@@ -159,7 +158,7 @@
               "RelativeDocumentMoniker": "AdminForm1.vb",
               "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\SUPERADMINUI\\AdminForm1.vb",
               "RelativeToolTip": "AdminForm1.vb",
-              "ViewState": "AgIAABIBAAAAAAAAAAApwGQBAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAADIBAAAAAAAAAAASwHwBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-07T15:44:53.122Z",
               "EditorCaption": ""

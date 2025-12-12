@@ -108,6 +108,7 @@ Partial Class AdminForm3
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 43.43949F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 9.363057F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 18.21656F))
+        TableLayoutPanel2.Controls.Add(Button3, 3, 0)
         TableLayoutPanel2.Controls.Add(Button2, 3, 1)
         TableLayoutPanel2.Controls.Add(Label7, 1, 0)
         TableLayoutPanel2.Controls.Add(BannedSearchBox, 1, 1)
@@ -249,14 +250,14 @@ Partial Class AdminForm3
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewBanned.DefaultCellStyle = DataGridViewCellStyle1
-        ViewBanned.Location = New Point(183, 204)
+        ViewBanned.Location = New Point(183, 147)
         ViewBanned.Margin = New Padding(3, 2, 3, 2)
         ViewBanned.Name = "ViewBanned"
         ViewBanned.ReadOnly = True
         ViewBanned.RowHeadersWidth = 51
         ViewBanned.RowTemplate.Height = 100
         ViewBanned.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewBanned.Size = New Size(1374, 427)
+        ViewBanned.Size = New Size(1374, 484)
         ViewBanned.TabIndex = 109
         ' 
         ' Button3
@@ -265,10 +266,10 @@ Partial Class AdminForm3
         Button3.BackColor = Color.Lime
         Button3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button3.ForeColor = SystemColors.ActiveCaptionText
-        Button3.Location = New Point(1250, 147)
+        Button3.Location = New Point(1201, 2)
         Button3.Margin = New Padding(3, 2, 3, 2)
         Button3.Name = "Button3"
-        Button3.Size = New Size(306, 52)
+        Button3.Size = New Size(170, 60)
         Button3.TabIndex = 110
         Button3.Text = "REFRESH"
         Button3.UseVisualStyleBackColor = False
@@ -279,7 +280,6 @@ Partial Class AdminForm3
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1569, 640)
-        Controls.Add(Button3)
         Controls.Add(ViewBanned)
         Controls.Add(PnlSidebar)
         Controls.Add(TableLayoutPanel2)

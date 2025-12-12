@@ -86,7 +86,7 @@ Partial Class AdminForm1
         ' 
         ' Button2
         ' 
-        Button2.Anchor = AnchorStyles.Top
+        Button2.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         Button2.BackColor = Color.Transparent
         Button2.Cursor = Cursors.Hand
         Button2.FlatStyle = FlatStyle.Flat
@@ -105,6 +105,7 @@ Partial Class AdminForm1
         ' 
         ' btnHistory
         ' 
+        btnHistory.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         btnHistory.BackColor = Color.Transparent
         btnHistory.Cursor = Cursors.Hand
         btnHistory.FlatStyle = FlatStyle.Flat
@@ -135,7 +136,7 @@ Partial Class AdminForm1
         ' 
         ' btnBannedList
         ' 
-        btnBannedList.Anchor = AnchorStyles.Top
+        btnBannedList.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         btnBannedList.BackColor = Color.Transparent
         btnBannedList.Cursor = Cursors.Hand
         btnBannedList.FlatStyle = FlatStyle.Flat
@@ -154,7 +155,7 @@ Partial Class AdminForm1
         ' 
         ' btnStocks
         ' 
-        btnStocks.Anchor = AnchorStyles.Right
+        btnStocks.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         btnStocks.BackColor = Color.Transparent
         btnStocks.BackgroundImageLayout = ImageLayout.None
         btnStocks.Cursor = Cursors.Hand

@@ -91,7 +91,7 @@ Partial Class AdminForm2
         PnlSidebar.ForeColor = Color.White
         PnlSidebar.Location = New Point(0, 0)
         PnlSidebar.Name = "PnlSidebar"
-        PnlSidebar.Size = New Size(164, 1041)
+        PnlSidebar.Size = New Size(164, 961)
         PnlSidebar.TabIndex = 105
         ' 
         ' Button4
@@ -182,7 +182,7 @@ Partial Class AdminForm2
         ' 
         ' ViewHistory
         ' 
-        ViewHistory.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        ViewHistory.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ViewHistory.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         ViewHistory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft
@@ -201,7 +201,7 @@ Partial Class AdminForm2
         ViewHistory.RowHeadersWidth = 51
         ViewHistory.RowTemplate.Height = 100
         ViewHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewHistory.Size = New Size(1712, 817)
+        ViewHistory.Size = New Size(1712, 737)
         ViewHistory.TabIndex = 108
         ' 
         ' LateButton
@@ -279,7 +279,7 @@ Partial Class AdminForm2
         Button2.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         Button2.Location = New Point(709, 17)
         Button2.Name = "Button2"
-        Button2.Size = New Size(123, 70)
+        Button2.Size = New Size(123, 74)
         Button2.TabIndex = 114
         Button2.Text = "Search"
         Button2.UseVisualStyleBackColor = True
@@ -298,7 +298,7 @@ Partial Class AdminForm2
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1904, 1041)
+        ClientSize = New Size(1904, 961)
         Controls.Add(FilterBox)
         Controls.Add(PnlSidebar)
         Controls.Add(Panel1)

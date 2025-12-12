@@ -6,7 +6,7 @@ Public Class AdminForm2
         MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
-        "SELECT CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
+        "SELECT  r.Rent_ID, CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
         "t.Tool_Name, r.Amount, r.Total_Price, r.Date_Of_Rent, r.Date_Of_Return, r.Return_Status, r.is_Late " &
         "FROM tbl_rent r " &
         "LEFT JOIN tbl_client c ON r.Client_ID = c.Client_ID " &
@@ -19,6 +19,7 @@ Public Class AdminForm2
                     Dim dt As New DataTable()
                     da.Fill(dt)
                     ViewHistory.DataSource = dt
+                    ViewHistory.Columns("Rent_ID").Visible = False
                     ViewHistory.Columns("is_Late").Visible = False
                 End Using
             End Using
@@ -49,7 +50,7 @@ Public Class AdminForm2
     Public Sub ShowNotReturned()
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
-        "SELECT CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
+        "SELECT  r.Rent_ID, CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
         "t.Tool_Name, r.Amount, r.Total_Price, r.Date_Of_Rent, r.Date_Of_Return, r.Return_Status, r.is_Late " &
         "FROM tbl_rent r " &
         "LEFT JOIN tbl_client c ON r.Client_ID = c.Client_ID " &
@@ -64,6 +65,7 @@ Public Class AdminForm2
                     Dim dt As New DataTable()
                     da.Fill(dt)
                     ViewHistory.DataSource = dt
+                    ViewHistory.Columns("Rent_ID").Visible = False
                     ViewHistory.Columns("is_Late").Visible = False
                 End Using
             End Using
@@ -76,7 +78,7 @@ Public Class AdminForm2
     Public Sub ShowReturned()
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
-        "SELECT CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
+        "SELECT  r.Rent_ID, CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
         "t.Tool_Name, r.Amount, r.Total_Price, r.Date_Of_Rent, r.Date_Of_Return, r.Return_Status, r.is_Late " &
         "FROM tbl_rent r " &
         "LEFT JOIN tbl_client c ON r.Client_ID = c.Client_ID " &
@@ -91,6 +93,7 @@ Public Class AdminForm2
                     Dim dt As New DataTable()
                     da.Fill(dt)
                     ViewHistory.DataSource = dt
+                    ViewHistory.Columns("Rent_ID").Visible = False
                     ViewHistory.Columns("is_Late").Visible = False
                 End Using
             End Using
@@ -99,13 +102,29 @@ Public Class AdminForm2
         ViewHistory.DefaultCellStyle.ForeColor = Color.Black
         FormatReturnedRows()
     End Sub
+    Public Sub ToggleReturnStatus(rentId As Integer, newStatus As String, isReturned As Integer)
+        Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
+        Dim query As String =
+        "UPDATE tbl_rent SET Return_Status = @status, is_Returned = @isreturned WHERE Rent_ID = @id;"
+
+        Using conn As New MySqlConnection(ConnectionString)
+            conn.Open()
+            Using cmd As New MySqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@status", newStatus)
+                cmd.Parameters.AddWithValue("@isreturned", isReturned)
+                cmd.Parameters.AddWithValue("@id", rentId)
+                cmd.ExecuteNonQuery()
+            End Using
+        End Using
+    End Sub
+
 
     Public Sub ShowLate()
         Dim ConnectionString As String =
         "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
 
         Dim query As String =
-        "SELECT CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
+        "SELECT r.Rent_ID, CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
         "t.Tool_Name, r.Amount, r.Total_Price, r.Date_Of_Rent, r.Date_Of_Return, r.Return_Status, r.is_Late " &
         "FROM tbl_rent r " &
         "LEFT JOIN tbl_client c ON r.Client_ID = c.Client_ID " &
@@ -119,6 +138,7 @@ Public Class AdminForm2
                     Dim dt As New DataTable()
                     da.Fill(dt)
                     ViewHistory.DataSource = dt
+                    ViewHistory.Columns("Rent_ID").Visible = False
                     ViewHistory.Columns("is_Late").Visible = False
                 End Using
             End Using
@@ -130,7 +150,7 @@ Public Class AdminForm2
         MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
-        "SELECT  CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
+        "SELECT r.Rent_ID, CONCAT(c.LastName, ', ', c.FirstName, ' ', c.MiddleName) AS FullName, " &
         "t.Tool_Name, r.Amount, r.Total_Price, r.Date_Of_Rent, r.Date_Of_Return, r.Return_Status, r.is_Late " &
         "FROM tbl_rent r " &
         "LEFT JOIN tbl_client c ON r.Client_ID = c.Client_ID " &
@@ -144,6 +164,7 @@ Public Class AdminForm2
                     Dim dt As New DataTable()
                     cmd.Parameters.AddWithValue("@term", "%" & SearchTextBox.Text & "%")
                     da.Fill(dt)
+                    ViewHistory.Columns("Rent_ID").Visible = False
                     ViewHistory.Columns("is_Late").Visible = False
                     ViewHistory.DataSource = dt
                 End Using
@@ -212,8 +233,30 @@ Public Class AdminForm2
     Private Sub ViewHistory_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewHistory.CellContentClick, ViewHistory.CellClick
 
     End Sub
-    Private Sub ViewHistory_DoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewHistory.CellDoubleClick
+    Private Sub ViewHistory_DoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewHistory.CellDoubleClick, ViewHistory.CellContentDoubleClick
+        If e.RowIndex < 0 Then Exit Sub
 
+        Dim row As DataGridViewRow = ViewHistory.Rows(e.RowIndex)
+        Dim rentId As Integer = CInt(row.Cells("Rent_ID").Value)
+        Dim currentStatus As String = row.Cells("Return_Status").Value.ToString().ToUpper()
+        Dim isReturned As Integer = If(currentStatus = "RETURNED", 1, 0)
+        Dim newStatus As String
+        If currentStatus = "RETURNED" Then
+            newStatus = "NOT RETURNED"
+            isReturned = 0
+        Else
+            newStatus = "RETURNED"
+            isReturned = 1
+        End If
+        If MessageBox.Show("Change status to " & newStatus & "?",
+                   "Confirm Update",
+                   MessageBoxButtons.YesNo,
+                   MessageBoxIcon.Question) = DialogResult.No Then
+            Exit Sub
+        End If
+        ToggleReturnStatus(rentId, newStatus, isReturned)
+        UpdateLateRentals()
+        LoadHistory()
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim LOGIN As New LOGIN
@@ -247,7 +290,7 @@ Public Class AdminForm2
         ShowLate()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        LoadHistory()
+        ShowReturned()
     End Sub
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
         SearchHistory()

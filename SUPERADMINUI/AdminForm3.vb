@@ -3,23 +3,27 @@
 Public Class AdminForm3
     Dim MySqlConn As MySqlConnection
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Public Sub LoadBannedList()
         MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
         "SELECT Picture, FirstName, LastName, MiddleName FROM tbl_client WHERE Is_Banned = 'TRUE'"
-
         Using conn As New MySqlConnection(ConnectionString)
             Using cmd As New MySqlCommand(query, conn)
                 Using da As New MySqlDataAdapter(cmd)
                     Dim dt As New DataTable()
                     da.Fill(dt)
-
                     ViewBanned.DataSource = dt
+                    Dim imgCol As DataGridViewImageColumn = CType(ViewBanned.Columns("Picture"), DataGridViewImageColumn)
+                    imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
+                    ViewBanned.RowTemplate.Height = 80
                 End Using
             End Using
         End Using
         ViewBanned.DefaultCellStyle.ForeColor = Color.Black
+    End Sub
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        LoadBannedList()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
         MySqlConn = New MySqlConnection
@@ -32,8 +36,10 @@ Public Class AdminForm3
                 Using da As New MySqlDataAdapter(cmd)
                     Dim dt As New DataTable()
                     da.Fill(dt)
-
                     ViewBanned.DataSource = dt
+                    Dim imgCol As DataGridViewImageColumn = CType(ViewBanned.Columns("Picture"), DataGridViewImageColumn)
+                    imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
+                    ViewBanned.RowTemplate.Height = 80
                 End Using
             End Using
         End Using
@@ -67,6 +73,9 @@ Public Class AdminForm3
         Dim AdminForm4 As New AdminForm4
         AdminForm4.Show()
         Hide()
+    End Sub
+    Private Sub AdminForm3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadBannedList()
     End Sub
 
     Private Sub BannedSearchBox_TextChanged(sender As Object, e As EventArgs) Handles BannedSearchBox.TextChanged

@@ -182,7 +182,7 @@ Partial Class AdminForm4
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(169, 94)
+        Label1.Location = New Point(182, 92)
         Label1.Name = "Label1"
         Label1.Size = New Size(441, 37)
         Label1.TabIndex = 108
@@ -192,7 +192,7 @@ Partial Class AdminForm4
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 19.8000011F)
-        Label2.Location = New Point(169, 197)
+        Label2.Location = New Point(182, 195)
         Label2.Name = "Label2"
         Label2.Size = New Size(262, 37)
         Label2.TabIndex = 109
@@ -201,10 +201,10 @@ Partial Class AdminForm4
         ' IDTextBox
         ' 
         IDTextBox.Font = New Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        IDTextBox.Location = New Point(177, 140)
+        IDTextBox.Location = New Point(182, 140)
         IDTextBox.Margin = New Padding(3, 2, 3, 2)
         IDTextBox.Name = "IDTextBox"
-        IDTextBox.Size = New Size(476, 36)
+        IDTextBox.Size = New Size(493, 36)
         IDTextBox.TabIndex = 110
         ' 
         ' ReasonTextBox
@@ -214,7 +214,7 @@ Partial Class AdminForm4
         ReasonTextBox.Margin = New Padding(3, 2, 3, 2)
         ReasonTextBox.Multiline = True
         ReasonTextBox.Name = "ReasonTextBox"
-        ReasonTextBox.Size = New Size(476, 244)
+        ReasonTextBox.Size = New Size(493, 244)
         ReasonTextBox.TabIndex = 111
         ' 
         ' Button3
@@ -236,7 +236,7 @@ Partial Class AdminForm4
         ConfirmButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         ConfirmButton.BackColor = Color.Red
         ConfirmButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        ConfirmButton.Location = New Point(198, 875)
+        ConfirmButton.Location = New Point(182, 522)
         ConfirmButton.Margin = New Padding(3, 2, 3, 2)
         ConfirmButton.Name = "ConfirmButton"
         ConfirmButton.Size = New Size(192, 52)
@@ -248,7 +248,7 @@ Partial Class AdminForm4
         ' 
         CancelButton.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
         CancelButton.Font = New Font("Segoe UI Semibold", 16.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        CancelButton.Location = New Point(422, 875)
+        CancelButton.Location = New Point(454, 522)
         CancelButton.Margin = New Padding(3, 2, 3, 2)
         CancelButton.Name = "CancelButton"
         CancelButton.Size = New Size(192, 52)
