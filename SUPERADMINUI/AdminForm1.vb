@@ -6,7 +6,6 @@ Imports System.IO
 Imports System.Net
 Imports System.Resources
 Imports System.Runtime.InteropServices
-Imports System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar
 Imports MySql.Data.MySqlClient
 Imports Mysqlx
 Imports Mysqlx.Crud
@@ -18,7 +17,7 @@ Public Class AdminForm1
     Dim Command3 As MySqlCommand
     Dim cmd As MySqlCommand
 
-    Public Function LoadTools() As DataTable
+    Public Sub LoadTools()
         MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String = "SELECT Tool_ID, Tool_Name, is_Available, Price, Stocks, Tool_Image  FROM tbl_tools WHERE is_Deleted = '0'"
@@ -43,7 +42,7 @@ Public Class AdminForm1
         End If
         ViewTools.DefaultCellStyle.ForeColor = Color.Black
         CType(ViewTools.Columns("Tool_Image"), DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom
-    End Function
+    End Sub
     Private Sub PictureBox_Click(sender As Object, e As EventArgs) _
             Handles ProductImage1.Click
 
@@ -98,18 +97,28 @@ Public Class AdminForm1
         currentPic.Image = Nothing
     End Sub
 
-    Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles UpdateStocksBox1.SelectedIndexChanged
+    Private Sub Textbox_TextChanged(sender As Object, e As EventArgs) Handles UpdateStocksBox1.TextChanged
         CurrentStocks.Text = UpdateStocksBox1.Text
     End Sub
 
     Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles UpdatePriceBox1.TextChanged
         Dim value As Decimal
+
         If Decimal.TryParse(UpdatePriceBox1.Text, value) Then
             Price1.Text = "₱" & value.ToString("N2")
         Else
             Price1.Text = ""
         End If
     End Sub
+    Private Sub UpdatePriceBox(sender As Object, e As EventArgs) Handles UpdatePriceBox1.Leave
+        Dim val As Decimal
+        If Decimal.TryParse(UpdatePriceBox1.Text, val) Then
+            UpdatePriceBox1.Text = val.ToString(".00")
+        Else
+            UpdatePriceBox1.Text = ""
+        End If
+    End Sub
+
     Private Sub ClearInputs(adminForm1 As AdminForm1)
 
         For Each ctrl As Control In Panel1.Controls
@@ -170,7 +179,7 @@ Public Class AdminForm1
                 Return "Availability value is not recognized. Must be AVAILABLE or NOT AVAILABLE (All Capitalized)."
             End If
 
-            If tool.Availability = "Available" And tool.Stocks = 0 Then
+            If tool.Availability = "AVAILABLE" And tool.Stocks = 0 Then
                 Return "Available tools must have stocks greater than zero."
             End If
 
@@ -297,8 +306,8 @@ Public Class AdminForm1
         Dim tool As New ToolItem With {
         .Name = ToolNameBox1.Text,
         .Availability = AvailabilityBox1.Text.ToUpper(),
-        .Price = UpdatePriceBox1.Text,
-        .Stocks = UpdateStocksBox1.Text,
+        .Price = price,
+        .Stocks = stocks,
         .ImageData = If(ProductImage1.Image IsNot Nothing, ImageToBytes(ProductImage1.Image), Nothing)}
 
         Dim repo As New ToolRepository
@@ -329,8 +338,8 @@ Public Class AdminForm1
         .ToolID = Integer.Parse(ToolID.Text),
         .Name = ToolNameBox1.Text,
         .Availability = AvailabilityBox1.Text,
-        .Price = UpdatePriceBox1.Text,
-        .Stocks = UpdateStocksBox1.Text,
+        .Price = price,
+        .Stocks = stocks,
         .ImageData = IIf(ProductImage1.Image IsNot Nothing, ImageToBytes(ProductImage1.Image), Nothing)
     }
 
@@ -376,7 +385,6 @@ Public Class AdminForm1
         LOGIN.Show()
         Hide()
     End Sub
-
     Private Sub ViewTools_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewTools.CellClick, ViewTools.CellContentClick
         If e.RowIndex >= 0 Then
             Dim imgBytes As Byte() = TryCast(ViewTools.Rows(e.RowIndex).Cells("Tool_Image").Value, Byte())
@@ -404,13 +412,13 @@ Public Class AdminForm1
             End If
         End If
     End Sub
-    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs)
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         LoadTools()
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
         MySqlConn = New MySqlConnection
         MySqlConn.ConnectionString = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Try

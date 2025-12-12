@@ -33,16 +33,13 @@ Partial Class AdminForm1
         btnStocks = New Button()
         TableLayoutPanel5 = New TableLayoutPanel()
         Label7 = New Label()
-        Button1 = New Button()
         AddTool = New Button()
         ProductImage1 = New PictureBox()
         Price1 = New Label()
         Label8 = New Label()
         ToolNameBox1 = New TextBox()
-        AvailabilityBox1 = New ComboBox()
         Label11 = New Label()
         UpdatePriceBox1 = New TextBox()
-        UpdateStocksBox1 = New ComboBox()
         Label1 = New Label()
         Label13 = New Label()
         Label4 = New Label()
@@ -52,8 +49,9 @@ Partial Class AdminForm1
         ViewTools = New DataGridView()
         Panel1 = New Panel()
         ToolID = New Label()
-        Button3 = New Button()
         TableLayoutPanel1 = New TableLayoutPanel()
+        UpdateStocksBox1 = New TextBox()
+        AvailabilityBox1 = New ComboBox()
         Label3 = New Label()
         CurrentStocks = New Label()
         PnlSidebar.SuspendLayout()
@@ -180,7 +178,6 @@ Partial Class AdminForm1
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel5.Controls.Add(Label7, 1, 0)
-        TableLayoutPanel5.Controls.Add(Button1, 2, 0)
         TableLayoutPanel5.Dock = DockStyle.Top
         TableLayoutPanel5.Location = New Point(164, 0)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
@@ -204,18 +201,6 @@ Partial Class AdminForm1
         Label7.Text = "INVENTORY"
         Label7.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Button1
-        ' 
-        Button1.Anchor = AnchorStyles.Right
-        Button1.Font = New Font("Arial Black", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.Black
-        Button1.Location = New Point(1429, 3)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(308, 61)
-        Button1.TabIndex = 99
-        Button1.Text = "CHECK CONNECTION"
-        Button1.UseVisualStyleBackColor = True
-        ' 
         ' AddTool
         ' 
         AddTool.Anchor = AnchorStyles.Top Or AnchorStyles.Right
@@ -223,10 +208,10 @@ Partial Class AdminForm1
         AddTool.FlatStyle = FlatStyle.System
         AddTool.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         AddTool.ForeColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        AddTool.Location = New Point(372, 98)
+        AddTool.Location = New Point(372, 57)
         AddTool.Margin = New Padding(0)
         AddTool.Name = "AddTool"
-        AddTool.Size = New Size(228, 70)
+        AddTool.Size = New Size(228, 75)
         AddTool.TabIndex = 95
         AddTool.Text = "Add Tool"
         AddTool.UseVisualStyleBackColor = False
@@ -251,12 +236,13 @@ Partial Class AdminForm1
         Price1.BackColor = Color.FloralWhite
         Price1.Font = New Font("Microsoft Sans Serif", 14.25F)
         Price1.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        Price1.Location = New Point(208, 219)
-        Price1.Margin = New Padding(3, 8, 3, 0)
+        Price1.Location = New Point(212, 219)
+        Price1.Margin = New Padding(7, 8, 3, 0)
         Price1.Name = "Price1"
         Price1.Size = New Size(20, 24)
         Price1.TabIndex = 14
         Price1.Text = "#"
+        Price1.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' Label8
         ' 
@@ -273,25 +259,13 @@ Partial Class AdminForm1
         ' 
         ' ToolNameBox1
         ' 
-        ToolNameBox1.Anchor = AnchorStyles.Left
+        ToolNameBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         ToolNameBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
         ToolNameBox1.Location = New Point(212, 18)
         ToolNameBox1.Margin = New Padding(7, 2, 3, 2)
         ToolNameBox1.Name = "ToolNameBox1"
-        ToolNameBox1.Size = New Size(285, 29)
+        ToolNameBox1.Size = New Size(367, 29)
         ToolNameBox1.TabIndex = 4
-        ' 
-        ' AvailabilityBox1
-        ' 
-        AvailabilityBox1.Anchor = AnchorStyles.Left
-        AvailabilityBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
-        AvailabilityBox1.FormattingEnabled = True
-        AvailabilityBox1.Items.AddRange(New Object() {"AVAILABLE", "NOT AVAILABLE"})
-        AvailabilityBox1.Location = New Point(214, 81)
-        AvailabilityBox1.Margin = New Padding(9, 2, 3, 2)
-        AvailabilityBox1.Name = "AvailabilityBox1"
-        AvailabilityBox1.Size = New Size(285, 32)
-        AvailabilityBox1.TabIndex = 6
         ' 
         ' Label11
         ' 
@@ -308,25 +282,13 @@ Partial Class AdminForm1
         ' 
         ' UpdatePriceBox1
         ' 
-        UpdatePriceBox1.Anchor = AnchorStyles.Left
+        UpdatePriceBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         UpdatePriceBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
         UpdatePriceBox1.Location = New Point(212, 148)
         UpdatePriceBox1.Margin = New Padding(7, 2, 3, 2)
         UpdatePriceBox1.Name = "UpdatePriceBox1"
-        UpdatePriceBox1.Size = New Size(285, 29)
+        UpdatePriceBox1.Size = New Size(367, 29)
         UpdatePriceBox1.TabIndex = 12
-        ' 
-        ' UpdateStocksBox1
-        ' 
-        UpdateStocksBox1.Anchor = AnchorStyles.Left
-        UpdateStocksBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
-        UpdateStocksBox1.FormattingEnabled = True
-        UpdateStocksBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        UpdateStocksBox1.Location = New Point(214, 276)
-        UpdateStocksBox1.Margin = New Padding(9, 2, 3, 2)
-        UpdateStocksBox1.Name = "UpdateStocksBox1"
-        UpdateStocksBox1.Size = New Size(285, 32)
-        UpdateStocksBox1.TabIndex = 10
         ' 
         ' Label1
         ' 
@@ -375,10 +337,10 @@ Partial Class AdminForm1
         Cancel.FlatStyle = FlatStyle.System
         Cancel.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         Cancel.ForeColor = Color.White
-        Cancel.Location = New Point(372, 346)
+        Cancel.Location = New Point(372, 305)
         Cancel.Margin = New Padding(0)
         Cancel.Name = "Cancel"
-        Cancel.Size = New Size(228, 70)
+        Cancel.Size = New Size(228, 75)
         Cancel.TabIndex = 96
         Cancel.Text = "Clear Entries"
         Cancel.UseVisualStyleBackColor = False
@@ -390,10 +352,10 @@ Partial Class AdminForm1
         Update.FlatStyle = FlatStyle.System
         Update.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         Update.ForeColor = Color.White
-        Update.Location = New Point(372, 179)
+        Update.Location = New Point(372, 138)
         Update.Margin = New Padding(0)
         Update.Name = "Update"
-        Update.Size = New Size(228, 70)
+        Update.Size = New Size(228, 75)
         Update.TabIndex = 113
         Update.Text = "Update"
         Update.UseVisualStyleBackColor = False
@@ -405,10 +367,10 @@ Partial Class AdminForm1
         Delete.FlatStyle = FlatStyle.System
         Delete.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         Delete.ForeColor = Color.White
-        Delete.Location = New Point(372, 264)
+        Delete.Location = New Point(372, 223)
         Delete.Margin = New Padding(0)
         Delete.Name = "Delete"
-        Delete.Size = New Size(228, 70)
+        Delete.Size = New Size(228, 75)
         Delete.TabIndex = 114
         Delete.Text = "Delete Tool"
         Delete.UseVisualStyleBackColor = False
@@ -441,7 +403,6 @@ Partial Class AdminForm1
         Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Panel1.BackColor = SystemColors.GradientActiveCaption
         Panel1.Controls.Add(ToolID)
-        Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(TableLayoutPanel1)
         Panel1.Controls.Add(ProductImage1)
         Panel1.Controls.Add(Cancel)
@@ -463,34 +424,19 @@ Partial Class AdminForm1
         ToolID.Text = "Label2"
         ToolID.Visible = False
         ' 
-        ' Button3
-        ' 
-        Button3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button3.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        Button3.FlatStyle = FlatStyle.System
-        Button3.Font = New Font("Arial Black", 12F, FontStyle.Bold)
-        Button3.ForeColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
-        Button3.Location = New Point(372, 19)
-        Button3.Margin = New Padding(0)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(228, 70)
-        Button3.TabIndex = 116
-        Button3.Text = "Show all Tools"
-        Button3.UseVisualStyleBackColor = False
-        ' 
         ' TableLayoutPanel1
         ' 
         TableLayoutPanel1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel1.ColumnCount = 2
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 35.29412F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 64.70588F))
+        TableLayoutPanel1.Controls.Add(UpdateStocksBox1, 1, 4)
+        TableLayoutPanel1.Controls.Add(AvailabilityBox1, 1, 1)
         TableLayoutPanel1.Controls.Add(Label3, 0, 5)
         TableLayoutPanel1.Controls.Add(Label8, 0, 0)
         TableLayoutPanel1.Controls.Add(Price1, 1, 3)
-        TableLayoutPanel1.Controls.Add(UpdateStocksBox1, 1, 4)
         TableLayoutPanel1.Controls.Add(Label1, 0, 4)
         TableLayoutPanel1.Controls.Add(Label11, 0, 1)
-        TableLayoutPanel1.Controls.Add(AvailabilityBox1, 1, 1)
         TableLayoutPanel1.Controls.Add(UpdatePriceBox1, 1, 2)
         TableLayoutPanel1.Controls.Add(ToolNameBox1, 1, 0)
         TableLayoutPanel1.Controls.Add(Label4, 0, 3)
@@ -507,6 +453,29 @@ Partial Class AdminForm1
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 16.666666F))
         TableLayoutPanel1.Size = New Size(582, 392)
         TableLayoutPanel1.TabIndex = 115
+        ' 
+        ' UpdateStocksBox1
+        ' 
+        UpdateStocksBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        UpdateStocksBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
+        UpdateStocksBox1.Location = New Point(212, 278)
+        UpdateStocksBox1.Margin = New Padding(7, 2, 3, 2)
+        UpdateStocksBox1.Name = "UpdateStocksBox1"
+        UpdateStocksBox1.Size = New Size(367, 29)
+        UpdateStocksBox1.TabIndex = 18
+        ' 
+        ' AvailabilityBox1
+        ' 
+        AvailabilityBox1.Anchor = AnchorStyles.Left Or AnchorStyles.Right
+        AvailabilityBox1.AutoCompleteMode = AutoCompleteMode.Suggest
+        AvailabilityBox1.Font = New Font("Microsoft Sans Serif", 14.25F)
+        AvailabilityBox1.FormattingEnabled = True
+        AvailabilityBox1.Items.AddRange(New Object() {"AVAILABLE", "NOT AVAILABLE"})
+        AvailabilityBox1.Location = New Point(212, 81)
+        AvailabilityBox1.Margin = New Padding(7, 2, 3, 2)
+        AvailabilityBox1.Name = "AvailabilityBox1"
+        AvailabilityBox1.Size = New Size(367, 32)
+        AvailabilityBox1.TabIndex = 17
         ' 
         ' Label3
         ' 
@@ -528,12 +497,13 @@ Partial Class AdminForm1
         CurrentStocks.BackColor = Color.FloralWhite
         CurrentStocks.Font = New Font("Microsoft Sans Serif", 14.25F)
         CurrentStocks.ForeColor = Color.FromArgb(CByte(5), CByte(14), CByte(60))
-        CurrentStocks.Location = New Point(208, 350)
-        CurrentStocks.Margin = New Padding(3, 8, 3, 0)
+        CurrentStocks.Location = New Point(212, 350)
+        CurrentStocks.Margin = New Padding(7, 8, 3, 0)
         CurrentStocks.Name = "CurrentStocks"
         CurrentStocks.Size = New Size(20, 24)
         CurrentStocks.TabIndex = 15
         CurrentStocks.Text = "#"
+        CurrentStocks.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' AdminForm1
         ' 
@@ -577,11 +547,9 @@ Partial Class AdminForm1
     Friend WithEvents Label13 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents ToolNameBox1 As TextBox
-    Friend WithEvents AvailabilityBox1 As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents UpdatePriceBox1 As TextBox
-    Friend WithEvents UpdateStocksBox1 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Cancel As Button
     Friend WithEvents Update As Button
@@ -593,7 +561,7 @@ Partial Class AdminForm1
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label3 As Label
     Friend WithEvents CurrentStocks As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents ToolID As Label
+    Friend WithEvents AvailabilityBox1 As ComboBox
+    Friend WithEvents UpdateStocksBox1 As TextBox
 End Class
