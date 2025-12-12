@@ -25,7 +25,6 @@ Partial Class Form1
         Label2 = New Label()
         TableLayoutPanel1 = New TableLayoutPanel()
         PictureBox2 = New PictureBox()
-        Panel1 = New Panel()
         Login = New Button()
         Passwordtxt = New TextBox()
         Label5 = New Label()
@@ -35,11 +34,12 @@ Partial Class Form1
         TableLayoutPanel14 = New TableLayoutPanel()
         PictureBox5 = New PictureBox()
         Label4 = New Label()
+        LoginPanel = New TableLayoutPanel()
         TableLayoutPanel1.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        Panel1.SuspendLayout()
         TableLayoutPanel14.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
+        LoginPanel.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label2
@@ -49,7 +49,7 @@ Partial Class Form1
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Mongolian Baiti", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(735, 431)
+        Label2.Location = New Point(1087, 431)
         Label2.Margin = New Padding(800, 79, 200, 0)
         Label2.Name = "Label2"
         Label2.Size = New Size(0, 25)
@@ -64,14 +64,14 @@ Partial Class Form1
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 35.7955856F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 32.1022072F))
         TableLayoutPanel1.Controls.Add(PictureBox2, 0, 0)
-        TableLayoutPanel1.Location = New Point(0, 593)
+        TableLayoutPanel1.Location = New Point(0, 805)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 4
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 39.5348854F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 30.2325573F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 13.1782942F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 15.5038757F))
-        TableLayoutPanel1.Size = New Size(1201, 158)
+        TableLayoutPanel1.Size = New Size(1905, 158)
         TableLayoutPanel1.TabIndex = 24
         ' 
         ' PictureBox2
@@ -82,85 +82,69 @@ Partial Class Form1
         PictureBox2.TabIndex = 8
         PictureBox2.TabStop = False
         ' 
-        ' Panel1
-        ' 
-        Panel1.Anchor = AnchorStyles.Top
-        Panel1.BackColor = Color.Transparent
-        Panel1.BackgroundImage = My.Resources.Resources.RENT_NOW_removebg_preview
-        Panel1.BackgroundImageLayout = ImageLayout.Stretch
-        Panel1.Controls.Add(Login)
-        Panel1.Controls.Add(Passwordtxt)
-        Panel1.Controls.Add(Label5)
-        Panel1.Controls.Add(Label3)
-        Panel1.Controls.Add(Usernametxt)
-        Panel1.Controls.Add(Label1)
-        Panel1.Location = New Point(457, 242)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(300, 311)
-        Panel1.TabIndex = 71
-        ' 
         ' Login
         ' 
-        Login.Anchor = AnchorStyles.Top
         Login.BackgroundImageLayout = ImageLayout.Stretch
-        Login.Font = New Font("Arial Black", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Login.Location = New Point(98, 218)
+        Login.Dock = DockStyle.Fill
+        Login.Font = New Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Login.Location = New Point(103, 373)
         Login.Name = "Login"
-        Login.Size = New Size(115, 47)
-        Login.TabIndex = 5
+        Login.Size = New Size(294, 68)
+        Login.TabIndex = 3
         Login.Text = "Log In"
         Login.UseVisualStyleBackColor = True
         ' 
         ' Passwordtxt
         ' 
-        Passwordtxt.Anchor = AnchorStyles.Top
-        Passwordtxt.Font = New Font("Arial", 9.75F)
-        Passwordtxt.Location = New Point(113, 153)
+        Passwordtxt.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Passwordtxt.Font = New Font("Arial", 20.25F)
+        Passwordtxt.Location = New Point(103, 269)
         Passwordtxt.Name = "Passwordtxt"
-        Passwordtxt.Size = New Size(152, 22)
-        Passwordtxt.TabIndex = 4
+        Passwordtxt.PasswordChar = "*"c
+        Passwordtxt.Size = New Size(294, 39)
+        Passwordtxt.TabIndex = 2
         ' 
         ' Label5
         ' 
-        Label5.Anchor = AnchorStyles.Top
+        Label5.Anchor = AnchorStyles.Bottom
         Label5.AutoSize = True
-        Label5.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label5.Location = New Point(36, 156)
+        Label5.Font = New Font("Arial", 20.25F)
+        Label5.Location = New Point(184, 234)
         Label5.Name = "Label5"
-        Label5.Size = New Size(68, 16)
+        Label5.Size = New Size(132, 32)
         Label5.TabIndex = 3
         Label5.Text = "Password"
         ' 
         ' Label3
         ' 
-        Label3.Anchor = AnchorStyles.Top
+        Label3.Anchor = AnchorStyles.Bottom
         Label3.AutoSize = True
-        Label3.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label3.Location = New Point(36, 102)
+        Label3.Font = New Font("Arial", 20.25F)
+        Label3.Location = New Point(181, 116)
         Label3.Name = "Label3"
-        Label3.Size = New Size(71, 16)
+        Label3.Size = New Size(138, 32)
         Label3.TabIndex = 2
         Label3.Text = "Username"
         ' 
         ' Usernametxt
         ' 
-        Usernametxt.Anchor = AnchorStyles.Top
-        Usernametxt.Font = New Font("Arial", 9.75F)
-        Usernametxt.Location = New Point(113, 102)
+        Usernametxt.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        Usernametxt.Font = New Font("Arial", 20.25F)
+        Usernametxt.Location = New Point(103, 151)
         Usernametxt.Name = "Usernametxt"
-        Usernametxt.Size = New Size(152, 22)
+        Usernametxt.Size = New Size(294, 39)
         Usernametxt.TabIndex = 1
         ' 
         ' Label1
         ' 
-        Label1.Anchor = AnchorStyles.Top
+        Label1.Anchor = AnchorStyles.None
         Label1.AutoSize = True
         Label1.Font = New Font("Arial Black", 21.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(98, 26)
+        Label1.Location = New Point(169, 16)
         Label1.Name = "Label1"
-        Label1.Size = New Size(115, 41)
+        Label1.Size = New Size(161, 41)
         Label1.TabIndex = 0
-        Label1.Text = "Log In"
+        Label1.Text = "Welcome"
         ' 
         ' TableLayoutPanel14
         ' 
@@ -168,18 +152,16 @@ Partial Class Form1
         TableLayoutPanel14.AutoSize = True
         TableLayoutPanel14.BackColor = Color.FromArgb(CByte(12), CByte(43), CByte(78))
         TableLayoutPanel14.ColumnCount = 3
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 39.46711F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.2223129F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.22731F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel14.Controls.Add(PictureBox5, 0, 0)
         TableLayoutPanel14.Controls.Add(Label4, 1, 0)
         TableLayoutPanel14.Location = New Point(0, 0)
         TableLayoutPanel14.Name = "TableLayoutPanel14"
         TableLayoutPanel14.RowCount = 1
         TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
-        TableLayoutPanel14.Size = New Size(1201, 142)
+        TableLayoutPanel14.Size = New Size(1905, 142)
         TableLayoutPanel14.TabIndex = 85
         ' 
         ' PictureBox5
@@ -197,19 +179,44 @@ Partial Class Form1
         ' 
         ' Label4
         ' 
-        Label4.Anchor = AnchorStyles.Top
+        Label4.Anchor = AnchorStyles.Bottom
         Label4.AutoSize = True
         Label4.Cursor = Cursors.Hand
-        Label4.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.White
         Label4.ImageAlign = ContentAlignment.TopCenter
-        Label4.Location = New Point(538, 91)
-        Label4.Margin = New Padding(0, 91, 220, 0)
+        Label4.Location = New Point(898, 101)
+        Label4.Margin = New Padding(3)
         Label4.Name = "Label4"
-        Label4.Size = New Size(51, 18)
+        Label4.Size = New Size(106, 38)
         Label4.TabIndex = 4
         Label4.Text = "HOME"
-        Label4.TextAlign = ContentAlignment.TopCenter
+        Label4.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' LoginPanel
+        ' 
+        LoginPanel.ColumnCount = 3
+        LoginPanel.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        LoginPanel.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 60F))
+        LoginPanel.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        LoginPanel.Controls.Add(Label1, 1, 0)
+        LoginPanel.Controls.Add(Login, 1, 5)
+        LoginPanel.Controls.Add(Label3, 1, 1)
+        LoginPanel.Controls.Add(Label5, 1, 3)
+        LoginPanel.Controls.Add(Passwordtxt, 1, 4)
+        LoginPanel.Controls.Add(Usernametxt, 1, 2)
+        LoginPanel.Location = New Point(710, 240)
+        LoginPanel.Name = "LoginPanel"
+        LoginPanel.RowCount = 7
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 14.3093F))
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 14.3093F))
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 10.209136F))
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 12.5206385F))
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 20.03302F))
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 14.3093F))
+        LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 14.3093F))
+        LoginPanel.Size = New Size(501, 520)
+        LoginPanel.TabIndex = 0
         ' 
         ' Form1
         ' 
@@ -217,9 +224,9 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources._576825842_1335610788354022_2752363819616472036_n1
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1200, 749)
+        ClientSize = New Size(1904, 961)
+        Controls.Add(LoginPanel)
         Controls.Add(TableLayoutPanel14)
-        Controls.Add(Panel1)
         Controls.Add(TableLayoutPanel1)
         Controls.Add(Label2)
         DoubleBuffered = True
@@ -229,11 +236,11 @@ Partial Class Form1
         WindowState = FormWindowState.Maximized
         TableLayoutPanel1.ResumeLayout(False)
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
         TableLayoutPanel14.ResumeLayout(False)
         TableLayoutPanel14.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
+        LoginPanel.ResumeLayout(False)
+        LoginPanel.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -241,7 +248,6 @@ Partial Class Form1
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Usernametxt As TextBox
     Friend WithEvents Passwordtxt As TextBox
@@ -251,5 +257,6 @@ Partial Class Form1
     Friend WithEvents TableLayoutPanel14 As TableLayoutPanel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents LoginPanel As TableLayoutPanel
 
 End Class

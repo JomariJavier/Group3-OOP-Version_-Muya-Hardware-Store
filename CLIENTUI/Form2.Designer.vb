@@ -24,43 +24,42 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        btnRefresh = New Button()
         TableLayoutPanel1 = New TableLayoutPanel()
         TableLayoutPanel10 = New TableLayoutPanel()
-        Label9 = New Label()
+        ToolName3 = New Label()
         TableLayoutPanel11 = New TableLayoutPanel()
         Label12 = New Label()
-        PictureBox4 = New PictureBox()
-        Label14 = New Label()
-        Label27 = New Label()
+        ToolPicture3 = New PictureBox()
+        StockLabel3 = New Label()
+        AvailabilityLabel3 = New Label()
         Label19 = New Label()
-        Label7 = New Label()
+        Price3 = New Label()
         TableLayoutPanel9 = New TableLayoutPanel()
         btnRemove3 = New Button()
         btnAdd3 = New Button()
         TableLayoutPanel4 = New TableLayoutPanel()
-        Label3 = New Label()
+        ToolName2 = New Label()
         TableLayoutPanel5 = New TableLayoutPanel()
         Label4 = New Label()
-        PictureBox2 = New PictureBox()
-        Label11 = New Label()
-        Label20 = New Label()
+        ToolPicture2 = New PictureBox()
+        StockLabel2 = New Label()
+        AvailabilityLabel2 = New Label()
         Label17 = New Label()
-        Label1 = New Label()
+        Price2 = New Label()
         TableLayoutPanel6 = New TableLayoutPanel()
         btnRemove2 = New Button()
         btnAdd2 = New Button()
         TableLayoutPanel7 = New TableLayoutPanel()
-        lblInfo = New Label()
+        ToolName1 = New Label()
         TableLayoutPanel8 = New TableLayoutPanel()
         Label15 = New Label()
-        PictureBox3 = New PictureBox()
-        Label5 = New Label()
+        ToolPicture1 = New PictureBox()
+        StockLabel1 = New Label()
         TableLayoutPanel13 = New TableLayoutPanel()
         btnAdd1 = New Button()
         btnRemove1 = New Button()
-        avail = New Label()
-        presyo = New Label()
+        AvailabilityLabel1 = New Label()
+        Price1 = New Label()
         Label6 = New Label()
         TableLayoutPanel3 = New TableLayoutPanel()
         Button2 = New Button()
@@ -77,15 +76,15 @@ Partial Class Form2
         TableLayoutPanel1.SuspendLayout()
         TableLayoutPanel10.SuspendLayout()
         TableLayoutPanel11.SuspendLayout()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ToolPicture3, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel9.SuspendLayout()
         TableLayoutPanel4.SuspendLayout()
         TableLayoutPanel5.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ToolPicture2, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel6.SuspendLayout()
         TableLayoutPanel7.SuspendLayout()
         TableLayoutPanel8.SuspendLayout()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ToolPicture1, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel13.SuspendLayout()
         TableLayoutPanel3.SuspendLayout()
         CType(dgvCart, ComponentModel.ISupportInitialize).BeginInit()
@@ -93,20 +92,6 @@ Partial Class Form2
         TableLayoutPanel14.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
-        ' 
-        ' btnRefresh
-        ' 
-        btnRefresh.Anchor = AnchorStyles.None
-        btnRefresh.BackColor = Color.AliceBlue
-        btnRefresh.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        btnRefresh.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
-        btnRefresh.Location = New Point(936, 70)
-        btnRefresh.Margin = New Padding(0, 70, 0, 0)
-        btnRefresh.Name = "btnRefresh"
-        btnRefresh.Size = New Size(104, 46)
-        btnRefresh.TabIndex = 81
-        btnRefresh.Text = "REFRESH"
-        btnRefresh.UseVisualStyleBackColor = False
         ' 
         ' TableLayoutPanel1
         ' 
@@ -120,27 +105,27 @@ Partial Class Form2
         TableLayoutPanel1.Controls.Add(TableLayoutPanel4, 1, 0)
         TableLayoutPanel1.Controls.Add(TableLayoutPanel7, 0, 0)
         TableLayoutPanel1.Controls.Add(TableLayoutPanel3, 1, 1)
-        TableLayoutPanel1.Location = New Point(0, 264)
+        TableLayoutPanel1.Location = New Point(0, 361)
         TableLayoutPanel1.Margin = New Padding(2)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 2
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 88.55508F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 11.4449215F))
-        TableLayoutPanel1.Size = New Size(1204, 493)
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 78.0068741F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 21.9931278F))
+        TableLayoutPanel1.Size = New Size(1908, 608)
         TableLayoutPanel1.TabIndex = 12
         ' 
         ' TableLayoutPanel10
         ' 
         TableLayoutPanel10.ColumnCount = 1
         TableLayoutPanel10.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel10.Controls.Add(Label9, 0, 0)
+        TableLayoutPanel10.Controls.Add(ToolName3, 0, 0)
         TableLayoutPanel10.Controls.Add(TableLayoutPanel11, 0, 1)
-        TableLayoutPanel10.Controls.Add(Label27, 0, 2)
+        TableLayoutPanel10.Controls.Add(AvailabilityLabel3, 0, 2)
         TableLayoutPanel10.Controls.Add(Label19, 0, 3)
-        TableLayoutPanel10.Controls.Add(Label7, 0, 4)
+        TableLayoutPanel10.Controls.Add(Price3, 0, 4)
         TableLayoutPanel10.Controls.Add(TableLayoutPanel9, 0, 5)
         TableLayoutPanel10.Dock = DockStyle.Fill
-        TableLayoutPanel10.Location = New Point(805, 2)
+        TableLayoutPanel10.Location = New Point(1273, 2)
         TableLayoutPanel10.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel10.Name = "TableLayoutPanel10"
         TableLayoutPanel10.RowCount = 6
@@ -150,103 +135,103 @@ Partial Class Form2
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Absolute, 31F))
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Absolute, 24F))
         TableLayoutPanel10.RowStyles.Add(New RowStyle(SizeType.Absolute, 62F))
-        TableLayoutPanel10.Size = New Size(396, 432)
+        TableLayoutPanel10.Size = New Size(632, 470)
         TableLayoutPanel10.TabIndex = 85
         ' 
-        ' Label9
+        ' ToolName3
         ' 
-        Label9.Anchor = AnchorStyles.None
-        Label9.AutoSize = True
-        Label9.Font = New Font("Arial Black", 11.25F, FontStyle.Bold)
-        Label9.Location = New Point(142, 7)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(111, 22)
-        Label9.TabIndex = 1
-        Label9.Text = "TOOL NAME"
+        ToolName3.Anchor = AnchorStyles.None
+        ToolName3.AutoSize = True
+        ToolName3.Font = New Font("Arial Black", 21.75F, FontStyle.Bold)
+        ToolName3.Location = New Point(211, 16)
+        ToolName3.Name = "ToolName3"
+        ToolName3.Size = New Size(210, 41)
+        ToolName3.TabIndex = 1
+        ToolName3.Text = "TOOL NAME"
         ' 
         ' TableLayoutPanel11
         ' 
         TableLayoutPanel11.ColumnCount = 1
         TableLayoutPanel11.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel11.Controls.Add(Label12, 0, 1)
-        TableLayoutPanel11.Controls.Add(PictureBox4, 0, 0)
-        TableLayoutPanel11.Controls.Add(Label14, 0, 2)
+        TableLayoutPanel11.Controls.Add(ToolPicture3, 0, 0)
+        TableLayoutPanel11.Controls.Add(StockLabel3, 0, 2)
         TableLayoutPanel11.Dock = DockStyle.Fill
-        TableLayoutPanel11.Location = New Point(3, 38)
+        TableLayoutPanel11.Location = New Point(3, 76)
         TableLayoutPanel11.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel11.Name = "TableLayoutPanel11"
         TableLayoutPanel11.RowCount = 3
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 78.57143F))
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Absolute, 34F))
         TableLayoutPanel11.RowStyles.Add(New RowStyle(SizeType.Percent, 21.4285717F))
-        TableLayoutPanel11.Size = New Size(390, 251)
+        TableLayoutPanel11.Size = New Size(626, 251)
         TableLayoutPanel11.TabIndex = 4
         ' 
         ' Label12
         ' 
         Label12.Anchor = AnchorStyles.None
         Label12.AutoSize = True
-        Label12.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label12.Location = New Point(167, 179)
+        Label12.Font = New Font("Arial", 18F)
+        Label12.Location = New Point(262, 173)
         Label12.Name = "Label12"
-        Label12.Size = New Size(56, 16)
+        Label12.Size = New Size(101, 27)
         Label12.TabIndex = 4
         Label12.Text = "STOCK:"
         ' 
-        ' PictureBox4
+        ' ToolPicture3
         ' 
-        PictureBox4.Anchor = AnchorStyles.None
-        PictureBox4.Location = New Point(114, 18)
-        PictureBox4.Margin = New Padding(3, 2, 3, 2)
-        PictureBox4.Name = "PictureBox4"
-        PictureBox4.Size = New Size(161, 133)
-        PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox4.TabIndex = 0
-        PictureBox4.TabStop = False
+        ToolPicture3.Anchor = AnchorStyles.None
+        ToolPicture3.Location = New Point(213, 2)
+        ToolPicture3.Margin = New Padding(3, 2, 3, 2)
+        ToolPicture3.Name = "ToolPicture3"
+        ToolPicture3.Size = New Size(200, 166)
+        ToolPicture3.SizeMode = PictureBoxSizeMode.StretchImage
+        ToolPicture3.TabIndex = 0
+        ToolPicture3.TabStop = False
         ' 
-        ' Label14
+        ' StockLabel3
         ' 
-        Label14.Anchor = AnchorStyles.None
-        Label14.AutoSize = True
-        Label14.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Label14.Location = New Point(186, 218)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(17, 18)
-        Label14.TabIndex = 3
-        Label14.Text = "1"
+        StockLabel3.Anchor = AnchorStyles.None
+        StockLabel3.AutoSize = True
+        StockLabel3.Font = New Font("Arial", 18F)
+        StockLabel3.Location = New Point(300, 214)
+        StockLabel3.Name = "StockLabel3"
+        StockLabel3.Size = New Size(25, 27)
+        StockLabel3.TabIndex = 3
+        StockLabel3.Text = "1"
         ' 
-        ' Label27
+        ' AvailabilityLabel3
         ' 
-        Label27.Anchor = AnchorStyles.None
-        Label27.AutoSize = True
-        Label27.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label27.Location = New Point(151, 295)
-        Label27.Name = "Label27"
-        Label27.Size = New Size(94, 16)
-        Label27.TabIndex = 84
-        Label27.Text = "AVAILABILITY"
+        AvailabilityLabel3.Anchor = AnchorStyles.None
+        AvailabilityLabel3.AutoSize = True
+        AvailabilityLabel3.Font = New Font("Arial", 18F)
+        AvailabilityLabel3.Location = New Point(237, 329)
+        AvailabilityLabel3.Name = "AvailabilityLabel3"
+        AvailabilityLabel3.Size = New Size(158, 24)
+        AvailabilityLabel3.TabIndex = 84
+        AvailabilityLabel3.Text = "AVAILABILITY"
         ' 
         ' Label19
         ' 
         Label19.Anchor = AnchorStyles.None
         Label19.AutoSize = True
-        Label19.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label19.Location = New Point(145, 322)
+        Label19.Font = New Font("Arial", 18F)
+        Label19.Location = New Point(219, 355)
         Label19.Name = "Label19"
-        Label19.Size = New Size(105, 16)
+        Label19.Size = New Size(193, 27)
         Label19.TabIndex = 2
         Label19.Text = "PRICE PER DAY"
         ' 
-        ' Label7
+        ' Price3
         ' 
-        Label7.Anchor = AnchorStyles.None
-        Label7.AutoSize = True
-        Label7.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Label7.Location = New Point(189, 349)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(17, 18)
-        Label7.TabIndex = 8
-        Label7.Text = "0"
+        Price3.Anchor = AnchorStyles.None
+        Price3.AutoSize = True
+        Price3.Font = New Font("Arial", 18F)
+        Price3.Location = New Point(303, 384)
+        Price3.Name = "Price3"
+        Price3.Size = New Size(25, 24)
+        Price3.TabIndex = 8
+        Price3.Text = "0"
         ' 
         ' TableLayoutPanel9
         ' 
@@ -256,7 +241,7 @@ Partial Class Form2
         TableLayoutPanel9.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel9.Controls.Add(btnRemove3, 1, 0)
         TableLayoutPanel9.Controls.Add(btnAdd3, 0, 0)
-        TableLayoutPanel9.Location = New Point(3, 372)
+        TableLayoutPanel9.Location = New Point(121, 410)
         TableLayoutPanel9.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel9.Name = "TableLayoutPanel9"
         TableLayoutPanel9.RowCount = 1
@@ -267,11 +252,11 @@ Partial Class Form2
         ' btnRemove3
         ' 
         btnRemove3.Anchor = AnchorStyles.None
-        btnRemove3.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        btnRemove3.Location = New Point(246, 11)
+        btnRemove3.Font = New Font("Arial", 20.25F, FontStyle.Bold)
+        btnRemove3.Location = New Point(217, 4)
         btnRemove3.Margin = New Padding(3, 2, 3, 2)
         btnRemove3.Name = "btnRemove3"
-        btnRemove3.Size = New Size(93, 36)
+        btnRemove3.Size = New Size(150, 50)
         btnRemove3.TabIndex = 0
         btnRemove3.Text = "REMOVE"
         btnRemove3.UseVisualStyleBackColor = True
@@ -279,11 +264,11 @@ Partial Class Form2
         ' btnAdd3
         ' 
         btnAdd3.Anchor = AnchorStyles.None
-        btnAdd3.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        btnAdd3.Location = New Point(51, 11)
+        btnAdd3.Font = New Font("Arial", 20.25F, FontStyle.Bold)
+        btnAdd3.Location = New Point(22, 4)
         btnAdd3.Margin = New Padding(3, 2, 3, 2)
         btnAdd3.Name = "btnAdd3"
-        btnAdd3.Size = New Size(93, 36)
+        btnAdd3.Size = New Size(150, 50)
         btnAdd3.TabIndex = 81
         btnAdd3.Text = "ADD"
         btnAdd3.UseVisualStyleBackColor = True
@@ -292,15 +277,15 @@ Partial Class Form2
         ' 
         TableLayoutPanel4.ColumnCount = 1
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel4.Controls.Add(Label3, 0, 0)
+        TableLayoutPanel4.Controls.Add(ToolName2, 0, 0)
         TableLayoutPanel4.Controls.Add(TableLayoutPanel5, 0, 1)
-        TableLayoutPanel4.Controls.Add(Label20, 0, 2)
+        TableLayoutPanel4.Controls.Add(AvailabilityLabel2, 0, 2)
         TableLayoutPanel4.Controls.Add(Label17, 0, 3)
-        TableLayoutPanel4.Controls.Add(Label1, 0, 4)
+        TableLayoutPanel4.Controls.Add(Price2, 0, 4)
         TableLayoutPanel4.Controls.Add(TableLayoutPanel6, 0, 5)
         TableLayoutPanel4.Dock = DockStyle.Fill
         TableLayoutPanel4.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        TableLayoutPanel4.Location = New Point(404, 2)
+        TableLayoutPanel4.Location = New Point(638, 2)
         TableLayoutPanel4.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
         TableLayoutPanel4.RowCount = 6
@@ -310,103 +295,103 @@ Partial Class Form2
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 31F))
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 24F))
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Absolute, 62F))
-        TableLayoutPanel4.Size = New Size(395, 432)
+        TableLayoutPanel4.Size = New Size(629, 470)
         TableLayoutPanel4.TabIndex = 84
         ' 
-        ' Label3
+        ' ToolName2
         ' 
-        Label3.Anchor = AnchorStyles.None
-        Label3.AutoSize = True
-        Label3.Font = New Font("Arial Black", 11.25F, FontStyle.Bold)
-        Label3.Location = New Point(142, 6)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(111, 22)
-        Label3.TabIndex = 1
-        Label3.Text = "TOOL NAME"
+        ToolName2.Anchor = AnchorStyles.None
+        ToolName2.AutoSize = True
+        ToolName2.Font = New Font("Arial Black", 21.75F, FontStyle.Bold)
+        ToolName2.Location = New Point(209, 16)
+        ToolName2.Name = "ToolName2"
+        ToolName2.Size = New Size(210, 41)
+        ToolName2.TabIndex = 1
+        ToolName2.Text = "TOOL NAME"
         ' 
         ' TableLayoutPanel5
         ' 
         TableLayoutPanel5.ColumnCount = 1
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel5.Controls.Add(Label4, 0, 1)
-        TableLayoutPanel5.Controls.Add(PictureBox2, 0, 0)
-        TableLayoutPanel5.Controls.Add(Label11, 0, 2)
+        TableLayoutPanel5.Controls.Add(ToolPicture2, 0, 0)
+        TableLayoutPanel5.Controls.Add(StockLabel2, 0, 2)
         TableLayoutPanel5.Dock = DockStyle.Fill
-        TableLayoutPanel5.Location = New Point(3, 37)
+        TableLayoutPanel5.Location = New Point(3, 75)
         TableLayoutPanel5.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
         TableLayoutPanel5.RowCount = 3
         TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 78.57143F))
         TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Absolute, 32F))
         TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 21.4285717F))
-        TableLayoutPanel5.Size = New Size(389, 251)
+        TableLayoutPanel5.Size = New Size(623, 251)
         TableLayoutPanel5.TabIndex = 4
         ' 
         ' Label4
         ' 
         Label4.Anchor = AnchorStyles.None
         Label4.AutoSize = True
-        Label4.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label4.Location = New Point(166, 180)
+        Label4.Font = New Font("Arial", 18F)
+        Label4.Location = New Point(261, 174)
         Label4.Name = "Label4"
-        Label4.Size = New Size(56, 16)
+        Label4.Size = New Size(101, 27)
         Label4.TabIndex = 4
         Label4.Text = "STOCK:"
         ' 
-        ' PictureBox2
+        ' ToolPicture2
         ' 
-        PictureBox2.Anchor = AnchorStyles.None
-        PictureBox2.Location = New Point(112, 19)
-        PictureBox2.Margin = New Padding(3, 2, 3, 2)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(165, 134)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 0
-        PictureBox2.TabStop = False
+        ToolPicture2.Anchor = AnchorStyles.None
+        ToolPicture2.Location = New Point(211, 2)
+        ToolPicture2.Margin = New Padding(3, 2, 3, 2)
+        ToolPicture2.Name = "ToolPicture2"
+        ToolPicture2.Size = New Size(200, 168)
+        ToolPicture2.SizeMode = PictureBoxSizeMode.StretchImage
+        ToolPicture2.TabIndex = 0
+        ToolPicture2.TabStop = False
         ' 
-        ' Label11
+        ' StockLabel2
         ' 
-        Label11.Anchor = AnchorStyles.None
-        Label11.AutoSize = True
-        Label11.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Label11.Location = New Point(186, 218)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(17, 18)
-        Label11.TabIndex = 3
-        Label11.Text = "1"
+        StockLabel2.Anchor = AnchorStyles.None
+        StockLabel2.AutoSize = True
+        StockLabel2.Font = New Font("Arial", 18F)
+        StockLabel2.Location = New Point(299, 214)
+        StockLabel2.Name = "StockLabel2"
+        StockLabel2.Size = New Size(25, 27)
+        StockLabel2.TabIndex = 3
+        StockLabel2.Text = "1"
         ' 
-        ' Label20
+        ' AvailabilityLabel2
         ' 
-        Label20.Anchor = AnchorStyles.None
-        Label20.AutoSize = True
-        Label20.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label20.Location = New Point(150, 294)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(94, 16)
-        Label20.TabIndex = 84
-        Label20.Text = "AVAILABILITY"
+        AvailabilityLabel2.Anchor = AnchorStyles.None
+        AvailabilityLabel2.AutoSize = True
+        AvailabilityLabel2.Font = New Font("Arial", 18F)
+        AvailabilityLabel2.Location = New Point(235, 328)
+        AvailabilityLabel2.Name = "AvailabilityLabel2"
+        AvailabilityLabel2.Size = New Size(158, 25)
+        AvailabilityLabel2.TabIndex = 84
+        AvailabilityLabel2.Text = "AVAILABILITY"
         ' 
         ' Label17
         ' 
         Label17.Anchor = AnchorStyles.None
         Label17.AutoSize = True
-        Label17.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label17.Location = New Point(141, 322)
+        Label17.Font = New Font("Arial", 18F)
+        Label17.Location = New Point(211, 355)
         Label17.Name = "Label17"
-        Label17.Size = New Size(113, 16)
+        Label17.Size = New Size(207, 27)
         Label17.TabIndex = 2
         Label17.Text = "PRICE PER DAY :"
         ' 
-        ' Label1
+        ' Price2
         ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Label1.Location = New Point(189, 349)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(17, 18)
-        Label1.TabIndex = 8
-        Label1.Text = "0"
+        Price2.Anchor = AnchorStyles.None
+        Price2.AutoSize = True
+        Price2.Font = New Font("Arial", 18F)
+        Price2.Location = New Point(302, 384)
+        Price2.Name = "Price2"
+        Price2.Size = New Size(25, 24)
+        Price2.TabIndex = 8
+        Price2.Text = "0"
         ' 
         ' TableLayoutPanel6
         ' 
@@ -416,7 +401,7 @@ Partial Class Form2
         TableLayoutPanel6.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel6.Controls.Add(btnRemove2, 1, 0)
         TableLayoutPanel6.Controls.Add(btnAdd2, 0, 0)
-        TableLayoutPanel6.Location = New Point(3, 372)
+        TableLayoutPanel6.Location = New Point(120, 410)
         TableLayoutPanel6.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel6.Name = "TableLayoutPanel6"
         TableLayoutPanel6.RowCount = 1
@@ -427,11 +412,11 @@ Partial Class Form2
         ' btnRemove2
         ' 
         btnRemove2.Anchor = AnchorStyles.None
-        btnRemove2.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        btnRemove2.Location = New Point(245, 11)
+        btnRemove2.Font = New Font("Arial", 20.25F, FontStyle.Bold)
+        btnRemove2.Location = New Point(216, 4)
         btnRemove2.Margin = New Padding(3, 2, 3, 2)
         btnRemove2.Name = "btnRemove2"
-        btnRemove2.Size = New Size(93, 36)
+        btnRemove2.Size = New Size(150, 50)
         btnRemove2.TabIndex = 0
         btnRemove2.Text = "REMOVE"
         btnRemove2.UseVisualStyleBackColor = True
@@ -439,11 +424,11 @@ Partial Class Form2
         ' btnAdd2
         ' 
         btnAdd2.Anchor = AnchorStyles.None
-        btnAdd2.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        btnAdd2.Location = New Point(50, 11)
+        btnAdd2.Font = New Font("Arial", 20.25F, FontStyle.Bold)
+        btnAdd2.Location = New Point(22, 4)
         btnAdd2.Margin = New Padding(3, 2, 3, 2)
         btnAdd2.Name = "btnAdd2"
-        btnAdd2.Size = New Size(93, 36)
+        btnAdd2.Size = New Size(150, 50)
         btnAdd2.TabIndex = 81
         btnAdd2.Text = "ADD"
         btnAdd2.UseVisualStyleBackColor = True
@@ -452,11 +437,11 @@ Partial Class Form2
         ' 
         TableLayoutPanel7.ColumnCount = 1
         TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
-        TableLayoutPanel7.Controls.Add(lblInfo, 0, 0)
+        TableLayoutPanel7.Controls.Add(ToolName1, 0, 0)
         TableLayoutPanel7.Controls.Add(TableLayoutPanel8, 0, 1)
         TableLayoutPanel7.Controls.Add(TableLayoutPanel13, 0, 5)
-        TableLayoutPanel7.Controls.Add(avail, 0, 2)
-        TableLayoutPanel7.Controls.Add(presyo, 0, 4)
+        TableLayoutPanel7.Controls.Add(AvailabilityLabel1, 0, 2)
+        TableLayoutPanel7.Controls.Add(Price1, 0, 4)
         TableLayoutPanel7.Controls.Add(Label6, 0, 3)
         TableLayoutPanel7.Dock = DockStyle.Fill
         TableLayoutPanel7.Location = New Point(3, 2)
@@ -469,72 +454,72 @@ Partial Class Form2
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 30F))
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 24F))
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 62F))
-        TableLayoutPanel7.Size = New Size(395, 432)
+        TableLayoutPanel7.Size = New Size(629, 470)
         TableLayoutPanel7.TabIndex = 81
         ' 
-        ' lblInfo
+        ' ToolName1
         ' 
-        lblInfo.Anchor = AnchorStyles.None
-        lblInfo.AutoSize = True
-        lblInfo.Font = New Font("Arial Black", 11.25F, FontStyle.Bold)
-        lblInfo.Location = New Point(142, 7)
-        lblInfo.Name = "lblInfo"
-        lblInfo.Size = New Size(111, 22)
-        lblInfo.TabIndex = 1
-        lblInfo.Text = "TOOL NAME"
+        ToolName1.Anchor = AnchorStyles.None
+        ToolName1.AutoSize = True
+        ToolName1.Font = New Font("Arial Black", 21.75F, FontStyle.Bold)
+        ToolName1.Location = New Point(209, 16)
+        ToolName1.Name = "ToolName1"
+        ToolName1.Size = New Size(210, 41)
+        ToolName1.TabIndex = 1
+        ToolName1.Text = "TOOL NAME"
         ' 
         ' TableLayoutPanel8
         ' 
         TableLayoutPanel8.ColumnCount = 1
         TableLayoutPanel8.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel8.Controls.Add(Label15, 0, 1)
-        TableLayoutPanel8.Controls.Add(PictureBox3, 0, 0)
-        TableLayoutPanel8.Controls.Add(Label5, 0, 2)
+        TableLayoutPanel8.Controls.Add(ToolPicture1, 0, 0)
+        TableLayoutPanel8.Controls.Add(StockLabel1, 0, 2)
         TableLayoutPanel8.Dock = DockStyle.Fill
-        TableLayoutPanel8.Location = New Point(3, 38)
+        TableLayoutPanel8.Location = New Point(3, 76)
         TableLayoutPanel8.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel8.Name = "TableLayoutPanel8"
         TableLayoutPanel8.RowCount = 3
         TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Percent, 78.57143F))
         TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Absolute, 33F))
         TableLayoutPanel8.RowStyles.Add(New RowStyle(SizeType.Percent, 21.4285717F))
-        TableLayoutPanel8.Size = New Size(389, 250)
+        TableLayoutPanel8.Size = New Size(623, 250)
         TableLayoutPanel8.TabIndex = 4
         ' 
         ' Label15
         ' 
         Label15.Anchor = AnchorStyles.None
         Label15.AutoSize = True
-        Label15.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label15.Location = New Point(166, 178)
+        Label15.Font = New Font("Arial", 18F)
+        Label15.Location = New Point(261, 173)
         Label15.Name = "Label15"
-        Label15.Size = New Size(56, 16)
+        Label15.Size = New Size(101, 27)
         Label15.TabIndex = 4
         Label15.Text = "STOCK:"
         ' 
-        ' PictureBox3
+        ' ToolPicture1
         ' 
-        PictureBox3.Anchor = AnchorStyles.None
-        PictureBox3.BackColor = Color.Transparent
-        PictureBox3.BackgroundImageLayout = ImageLayout.Stretch
-        PictureBox3.Location = New Point(109, 18)
-        PictureBox3.Margin = New Padding(3, 2, 3, 2)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(170, 133)
-        PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox3.TabIndex = 0
-        PictureBox3.TabStop = False
+        ToolPicture1.Anchor = AnchorStyles.None
+        ToolPicture1.BackColor = Color.Transparent
+        ToolPicture1.BackgroundImageLayout = ImageLayout.Stretch
+        ToolPicture1.Location = New Point(211, 2)
+        ToolPicture1.Margin = New Padding(3, 2, 3, 2)
+        ToolPicture1.Name = "ToolPicture1"
+        ToolPicture1.Size = New Size(200, 166)
+        ToolPicture1.SizeMode = PictureBoxSizeMode.StretchImage
+        ToolPicture1.TabIndex = 0
+        ToolPicture1.TabStop = False
         ' 
-        ' Label5
+        ' StockLabel1
         ' 
-        Label5.Anchor = AnchorStyles.None
-        Label5.AutoSize = True
-        Label5.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Label5.Location = New Point(186, 217)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(17, 18)
-        Label5.TabIndex = 3
-        Label5.Text = "1"
+        StockLabel1.Anchor = AnchorStyles.None
+        StockLabel1.AutoSize = True
+        StockLabel1.Font = New Font("Arial", 18F)
+        StockLabel1.Location = New Point(299, 213)
+        StockLabel1.Name = "StockLabel1"
+        StockLabel1.Size = New Size(25, 27)
+        StockLabel1.TabIndex = 3
+        StockLabel1.Text = "1"
         ' 
         ' TableLayoutPanel13
         ' 
@@ -544,7 +529,7 @@ Partial Class Form2
         TableLayoutPanel13.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel13.Controls.Add(btnAdd1, 0, 0)
         TableLayoutPanel13.Controls.Add(btnRemove1, 1, 0)
-        TableLayoutPanel13.Location = New Point(3, 372)
+        TableLayoutPanel13.Location = New Point(120, 410)
         TableLayoutPanel13.Margin = New Padding(3, 2, 3, 2)
         TableLayoutPanel13.Name = "TableLayoutPanel13"
         TableLayoutPanel13.RowCount = 1
@@ -555,11 +540,11 @@ Partial Class Form2
         ' btnAdd1
         ' 
         btnAdd1.Anchor = AnchorStyles.None
-        btnAdd1.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        btnAdd1.Location = New Point(50, 11)
+        btnAdd1.Font = New Font("Arial", 20.25F, FontStyle.Bold)
+        btnAdd1.Location = New Point(22, 4)
         btnAdd1.Margin = New Padding(3, 2, 3, 2)
         btnAdd1.Name = "btnAdd1"
-        btnAdd1.Size = New Size(93, 36)
+        btnAdd1.Size = New Size(150, 50)
         btnAdd1.TabIndex = 81
         btnAdd1.Text = "ADD"
         btnAdd1.UseVisualStyleBackColor = True
@@ -567,72 +552,72 @@ Partial Class Form2
         ' btnRemove1
         ' 
         btnRemove1.Anchor = AnchorStyles.None
-        btnRemove1.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        btnRemove1.Location = New Point(245, 11)
+        btnRemove1.Font = New Font("Arial", 20.25F, FontStyle.Bold)
+        btnRemove1.Location = New Point(216, 4)
         btnRemove1.Margin = New Padding(3, 2, 3, 2)
         btnRemove1.Name = "btnRemove1"
-        btnRemove1.Size = New Size(93, 36)
+        btnRemove1.Size = New Size(150, 50)
         btnRemove1.TabIndex = 0
         btnRemove1.Text = "REMOVE"
         btnRemove1.UseVisualStyleBackColor = True
         ' 
-        ' avail
+        ' AvailabilityLabel1
         ' 
-        avail.Anchor = AnchorStyles.None
-        avail.AutoSize = True
-        avail.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        avail.Location = New Point(150, 295)
-        avail.Name = "avail"
-        avail.Size = New Size(94, 16)
-        avail.TabIndex = 83
-        avail.Text = "AVAILABILITY"
+        AvailabilityLabel1.Anchor = AnchorStyles.None
+        AvailabilityLabel1.AutoSize = True
+        AvailabilityLabel1.Font = New Font("Arial", 18F)
+        AvailabilityLabel1.Location = New Point(235, 328)
+        AvailabilityLabel1.Name = "AvailabilityLabel1"
+        AvailabilityLabel1.Size = New Size(158, 26)
+        AvailabilityLabel1.TabIndex = 83
+        AvailabilityLabel1.Text = "AVAILABILITY"
         ' 
-        ' presyo
+        ' Price1
         ' 
-        presyo.Anchor = AnchorStyles.None
-        presyo.AutoSize = True
-        presyo.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        presyo.Location = New Point(189, 349)
-        presyo.Name = "presyo"
-        presyo.Size = New Size(17, 18)
-        presyo.TabIndex = 8
-        presyo.Text = "0"
+        Price1.Anchor = AnchorStyles.None
+        Price1.AutoSize = True
+        Price1.Font = New Font("Arial", 18F)
+        Price1.Location = New Point(302, 384)
+        Price1.Name = "Price1"
+        Price1.Size = New Size(25, 24)
+        Price1.TabIndex = 8
+        Price1.Text = "0"
         ' 
         ' Label6
         ' 
         Label6.Anchor = AnchorStyles.None
         Label6.AutoSize = True
-        Label6.Font = New Font("Arial", 9.75F, FontStyle.Bold)
-        Label6.Location = New Point(141, 323)
+        Label6.Font = New Font("Arial", 18F)
+        Label6.Location = New Point(211, 355)
         Label6.Name = "Label6"
-        Label6.Size = New Size(113, 16)
+        Label6.Size = New Size(207, 27)
         Label6.TabIndex = 2
         Label6.Text = "PRICE PER DAY :"
         ' 
         ' TableLayoutPanel3
         ' 
-        TableLayoutPanel3.Anchor = AnchorStyles.Top
+        TableLayoutPanel3.Anchor = AnchorStyles.None
         TableLayoutPanel3.ColumnCount = 2
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 50F))
         TableLayoutPanel3.Controls.Add(Button2, 1, 0)
         TableLayoutPanel3.Controls.Add(Button1, 0, 0)
-        TableLayoutPanel3.Location = New Point(482, 439)
+        TableLayoutPanel3.Location = New Point(758, 515)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 1
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 54F))
-        TableLayoutPanel3.Size = New Size(239, 51)
+        TableLayoutPanel3.Size = New Size(389, 51)
         TableLayoutPanel3.TabIndex = 79
         ' 
         ' Button2
         ' 
         Button2.Anchor = AnchorStyles.Top
-        Button2.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
+        Button2.Font = New Font("Arial Black", 20.25F, FontStyle.Bold)
         Button2.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
-        Button2.Location = New Point(127, 3)
+        Button2.Location = New Point(204, 3)
         Button2.Name = "Button2"
-        Button2.Size = New Size(104, 45)
+        Button2.Size = New Size(174, 45)
         Button2.TabIndex = 81
         Button2.Text = "BACK"
         Button2.UseVisualStyleBackColor = True
@@ -640,18 +625,19 @@ Partial Class Form2
         ' Button1
         ' 
         Button1.Anchor = AnchorStyles.Top
-        Button1.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Button1.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
-        Button1.Location = New Point(7, 3)
+        Button1.BackColor = Color.FromArgb(CByte(128), CByte(255), CByte(128))
+        Button1.Font = New Font("Arial Black", 20.25F, FontStyle.Bold)
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(10, 3)
         Button1.Name = "Button1"
-        Button1.Size = New Size(104, 45)
+        Button1.Size = New Size(174, 45)
         Button1.TabIndex = 80
         Button1.Text = "CONFIRM"
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' dgvCart
         ' 
-        dgvCart.Anchor = AnchorStyles.Left
+        dgvCart.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvCart.BackgroundColor = Color.White
         DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
         DataGridViewCellStyle1.BackColor = SystemColors.Control
@@ -665,18 +651,20 @@ Partial Class Form2
         dgvCart.Columns.AddRange(New DataGridViewColumn() {ColName, colPrice, colQty})
         DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter
         DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
         DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
         dgvCart.DefaultCellStyle = DataGridViewCellStyle2
-        dgvCart.Location = New Point(15, 13)
+        dgvCart.Dock = DockStyle.Fill
+        dgvCart.Location = New Point(15, 0)
         dgvCart.Margin = New Padding(15, 0, 0, 0)
         dgvCart.Name = "dgvCart"
         dgvCart.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
         dgvCart.RowHeadersWidth = 51
-        dgvCart.Size = New Size(428, 90)
+        dgvCart.RowTemplate.Height = 40
+        dgvCart.Size = New Size(730, 188)
         dgvCart.TabIndex = 13
         ' 
         ' ColName
@@ -684,31 +672,28 @@ Partial Class Form2
         ColName.HeaderText = "ITEM"
         ColName.MinimumWidth = 6
         ColName.Name = "ColName"
-        ColName.Width = 125
         ' 
         ' colPrice
         ' 
         colPrice.HeaderText = "PRICE"
         colPrice.MinimumWidth = 6
         colPrice.Name = "colPrice"
-        colPrice.Width = 125
         ' 
         ' colQty
         ' 
         colQty.HeaderText = "QUANTITY"
         colQty.MinimumWidth = 6
         colQty.Name = "colQty"
-        colQty.Width = 125
         ' 
         ' Logout
         ' 
         Logout.Anchor = AnchorStyles.Right
         Logout.BackColor = Color.AliceBlue
-        Logout.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Logout.Location = New Point(1044, 70)
-        Logout.Margin = New Padding(0, 70, 50, 0)
+        Logout.Font = New Font("Arial", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Logout.Location = New Point(1702, 48)
+        Logout.Margin = New Padding(3, 3, 50, 3)
         Logout.Name = "Logout"
-        Logout.Size = New Size(104, 46)
+        Logout.Size = New Size(153, 46)
         Logout.TabIndex = 5
         Logout.Text = "LOGOUT"
         Logout.UseVisualStyleBackColor = False
@@ -723,13 +708,11 @@ Partial Class Form2
         TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 9.265443F))
         TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 12.6878128F))
         TableLayoutPanel12.Controls.Add(dgvCart, 0, 0)
-        TableLayoutPanel12.Controls.Add(btnRefresh, 2, 0)
-        TableLayoutPanel12.Controls.Add(Logout, 3, 0)
-        TableLayoutPanel12.Location = New Point(0, 144)
+        TableLayoutPanel12.Location = New Point(6, 148)
         TableLayoutPanel12.Name = "TableLayoutPanel12"
         TableLayoutPanel12.RowCount = 1
         TableLayoutPanel12.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel12.Size = New Size(1198, 117)
+        TableLayoutPanel12.Size = New Size(1902, 188)
         TableLayoutPanel12.TabIndex = 83
         ' 
         ' TableLayoutPanel14
@@ -738,18 +721,17 @@ Partial Class Form2
         TableLayoutPanel14.AutoSize = True
         TableLayoutPanel14.BackColor = Color.FromArgb(CByte(12), CByte(43), CByte(78))
         TableLayoutPanel14.ColumnCount = 3
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 39.46711F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.2223129F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.22731F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel14.Controls.Add(PictureBox5, 0, 0)
         TableLayoutPanel14.Controls.Add(Label2, 1, 0)
+        TableLayoutPanel14.Controls.Add(Logout, 2, 0)
         TableLayoutPanel14.Location = New Point(0, 0)
         TableLayoutPanel14.Name = "TableLayoutPanel14"
         TableLayoutPanel14.RowCount = 1
         TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
-        TableLayoutPanel14.Size = New Size(1201, 142)
+        TableLayoutPanel14.Size = New Size(1905, 142)
         TableLayoutPanel14.TabIndex = 84
         ' 
         ' PictureBox5
@@ -767,16 +749,16 @@ Partial Class Form2
         ' 
         ' Label2
         ' 
-        Label2.Anchor = AnchorStyles.Top
+        Label2.Anchor = AnchorStyles.Bottom
         Label2.AutoSize = True
         Label2.Cursor = Cursors.Hand
-        Label2.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Arial Black", 20.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
         Label2.ImageAlign = ContentAlignment.TopCenter
-        Label2.Location = New Point(538, 91)
-        Label2.Margin = New Padding(0, 91, 220, 0)
+        Label2.Location = New Point(898, 101)
+        Label2.Margin = New Padding(3)
         Label2.Name = "Label2"
-        Label2.Size = New Size(51, 18)
+        Label2.Size = New Size(106, 38)
         Label2.TabIndex = 4
         Label2.Text = "HOME"
         Label2.TextAlign = ContentAlignment.TopCenter
@@ -788,7 +770,7 @@ Partial Class Form2
         BackColor = Color.White
         BackgroundImage = My.Resources.Resources._576825842_1335610788354022_2752363819616472036_n1
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1200, 749)
+        ClientSize = New Size(1904, 961)
         Controls.Add(TableLayoutPanel14)
         Controls.Add(TableLayoutPanel12)
         Controls.Add(TableLayoutPanel1)
@@ -802,19 +784,19 @@ Partial Class Form2
         TableLayoutPanel10.PerformLayout()
         TableLayoutPanel11.ResumeLayout(False)
         TableLayoutPanel11.PerformLayout()
-        CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
+        CType(ToolPicture3, ComponentModel.ISupportInitialize).EndInit()
         TableLayoutPanel9.ResumeLayout(False)
         TableLayoutPanel4.ResumeLayout(False)
         TableLayoutPanel4.PerformLayout()
         TableLayoutPanel5.ResumeLayout(False)
         TableLayoutPanel5.PerformLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(ToolPicture2, ComponentModel.ISupportInitialize).EndInit()
         TableLayoutPanel6.ResumeLayout(False)
         TableLayoutPanel7.ResumeLayout(False)
         TableLayoutPanel7.PerformLayout()
         TableLayoutPanel8.ResumeLayout(False)
         TableLayoutPanel8.PerformLayout()
-        CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
+        CType(ToolPicture1, ComponentModel.ISupportInitialize).EndInit()
         TableLayoutPanel13.ResumeLayout(False)
         TableLayoutPanel3.ResumeLayout(False)
         CType(dgvCart, ComponentModel.ISupportInitialize).EndInit()
@@ -839,39 +821,38 @@ Partial Class Form2
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents AvailabilityLabel2 As Label
+    Friend WithEvents Price2 As Label
+    Friend WithEvents ToolName2 As Label
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label11 As Label
+    Friend WithEvents ToolPicture2 As PictureBox
+    Friend WithEvents StockLabel2 As Label
     Friend WithEvents btnRemove2 As Button
     Friend WithEvents btnAdd2 As Button
     Friend WithEvents Label17 As Label
-    Friend WithEvents btnRefresh As Button
     Friend WithEvents dgvCart As DataGridView
     Friend WithEvents TableLayoutPanel10 As TableLayoutPanel
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents Price3 As Label
+    Friend WithEvents ToolName3 As Label
     Friend WithEvents TableLayoutPanel11 As TableLayoutPanel
     Friend WithEvents Label12 As Label
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Label14 As Label
+    Friend WithEvents ToolPicture3 As PictureBox
+    Friend WithEvents StockLabel3 As Label
     Friend WithEvents btnRemove3 As Button
     Friend WithEvents btnAdd3 As Button
     Friend WithEvents Label19 As Label
-    Friend WithEvents Label27 As Label
+    Friend WithEvents AvailabilityLabel3 As Label
     Friend WithEvents price As DataGridViewTextBoxColumn
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
-    Friend WithEvents lblInfo As Label
+    Friend WithEvents ToolName1 As Label
     Friend WithEvents TableLayoutPanel8 As TableLayoutPanel
     Friend WithEvents Label15 As Label
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Label5 As Label
+    Friend WithEvents ToolPicture1 As PictureBox
+    Friend WithEvents StockLabel1 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents presyo As Label
-    Friend WithEvents avail As Label
+    Friend WithEvents Price1 As Label
+    Friend WithEvents AvailabilityLabel1 As Label
     Friend WithEvents TableLayoutPanel13 As TableLayoutPanel
     Friend WithEvents btnAdd1 As Button
     Friend WithEvents btnRemove1 As Button

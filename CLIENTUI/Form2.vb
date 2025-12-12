@@ -4,27 +4,8 @@ Imports Org.BouncyCastle.Asn1.Cmp
 
 Public Class Form2
     Dim conn As New MySqlConnection("Server=localhost;Port=3306;Uid=root;Pwd=;Database=db_rent")
-    Private Sub Label21_Click(sender As Object, e As EventArgs)
-        Dim Form1 As New Form1
-        Form1.Show()
-        Hide()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-        Dim Form1 As New Form1
-        Form1.Show()
-        Hide()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Show()
-        Me.Hide()
-    End Sub
-
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Do NOT update stock here
-        ' Just go to next confirmation page
 
         Dim f As New Form3
 
@@ -68,25 +49,25 @@ Public Class Form2
                             '️⃣ FIRST: Load values into labels
                             Select Case index
                                 Case 0
-                                    PictureBox3.Image = toolImg
-                                    Label5.Text = reader("Stocks").ToString()
-                                    lblInfo.Text = reader("Tool_Name").ToString()
-                                    presyo.Text = reader("Price").ToString()
-                                    avail.Text = reader("is_Available").ToString()
+                                    ToolPicture1.Image = toolImg
+                                    StockLabel1.Text = reader("Stocks").ToString()
+                                    ToolName1.Text = reader("Tool_Name").ToString()
+                                    Price1.Text = "₱" & Convert.ToDecimal(reader("Price")).ToString("N2")
+                                    AvailabilityLabel1.Text = reader("is_Available").ToString()
 
                                 Case 1
-                                    PictureBox2.Image = toolImg
-                                    Label11.Text = reader("Stocks").ToString()
-                                    Label3.Text = reader("Tool_Name").ToString()
-                                    Label1.Text = reader("Price").ToString()
-                                    Label20.Text = reader("is_Available").ToString()
+                                    ToolPicture2.Image = toolImg
+                                    StockLabel2.Text = reader("Stocks").ToString()
+                                    ToolName2.Text = reader("Tool_Name").ToString()
+                                    Price2.Text = "₱" & Convert.ToDecimal(reader("Price")).ToString("N2")
+                                    AvailabilityLabel2.Text = reader("is_Available").ToString()
 
                                 Case 2
-                                    PictureBox4.Image = toolImg
-                                    Label14.Text = reader("Stocks").ToString()
-                                    Label9.Text = reader("Tool_Name").ToString()
-                                    Label7.Text = reader("Price").ToString()
-                                    Label27.Text = reader("is_Available").ToString()
+                                    ToolPicture3.Image = toolImg
+                                    StockLabel3.Text = reader("Stocks").ToString()
+                                    ToolName3.Text = reader("Tool_Name").ToString()
+                                    Price3.Text = "₱" & Convert.ToDecimal(reader("Price")).ToString("N2")
+                                    AvailabilityLabel3.Text = reader("is_Available").ToString()
                             End Select
 
                             index += 1
@@ -107,30 +88,30 @@ Public Class Form2
 
     Private Sub UpdateButtonStates()
         ' TOOL 1
-        If Val(Label5.Text) <= 0 Or Not IsToolAvailable(avail.Text) Then
+        If Val(StockLabel1.Text) <= 0 Or Not IsToolAvailable(AvailabilityLabel1.Text) Then
             btnAdd1.Enabled = False
-            avail.ForeColor = Color.Red
+            AvailabilityLabel1.ForeColor = Color.Red
         Else
             btnAdd1.Enabled = True
-            avail.ForeColor = Color.Green
+            AvailabilityLabel1.ForeColor = Color.Green
         End If
 
         ' TOOL 2
-        If Val(Label11.Text) <= 0 Or Not IsToolAvailable(Label20.Text) Then
+        If Val(StockLabel2.Text) <= 0 Or Not IsToolAvailable(AvailabilityLabel2.Text) Then
             btnAdd2.Enabled = False
-            Label20.ForeColor = Color.Red
+            AvailabilityLabel2.ForeColor = Color.Red
         Else
             btnAdd2.Enabled = True
-            Label20.ForeColor = Color.Green
+            AvailabilityLabel2.ForeColor = Color.Green
         End If
 
         ' TOOL 3
-        If Val(Label14.Text) <= 0 Or Not IsToolAvailable(Label27.Text) Then
+        If Val(StockLabel3.Text) <= 0 Or Not IsToolAvailable(AvailabilityLabel3.Text) Then
             btnAdd3.Enabled = False
-            Label27.ForeColor = Color.Red
+            AvailabilityLabel3.ForeColor = Color.Red
         Else
             btnAdd3.Enabled = True
-            Label27.ForeColor = Color.Green
+            AvailabilityLabel3.ForeColor = Color.Green
         End If
     End Sub
 
@@ -154,54 +135,54 @@ Public Class Form2
             End If
         Next
     End Sub
+    Private Function ParsePrice(priceText As String) As Decimal
+        If String.IsNullOrWhiteSpace(priceText) Then Return 0D
 
+        ' Remove peso sign and commas
+        priceText = priceText.Replace("₱", "").Replace(",", "").Trim()
 
-    Private Sub btnRemove1_Click(sender As Object, e As EventArgs) Handles btnRemove1.Click
-        RemoveFromCart(lblInfo.Text)
-    End Sub
+        Dim value As Decimal
+        Decimal.TryParse(priceText, value)
+        Return value
+    End Function
 
-    Private Sub btnRemove2_Click(sender As Object, e As EventArgs) Handles btnRemove2.Click
-        RemoveFromCart(Label3.Text)
-    End Sub
+    Public Sub AddToCart(itemName As String, priceText As String, qty As Integer, maxStock As Integer)
 
-    Private Sub btnRemove3_Click(sender As Object, e As EventArgs) Handles btnRemove3.Click
-        RemoveFromCart(Label9.Text)
-    End Sub
+        Dim price As Decimal = ParsePrice(priceText)
 
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Label17.Text = (CInt(Label17.Text) + 1).ToString
-    End Sub
-
-    Private Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
-        LoadTools()
-    End Sub
-    Public Sub AddToCart(itemName As String, price As Double, qty As Integer, maxStock As Integer)
+        ' Validate quantity
+        If qty <= 0 Then
+            MsgBox("Invalid quantity.")
+            Exit Sub
+        End If
 
         ' Check if item already in cart
         For Each row As DataGridViewRow In dgvCart.Rows
             If row.Cells("colName").Value = itemName Then
+
                 Dim currentQty As Integer = CInt(row.Cells("colQty").Value)
 
                 If currentQty + qty > maxStock Then
                     MsgBox("You cannot add more than the available stock (" & maxStock & ").")
-                    Return
+                    Exit Sub
                 End If
 
+                ' Update existing row
                 row.Cells("colQty").Value = currentQty + qty
                 Return
             End If
         Next
 
-        ' If new item exceeds stock
+        ' Validate new addition does not exceed stock
         If qty > maxStock Then
             MsgBox("You cannot add more than the available stock (" & maxStock & ").")
-            Return
+            Exit Sub
         End If
 
         ' Add new row
         dgvCart.Rows.Add(itemName, price, qty)
     End Sub
+
 
 
     ' Limit sa add button
@@ -241,56 +222,62 @@ Public Class Form2
     End Function
 
     Private Sub btnAdd1_Click(sender As Object, e As EventArgs) Handles btnAdd1.Click
-        If Not IsToolAvailable(avail.Text) Then
+        If Not IsToolAvailable(AvailabilityLabel1.Text) Then
             MsgBox("This item is currently unavailable.")
             Exit Sub
         End If
 
-        If Val(Label5.Text) <= 0 Then
+        If Val(StockLabel1.Text) <= 0 Then
             MsgBox("This item is out of stock.")
             Exit Sub
         End If
 
         ' Add to cart (NO STOCK REDUCTION YET)
-        AddToCart(lblInfo.Text, Val(presyo.Text), 1, Val(Label5.Text))
+        AddToCart(ToolName1.Text, Price1.Text, 1, Val(StockLabel1.Text))
 
-    End Sub
-
-
-
-    Private Sub dgvCart_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCart.CellContentClick
 
     End Sub
     Private Sub btnAdd2_Click(sender As Object, e As EventArgs) Handles btnAdd2.Click
-        If Not IsToolAvailable(Label20.Text) Then
+        If Not IsToolAvailable(AvailabilityLabel2.Text) Then
             MsgBox("This item is currently unavailable.")
             Exit Sub
         End If
 
-        If Val(Label11.Text) <= 0 Then
+        If Val(StockLabel2.Text) <= 0 Then
             MsgBox("This item is out of stock.")
             Exit Sub
         End If
 
-        AddToCart(Label3.Text, Val(Label1.Text), 1, Val(Label11.Text))
+        AddToCart(ToolName2.Text, Price2.Text, 1, Val(StockLabel2.Text))
+
 
     End Sub
 
 
     Private Sub btnAdd3_Click(sender As Object, e As EventArgs) Handles btnAdd3.Click
-        If Not IsToolAvailable(Label27.Text) Then
+        If Not IsToolAvailable(AvailabilityLabel3.Text) Then
             MsgBox("This item is currently unavailable.")
             Exit Sub
         End If
 
-        If Val(Label14.Text) <= 0 Then
+        If Val(StockLabel3.Text) <= 0 Then
             MsgBox("This item is out of stock.")
             Exit Sub
         End If
 
-        AddToCart(Label9.Text, Val(Label7.Text), 1, Val(Label14.Text))
+        AddToCart(ToolName2.Text, Price2.Text, 1, Val(StockLabel2.Text))
+
 
     End Sub
+    Private Sub dgvCart_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles dgvCart.CellFormatting
+        If dgvCart.Columns(e.ColumnIndex).Name = "colPrice" Then
+            If e.Value IsNot Nothing AndAlso IsNumeric(e.Value) Then
+                e.Value = "₱" & FormatNumber(CDec(e.Value), 2)
+                e.FormattingApplied = True
+            End If
+        End If
+    End Sub
+
 
     Private Sub Logout_Click(sender As Object, e As EventArgs) Handles Logout.Click
         Dim frm1 As New Form1
@@ -298,4 +285,47 @@ Public Class Form2
         frm1.Show()
 
     End Sub
+    Private Sub Label21_Click(sender As Object, e As EventArgs)
+        Dim Form1 As New Form1
+        Form1.Show()
+        Hide()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
+        Dim Form1 As New Form1
+        Form1.Show()
+        Hide()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Show()
+        Me.Hide()
+    End Sub
+
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadTools()
+    End Sub
+
+    Private Sub btnRemove1_Click(sender As Object, e As EventArgs) Handles btnRemove1.Click
+        RemoveFromCart(ToolName1.Text)
+    End Sub
+
+    Private Sub btnRemove2_Click(sender As Object, e As EventArgs) Handles btnRemove2.Click
+        RemoveFromCart(ToolName2.Text)
+    End Sub
+
+    Private Sub btnRemove3_Click(sender As Object, e As EventArgs) Handles btnRemove3.Click
+        RemoveFromCart(ToolName3.Text)
+    End Sub
+
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
+        Label17.Text = (CInt(Label17.Text) + 1).ToString
+    End Sub
+
+    Private Sub btnRefresh_Click(sender As Object, e As EventArgs)
+        LoadTools()
+    End Sub
+
 End Class
