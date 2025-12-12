@@ -22,8 +22,8 @@ Partial Class Form4
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label1 = New Label()
         PictureBox11 = New PictureBox()
         TableLayoutPanel3 = New TableLayoutPanel()
@@ -175,8 +175,8 @@ Partial Class Form4
         Label7.AutoSize = True
         Label7.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         Label7.ForeColor = Color.Black
-        Label7.Location = New Point(12, 116)
-        Label7.Margin = New Padding(0, 15, 15, 0)
+        Label7.Location = New Point(12, 113)
+        Label7.Margin = New Padding(0, 12, 15, 0)
         Label7.Name = "Label7"
         Label7.Size = New Size(65, 16)
         Label7.TabIndex = 75
@@ -209,8 +209,8 @@ Partial Class Form4
         ' TextBox3
         ' 
         TextBox3.Cursor = Cursors.Hand
-        TextBox3.Location = New Point(108, 111)
-        TextBox3.Margin = New Padding(3, 10, 3, 3)
+        TextBox3.Location = New Point(108, 109)
+        TextBox3.Margin = New Padding(3, 8, 3, 3)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(182, 23)
         TextBox3.TabIndex = 80
@@ -221,13 +221,13 @@ Partial Class Form4
         TableLayoutPanel4.ColumnCount = 2
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 35.89041F))
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 64.10959F))
-        TableLayoutPanel4.Controls.Add(Label10, 0, 3)
         TableLayoutPanel4.Controls.Add(Label9, 1, 0)
         TableLayoutPanel4.Controls.Add(TextBox5, 1, 1)
         TableLayoutPanel4.Controls.Add(TextBox6, 1, 2)
         TableLayoutPanel4.Controls.Add(TextBox7, 1, 3)
-        TableLayoutPanel4.Controls.Add(Label11, 0, 1)
-        TableLayoutPanel4.Controls.Add(Label18, 0, 2)
+        TableLayoutPanel4.Controls.Add(Label10, 0, 1)
+        TableLayoutPanel4.Controls.Add(Label11, 0, 2)
+        TableLayoutPanel4.Controls.Add(Label18, 0, 3)
         TableLayoutPanel4.Location = New Point(806, 3)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
         TableLayoutPanel4.RowCount = 4
@@ -245,7 +245,7 @@ Partial Class Form4
         Label10.AutoSize = True
         Label10.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         Label10.ForeColor = Color.Black
-        Label10.Location = New Point(3, 114)
+        Label10.Location = New Point(3, 48)
         Label10.Margin = New Padding(0, 10, 0, 0)
         Label10.Name = "Label10"
         Label10.Size = New Size(98, 16)
@@ -300,7 +300,7 @@ Partial Class Form4
         Label11.AutoSize = True
         Label11.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         Label11.ForeColor = Color.Black
-        Label11.Location = New Point(19, 48)
+        Label11.Location = New Point(19, 84)
         Label11.Margin = New Padding(0, 10, 25, 0)
         Label11.Name = "Label11"
         Label11.Size = New Size(42, 16)
@@ -314,7 +314,7 @@ Partial Class Form4
         Label18.AutoSize = True
         Label18.Font = New Font("Arial", 9.75F, FontStyle.Bold)
         Label18.ForeColor = Color.Black
-        Label18.Location = New Point(21, 79)
+        Label18.Location = New Point(21, 109)
         Label18.Margin = New Padding(0, 5, 35, 0)
         Label18.Name = "Label18"
         Label18.Size = New Size(27, 16)
@@ -542,24 +542,24 @@ Partial Class Form4
         dgvFinal.Anchor = AnchorStyles.None
         dgvFinal.BackgroundColor = Color.White
         dgvFinal.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle1.BackColor = SystemColors.Control
-        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
-        dgvFinal.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle7.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle7.BackColor = SystemColors.Control
+        DataGridViewCellStyle7.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle7.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle7.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle7.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle7.WrapMode = DataGridViewTriState.True
+        dgvFinal.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
         dgvFinal.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvFinal.Columns.AddRange(New DataGridViewColumn() {colName, colPrice, colQty})
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle2.BackColor = SystemColors.Window
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
-        dgvFinal.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle8.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle8.BackColor = SystemColors.Window
+        DataGridViewCellStyle8.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle8.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
+        DataGridViewCellStyle8.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = DataGridViewTriState.False
+        dgvFinal.DefaultCellStyle = DataGridViewCellStyle8
         dgvFinal.Location = New Point(12, 347)
         dgvFinal.Margin = New Padding(3, 2, 3, 2)
         dgvFinal.Name = "dgvFinal"
