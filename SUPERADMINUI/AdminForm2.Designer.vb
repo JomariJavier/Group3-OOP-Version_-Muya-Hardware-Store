@@ -40,6 +40,7 @@ Partial Class AdminForm2
         FilterBox = New GroupBox()
         Button2 = New Button()
         SearchTextBox = New TextBox()
+        Label1 = New Label()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -193,7 +194,7 @@ Partial Class AdminForm2
         DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
         DataGridViewCellStyle1.WrapMode = DataGridViewTriState.False
         ViewHistory.DefaultCellStyle = DataGridViewCellStyle1
-        ViewHistory.Location = New Point(180, 213)
+        ViewHistory.Location = New Point(180, 218)
         ViewHistory.Margin = New Padding(3, 2, 3, 2)
         ViewHistory.MaximumSize = New Size(1712, 817)
         ViewHistory.Name = "ViewHistory"
@@ -201,7 +202,7 @@ Partial Class AdminForm2
         ViewHistory.RowHeadersWidth = 51
         ViewHistory.RowTemplate.Height = 100
         ViewHistory.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewHistory.Size = New Size(1712, 737)
+        ViewHistory.Size = New Size(1712, 732)
         ViewHistory.TabIndex = 108
         ' 
         ' LateButton
@@ -293,12 +294,25 @@ Partial Class AdminForm2
         SearchTextBox.Size = New Size(674, 44)
         SearchTextBox.TabIndex = 0
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.BackColor = SystemColors.GradientInactiveCaption
+        Label1.Font = New Font("Arial", 15.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.Red
+        Label1.Location = New Point(853, 194)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(362, 24)
+        Label1.TabIndex = 116
+        Label1.Text = "*Double click to change Return Status"
+        ' 
         ' AdminForm2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1904, 961)
+        Controls.Add(Label1)
         Controls.Add(FilterBox)
         Controls.Add(PnlSidebar)
         Controls.Add(Panel1)
@@ -317,6 +331,7 @@ Partial Class AdminForm2
         FilterBox.ResumeLayout(False)
         FilterBox.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
     Friend WithEvents Label26 As Label
     Friend WithEvents Label1 As Label

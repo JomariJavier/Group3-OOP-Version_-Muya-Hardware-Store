@@ -36,7 +36,6 @@ Partial Class AdminForm3
         btnBannedList = New Button()
         btnStocks = New Button()
         ViewBanned = New DataGridView()
-        Button3 = New Button()
         TableLayoutPanel2.SuspendLayout()
         PnlSidebar.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -89,14 +88,14 @@ Partial Class AdminForm3
         ' 
         Button2.BackColor = Color.White
         Button2.FlatStyle = FlatStyle.System
-        Button2.Font = New Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         Button2.ForeColor = Color.Red
         Button2.Location = New Point(1140, 74)
         Button2.Margin = New Padding(18, 0, 0, 0)
         Button2.Name = "Button2"
-        Button2.Size = New Size(117, 52)
+        Button2.Size = New Size(222, 52)
         Button2.TabIndex = 82
-        Button2.Text = "ADD BAN"
+        Button2.Text = "GO TO BANNING FORM"
         Button2.UseVisualStyleBackColor = False
         ' 
         ' TableLayoutPanel2
@@ -108,7 +107,6 @@ Partial Class AdminForm3
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 43.43949F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 9.363057F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 18.21656F))
-        TableLayoutPanel2.Controls.Add(Button3, 3, 0)
         TableLayoutPanel2.Controls.Add(Button2, 3, 1)
         TableLayoutPanel2.Controls.Add(Label7, 1, 0)
         TableLayoutPanel2.Controls.Add(BannedSearchBox, 1, 1)
@@ -126,7 +124,7 @@ Partial Class AdminForm3
         ' 
         SearchButton.BackColor = Color.White
         SearchButton.FlatStyle = FlatStyle.System
-        SearchButton.Font = New Font("Arial Black", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        SearchButton.Font = New Font("Arial Black", 12F, FontStyle.Bold)
         SearchButton.ForeColor = Color.Red
         SearchButton.Location = New Point(994, 76)
         SearchButton.Margin = New Padding(0, 2, 0, 0)
@@ -148,7 +146,7 @@ Partial Class AdminForm3
         PnlSidebar.ForeColor = Color.White
         PnlSidebar.Location = New Point(0, 0)
         PnlSidebar.Name = "PnlSidebar"
-        PnlSidebar.Size = New Size(164, 640)
+        PnlSidebar.Size = New Size(164, 811)
         PnlSidebar.TabIndex = 106
         ' 
         ' Button4
@@ -257,29 +255,15 @@ Partial Class AdminForm3
         ViewBanned.RowHeadersWidth = 51
         ViewBanned.RowTemplate.Height = 100
         ViewBanned.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        ViewBanned.Size = New Size(1374, 484)
+        ViewBanned.Size = New Size(1374, 655)
         ViewBanned.TabIndex = 109
-        ' 
-        ' Button3
-        ' 
-        Button3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Button3.BackColor = Color.Lime
-        Button3.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button3.ForeColor = SystemColors.ActiveCaptionText
-        Button3.Location = New Point(1201, 2)
-        Button3.Margin = New Padding(3, 2, 3, 2)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(170, 60)
-        Button3.TabIndex = 110
-        Button3.Text = "REFRESH"
-        Button3.UseVisualStyleBackColor = False
         ' 
         ' AdminForm3
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1569, 640)
+        ClientSize = New Size(1569, 811)
         Controls.Add(ViewBanned)
         Controls.Add(PnlSidebar)
         Controls.Add(TableLayoutPanel2)
@@ -305,6 +289,5 @@ Partial Class AdminForm3
     Friend WithEvents btnBannedList As Button
     Friend WithEvents btnStocks As Button
     Friend WithEvents ViewBanned As DataGridView
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
 End Class

@@ -7,42 +7,59 @@ Public Class AdminForm3
         MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
-        "SELECT Picture, FirstName, LastName, MiddleName FROM tbl_client WHERE Is_Banned = 'TRUE'"
+        "SELECT Picture, CONCAT(LastName, ', ', FirstName, ' ', MiddleName) AS FullName, Ban_Reason FROM tbl_client WHERE Is_Banned = '1'"
         Using conn As New MySqlConnection(ConnectionString)
             Using cmd As New MySqlCommand(query, conn)
                 Using da As New MySqlDataAdapter(cmd)
                     Dim dt As New DataTable()
                     da.Fill(dt)
                     ViewBanned.DataSource = dt
-                    Dim imgCol As DataGridViewImageColumn = CType(ViewBanned.Columns("Picture"), DataGridViewImageColumn)
-                    imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
-                    ViewBanned.RowTemplate.Height = 80
+                    If ViewBanned.Columns.Contains("Picture") Then
+                        Dim imgCol As DataGridViewImageColumn = CType(ViewBanned.Columns("Picture"), DataGridViewImageColumn)
+                        imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
+                        imgCol.Width = 150
+                    End If
+                    If ViewBanned.Columns.Contains("FullName") Then
+                        ViewBanned.Columns("FullName").AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells
+                    End If
+                    If ViewBanned.Columns.Contains("Ban_Reason") Then
+                        ViewBanned.Columns("Ban_Reason").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                        ViewBanned.Columns("Ban_Reason").DefaultCellStyle.WrapMode = DataGridViewTriState.True
+                    End If
+                    ViewBanned.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+                    ViewBanned.RowTemplate.Height = 150
                 End Using
             End Using
         End Using
         ViewBanned.DefaultCellStyle.ForeColor = Color.Black
     End Sub
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        LoadBannedList()
-    End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles SearchButton.Click
-        MySqlConn = New MySqlConnection
         Dim ConnectionString As String = "Server=localhost;Port=3306;Database=db_rent;Uid=root;Pwd=;"
         Dim query As String =
-        "SELECT Picture, FirstName, LastName, MiddleName FROM tbl_client WHERE FirstName = '" & BannedSearchBox.Text & "'"
+       "SELECT Picture, CONCAT(LastName, ', ', FirstName, ' ', MiddleName) AS FullName, Ban_Reason " &
+        "FROM tbl_client " &
+        "WHERE (FirstName LIKE @term OR MiddleName LIKE @term OR LastName LIKE @term) " &
+        "AND Is_Banned = '1';"
 
         Using conn As New MySqlConnection(ConnectionString)
             Using cmd As New MySqlCommand(query, conn)
+                cmd.Parameters.AddWithValue("@term", "%" & BannedSearchBox.Text & "%")
+
+                Dim dt As New DataTable()
                 Using da As New MySqlDataAdapter(cmd)
-                    Dim dt As New DataTable()
                     da.Fill(dt)
-                    ViewBanned.DataSource = dt
-                    Dim imgCol As DataGridViewImageColumn = CType(ViewBanned.Columns("Picture"), DataGridViewImageColumn)
-                    imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
-                    ViewBanned.RowTemplate.Height = 80
                 End Using
+
+                ViewBanned.DataSource = dt
+                If ViewBanned.Columns.Contains("Picture") Then
+                    Dim imgCol As DataGridViewImageColumn =
+                    CType(ViewBanned.Columns("Picture"), DataGridViewImageColumn)
+                    imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
+                End If
+                ViewBanned.RowTemplate.Height = 80
             End Using
         End Using
+
         ViewBanned.DefaultCellStyle.ForeColor = Color.Black
     End Sub
 
@@ -79,6 +96,10 @@ Public Class AdminForm3
     End Sub
 
     Private Sub BannedSearchBox_TextChanged(sender As Object, e As EventArgs) Handles BannedSearchBox.TextChanged
+
+    End Sub
+
+    Private Sub ViewBanned_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ViewBanned.CellContentClick
 
     End Sub
 End Class
