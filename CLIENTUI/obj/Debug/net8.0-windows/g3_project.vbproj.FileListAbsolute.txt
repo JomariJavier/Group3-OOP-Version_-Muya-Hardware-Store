@@ -297,7 +297,6 @@ C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIEN
 C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.Form2.resources
 C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.Form3.resources
 C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.Form4.resources
-C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.Form5.resources
 C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.Resources.resources
 C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.vbproj.GenerateResource.cache
 C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.GeneratedMSBuildEditorConfig.editorconfig
@@ -403,3 +402,5 @@ C:\Users\jimuel\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTU
 C:\Users\jimuel\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.pdb
 C:\Users\jimuel\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\g3_project.genruntimeconfig.cache
 C:\Users\jimuel\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\obj\Debug\net8.0-windows\ref\g3_project.dll
+C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\bin\Debug\net8.0-windows\touchlesslib.dll
+C:\Users\personal\Documents\GitHub\Group3-OOP-Version_-Muya-Hardware-Store\CLIENTUI\bin\Debug\net8.0-windows\WebCamLib.dll

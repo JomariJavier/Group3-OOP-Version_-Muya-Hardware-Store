@@ -34,39 +34,23 @@ Public Class Form4
         conn.Open()
 
         Try
-            ' Insert Address
-            ' 1. INSERT ADDRESS -----------------------
-            Dim addressID As Integer
-            Dim qAddress As String = "INSERT INTO tbl_address (Street, Block, Lot) 
-                                      VALUES (@Street, @Block, @Lot)"
-
-            Using cmd As New MySqlCommand(qAddress, conn)
-                cmd.Parameters.AddWithValue("@Street", TextBox5.Text)
-                cmd.Parameters.AddWithValue("@Block", TextBox6.Text)
-                cmd.Parameters.AddWithValue("@Lot", TextBox7.Text)
-                cmd.ExecuteNonQuery()
-            End Using
-
-            ' Retrieve inserted Address_ID
-            Using cmd As New MySqlCommand("SELECT LAST_INSERT_ID()", conn)
-                addressID = Convert.ToInt32(cmd.ExecuteScalar())
-            End Using
-
             ' Insert Client
             Dim clientID As Integer
             Dim qClient As String =
                 "INSERT INTO tbl_client 
-                 (Address_ID, FirstName, MiddleName, LastName, MobileNum, ReceiptientNum) 
+                 (FirstName, MiddleName, LastName, StreetName, Block, Lot, MobileNumber, ReceiptientNumber) 
                  VALUES 
-                 (@Address_ID, @FirstName, @MiddleName, @LastName, @Mobile, @Receiptient)"
+                 (@FirstName, @MiddleName, @LastName,@Street, @Block, @Lot, @Mobile, @Receiptient)"
 
             Using cmd As New MySqlCommand(qClient, conn)
-                cmd.Parameters.AddWithValue("@Address_ID", addressID)
                 cmd.Parameters.AddWithValue("@FirstName", TextBox1.Text)
                 cmd.Parameters.AddWithValue("@MiddleName", TextBox2.Text)
                 cmd.Parameters.AddWithValue("@LastName", TextBox3.Text)
                 cmd.Parameters.AddWithValue("@Mobile", TextBox4.Text)
                 cmd.Parameters.AddWithValue("@Receiptient", TextBox8.Text)
+                cmd.Parameters.AddWithValue("@Street", TextBox5.Text)
+                cmd.Parameters.AddWithValue("@Block", TextBox6.Text)
+                cmd.Parameters.AddWithValue("@Lot", TextBox7.Text)
                 cmd.ExecuteNonQuery()
             End Using
 
@@ -93,9 +77,6 @@ Public Class Form4
                     End Using
                 End Using
             End If
-            ' 4. INSERT RENT RECORDS ------------------
-            ' Ensure each item in dgvFinal is saved into tbl_rent with Client_ID, Tool_ID, dates, price, qty and initial Return_Status.
-            ' If a tool name cannot be resolved to a Tool_ID the operation will raise an exception to surface the problem.
 
             Try
                 ' Use a transaction for rent inserts to ensure all-or-nothing for rent rows

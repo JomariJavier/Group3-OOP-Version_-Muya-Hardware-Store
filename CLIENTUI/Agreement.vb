@@ -13,7 +13,7 @@ Public Class Agreement
     ' Final confirmation button
     Private Sub btnFinalConfirm_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        Dim con As New MySqlConnection("Server=localhost;Port=3306;Uid=;Pwd=;Database=db_rent")
+        Dim con As New MySqlConnection("Server=localhost;Port=3306;Uid=root;Database=db_rent")
         con.Open()
 
         ' Loop through the DataGridView
