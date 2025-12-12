@@ -49,10 +49,10 @@ Partial Class Agreement
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = Color.DarkGreen
-        Button1.Location = New Point(189, 668)
-        Button1.Margin = New Padding(0, 19, 18, 5)
+        Button1.Location = New Point(165, 501)
+        Button1.Margin = New Padding(0, 14, 16, 4)
         Button1.Name = "Button1"
-        Button1.Size = New Size(111, 43)
+        Button1.Size = New Size(97, 32)
         Button1.TabIndex = 21
         Button1.Text = "I AGREE"
         Button1.UseVisualStyleBackColor = False
@@ -64,10 +64,10 @@ Partial Class Agreement
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Mongolian Baiti", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(913, 508)
-        Label2.Margin = New Padding(914, 93, 229, 0)
+        Label2.Location = New Point(799, 381)
+        Label2.Margin = New Padding(800, 70, 200, 0)
         Label2.Name = "Label2"
-        Label2.Size = New Size(0, 31)
+        Label2.Size = New Size(0, 25)
         Label2.TabIndex = 19
         ' 
         ' TableLayoutPanel7
@@ -76,15 +76,15 @@ Partial Class Agreement
         TableLayoutPanel7.ColumnCount = 1
         TableLayoutPanel7.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
         TableLayoutPanel7.Controls.Add(Label27, 0, 0)
-        TableLayoutPanel7.Location = New Point(693, 9)
-        TableLayoutPanel7.Margin = New Padding(0, 9, 26, 0)
+        TableLayoutPanel7.Location = New Point(606, 7)
+        TableLayoutPanel7.Margin = New Padding(0, 7, 23, 0)
         TableLayoutPanel7.Name = "TableLayoutPanel7"
-        TableLayoutPanel7.Padding = New Padding(0, 15, 0, 0)
+        TableLayoutPanel7.Padding = New Padding(0, 11, 0, 0)
         TableLayoutPanel7.RowCount = 1
         TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 28F))
-        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 28F))
-        TableLayoutPanel7.Size = New Size(296, 43)
+        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 21F))
+        TableLayoutPanel7.RowStyles.Add(New RowStyle(SizeType.Absolute, 21F))
+        TableLayoutPanel7.Size = New Size(259, 32)
         TableLayoutPanel7.TabIndex = 78
         ' 
         ' Label27
@@ -94,10 +94,10 @@ Partial Class Agreement
         Label27.BackColor = Color.Transparent
         Label27.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label27.ForeColor = Color.FromArgb(CByte(12), CByte(43), CByte(78))
-        Label27.Location = New Point(13, 15)
+        Label27.Location = New Point(24, 11)
         Label27.Margin = New Padding(0)
         Label27.Name = "Label27"
-        Label27.Size = New Size(270, 24)
+        Label27.Size = New Size(210, 18)
         Label27.TabIndex = 63
         Label27.Text = "All contents © 2025 Group 3"
         Label27.TextAlign = ContentAlignment.MiddleCenter
@@ -109,13 +109,13 @@ Partial Class Agreement
         TableLayoutPanel1.ColumnCount = 1
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
         TableLayoutPanel1.Controls.Add(TableLayoutPanel7, 0, 0)
-        TableLayoutPanel1.Location = New Point(1, 951)
-        TableLayoutPanel1.Margin = New Padding(2, 3, 2, 3)
+        TableLayoutPanel1.Location = New Point(1, 713)
+        TableLayoutPanel1.Margin = New Padding(2, 2, 2, 2)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 1
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 52F))
-        TableLayoutPanel1.Size = New Size(1709, 52)
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Absolute, 39F))
+        TableLayoutPanel1.Size = New Size(1495, 39)
         TableLayoutPanel1.TabIndex = 79
         ' 
         ' TableLayoutPanel3
@@ -125,13 +125,13 @@ Partial Class Agreement
         TableLayoutPanel3.ColumnCount = 1
         TableLayoutPanel3.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
         TableLayoutPanel3.Controls.Add(Button1, 0, 1)
-        TableLayoutPanel3.Location = New Point(18, 48)
-        TableLayoutPanel3.Margin = New Padding(2, 3, 2, 3)
+        TableLayoutPanel3.Location = New Point(15, 36)
+        TableLayoutPanel3.Margin = New Padding(2, 2, 2, 2)
         TableLayoutPanel3.Name = "TableLayoutPanel3"
         TableLayoutPanel3.RowCount = 2
         TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 73F))
-        TableLayoutPanel3.Size = New Size(507, 722)
+        TableLayoutPanel3.RowStyles.Add(New RowStyle(SizeType.Absolute, 55F))
+        TableLayoutPanel3.Size = New Size(444, 542)
         TableLayoutPanel3.TabIndex = 80
         ' 
         ' Label1
@@ -143,10 +143,10 @@ Partial Class Agreement
         Label1.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.ImageAlign = ContentAlignment.TopCenter
-        Label1.Location = New Point(207, 20)
-        Label1.Margin = New Padding(0, 20, 0, 0)
+        Label1.Location = New Point(188, 15)
+        Label1.Margin = New Padding(0, 15, 0, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(128, 24)
+        Label1.Size = New Size(98, 18)
         Label1.TabIndex = 81
         Label1.Text = "AGREEMENT"
         Label1.TextAlign = ContentAlignment.TopCenter
@@ -157,19 +157,18 @@ Partial Class Agreement
         TableLayoutPanel2.AutoSize = True
         TableLayoutPanel2.BackColor = Color.FromArgb(CByte(12), CByte(43), CByte(78))
         TableLayoutPanel2.ColumnCount = 3
-        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 44.0508F))
-        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 23.930481F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 41.97861F))
+        TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 26.0026741F))
         TableLayoutPanel2.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 31.9518719F))
         TableLayoutPanel2.Controls.Add(PictureBox1, 0, 0)
         TableLayoutPanel2.Controls.Add(Label4, 1, 0)
         TableLayoutPanel2.Location = New Point(0, 0)
-        TableLayoutPanel2.Margin = New Padding(3, 4, 3, 4)
         TableLayoutPanel2.Name = "TableLayoutPanel2"
         TableLayoutPanel2.RowCount = 1
         TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 167F))
-        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 167F))
-        TableLayoutPanel2.Size = New Size(1710, 167)
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 125F))
+        TableLayoutPanel2.RowStyles.Add(New RowStyle(SizeType.Absolute, 125F))
+        TableLayoutPanel2.Size = New Size(1496, 125)
         TableLayoutPanel2.TabIndex = 82
         ' 
         ' PictureBox1
@@ -177,10 +176,10 @@ Partial Class Agreement
         PictureBox1.BackColor = Color.Transparent
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = My.Resources.Resources._578935847_1627970941508389_3020005775530561214_n_removebg_preview
-        PictureBox1.Location = New Point(29, 12)
-        PictureBox1.Margin = New Padding(29, 12, 0, 4)
+        PictureBox1.Location = New Point(25, 9)
+        PictureBox1.Margin = New Padding(25, 9, 0, 3)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(147, 151)
+        PictureBox1.Size = New Size(129, 113)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 3
         PictureBox1.TabStop = False
@@ -193,10 +192,10 @@ Partial Class Agreement
         Label4.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.White
         Label4.ImageAlign = ContentAlignment.TopCenter
-        Label4.Location = New Point(799, 107)
-        Label4.Margin = New Padding(0, 107, 251, 0)
+        Label4.Location = New Point(687, 80)
+        Label4.Margin = New Padding(0, 80, 220, 0)
         Label4.Name = "Label4"
-        Label4.Size = New Size(66, 24)
+        Label4.Size = New Size(51, 18)
         Label4.TabIndex = 4
         Label4.Text = "HOME"
         Label4.TextAlign = ContentAlignment.TopCenter
@@ -207,32 +206,31 @@ Partial Class Agreement
         TableLayoutPanel4.BackColor = Color.Transparent
         TableLayoutPanel4.ColumnCount = 1
         TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 100F))
-        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 23F))
+        TableLayoutPanel4.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
         TableLayoutPanel4.Controls.Add(TableLayoutPanel3, 0, 1)
         TableLayoutPanel4.Controls.Add(Label1, 0, 0)
-        TableLayoutPanel4.Location = New Point(567, 171)
-        TableLayoutPanel4.Margin = New Padding(3, 4, 3, 4)
+        TableLayoutPanel4.Location = New Point(496, 128)
         TableLayoutPanel4.Name = "TableLayoutPanel4"
         TableLayoutPanel4.RowCount = 2
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 5.862069F))
         TableLayoutPanel4.RowStyles.Add(New RowStyle(SizeType.Percent, 94.13793F))
-        TableLayoutPanel4.Size = New Size(543, 773)
+        TableLayoutPanel4.Size = New Size(475, 580)
         TableLayoutPanel4.TabIndex = 83
         ' 
         ' Agreement
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         AutoSize = True
         BackgroundImage = My.Resources.Resources._576825842_1335610788354022_2752363819616472036_n1
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1710, 1003)
+        ClientSize = New Size(1496, 752)
         Controls.Add(TableLayoutPanel4)
         Controls.Add(TableLayoutPanel2)
         Controls.Add(TableLayoutPanel1)
         Controls.Add(Label2)
         DoubleBuffered = True
-        Margin = New Padding(2, 3, 2, 3)
+        Margin = New Padding(2, 2, 2, 2)
         Name = "Agreement"
         Text = "Form8"
         WindowState = FormWindowState.Maximized
