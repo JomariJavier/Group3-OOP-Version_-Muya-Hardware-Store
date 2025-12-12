@@ -223,6 +223,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property RENT_NOW_removebg_preview() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("RENT_NOW-removebg-preview", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Tools_16() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Tools-16", resourceCulture)

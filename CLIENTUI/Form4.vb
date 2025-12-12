@@ -182,13 +182,17 @@ Public Class Form4
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         Dim frm1 As New Form1
-        Me.Hide()
+        Hide()
         frm1.Show()
     End Sub
 
     Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
+
+    End Sub
+
+    Private Sub dgvFinal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvFinal.CellContentClick
 
     End Sub
 End Class

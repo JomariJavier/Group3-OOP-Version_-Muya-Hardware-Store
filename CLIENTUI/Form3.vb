@@ -80,9 +80,13 @@ Public Class Form3
         CalculateTotalPrice()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Dim frm1 As New Form1
-        Me.Hide()
+        Hide()
         frm1.Show()
+    End Sub
+
+    Private Sub dgvConfirm_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
     End Sub
 End Class
