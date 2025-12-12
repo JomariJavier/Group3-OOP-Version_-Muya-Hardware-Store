@@ -40,6 +40,10 @@ Public Class AdminForm1
             CType(ViewTools.Columns("Tool_Image"), DataGridViewImageColumn)
             imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom
         End If
+        If ViewTools.Columns.Contains("Price") Then
+            ViewTools.Columns("Price").DefaultCellStyle.Format = "C2" ' Currency with 2 decimals
+            ViewTools.Columns("Price").DefaultCellStyle.FormatProvider = Globalization.CultureInfo.GetCultureInfo("fil-PH")
+        End If
         ViewTools.DefaultCellStyle.ForeColor = Color.Black
         CType(ViewTools.Columns("Tool_Image"), DataGridViewImageColumn).ImageLayout = DataGridViewImageCellLayout.Zoom
     End Sub
