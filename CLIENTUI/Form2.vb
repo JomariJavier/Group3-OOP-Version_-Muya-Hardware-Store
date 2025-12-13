@@ -328,4 +328,7 @@ Public Class Form2
         LoadTools()
     End Sub
 
+    Private Sub dgvCart_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCart.CellContentClick
+
+    End Sub
 End Class

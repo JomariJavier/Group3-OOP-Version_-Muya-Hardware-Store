@@ -33,26 +33,16 @@ Public Class Form1
         panel.Region = New Region(path)
     End Sub
 
-    ' =========================
-    ' FORM LOAD
-    ' =========================
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RoundCorners(LoginPanel, 100)
         Passwordtxt.UseSystemPasswordChar = True
     End Sub
 
-    ' =========================
-    ' SHOW / HIDE PASSWORD
-    ' =========================
     Private Sub chkShowPassword_CheckedChanged(sender As Object, e As EventArgs) _
         Handles chkShowPassword.CheckedChanged
 
         Passwordtxt.UseSystemPasswordChar = Not chkShowPassword.Checked
     End Sub
-
-    ' =========================
-    ' LOGIN BUTTON
-    ' =========================
     Private Sub Login_Click(sender As Object, e As EventArgs) Handles Login.Click
 
         Dim username As String = Usernametxt.Text.Trim()
@@ -70,87 +60,56 @@ Public Class Form1
             Try
                 conn.Open()
 
-                ' Get account info
+                Dim role As String = ""
+                Dim isLocked As Boolean = False
+                Dim loginSuccess As Boolean = False
+
                 Dim query As String =
                     "SELECT role, is_locked
-                     FROM tbl_admin
-                     WHERE username=@username AND password=@password"
+                    FROM tbl_admin
+                    WHERE username=@username AND password=@password"
 
                 Using cmd As New MySqlCommand(query, conn)
                     cmd.Parameters.AddWithValue("@username", username)
                     cmd.Parameters.AddWithValue("@password", password)
-
                     Using reader As MySqlDataReader = cmd.ExecuteReader()
-
-                        ' =========================
-                        ' LOGIN SUCCESS
-                        ' =========================
                         If reader.Read() Then
-
-                            Dim role As String = reader("role").ToString()
-                            Dim isLocked As Boolean = Convert.ToBoolean(reader("is_locked"))
-
-                            ' Block locked normal admin
-                            If isLocked AndAlso role <> "superadmin" Then
-                                MessageBox.Show("Account is locked. Super Admin access required.",
-                                                "Account Locked",
-                                                MessageBoxButtons.OK,
-                                                MessageBoxIcon.Stop)
-                                Exit Sub
-                            End If
-
-                            attemptCount = 0
-                            MessageBox.Show("Login Successful!",
-                                            "Success",
-                                            MessageBoxButtons.OK,
-                                            MessageBoxIcon.Information)
-
-                            reader.Close()
-
-                            ' 🔓 SUPER ADMIN AUTO-UNLOCK
-                            If role = "superadmin" Then
-                                Dim unlockQuery As String =
-                                    "UPDATE tbl_admin SET is_locked = 0"
-
-                                Using unlockCmd As New MySqlCommand(unlockQuery, conn)
-                                    unlockCmd.ExecuteNonQuery()
-                                End Using
-                            End If
-
-                            Dim form2 As New Form2
-                            Me.Hide()
-                            form2.Show()
-
-                        Else
-                            ' =========================
-                            ' LOGIN FAILED
-                            ' =========================
-                            attemptCount += 1
-
-                            If attemptCount >= 3 Then
-                                Dim lockQuery As String =
-                                    "UPDATE tbl_admin
-                                     SET is_locked = 1
-                                     WHERE username=@username"
-
-                                Using lockCmd As New MySqlCommand(lockQuery, conn)
-                                    lockCmd.Parameters.AddWithValue("@username", username)
-                                    lockCmd.ExecuteNonQuery()
-                                End Using
-
-                                MessageBox.Show("Too many failed attempts. Account locked.",
-                                                "Locked",
-                                                MessageBoxButtons.OK,
-                                                MessageBoxIcon.Error)
-                            Else
-                                MessageBox.Show($"Invalid username or password. Attempts left: {3 - attemptCount}",
-                                                "Login Failed",
-                                                MessageBoxButtons.OK,
-                                                MessageBoxIcon.Warning)
-                            End If
+                            role = reader("role").ToString()
+                            isLocked = Convert.ToBoolean(reader("is_locked"))
+                            loginSuccess = True
                         End If
                     End Using
                 End Using
+                If loginSuccess Then
+
+                    If isLocked AndAlso role <> "superadmin" Then
+                        MessageBox.Show("Account is locked. Super Admin access required.")
+                        Exit Sub
+                    End If
+
+                    attemptCount = 0
+                    MessageBox.Show("Login Successful!")
+                    Dim form2 As New Form2
+                    Me.Hide()
+                    form2.Show()
+
+                Else
+                    attemptCount += 1
+
+                    If attemptCount >= 3 Then
+                        Dim lockQuery As String =
+                            "UPDATE tbl_admin SET is_locked = 1 WHERE username=@username"
+
+                        Using lockCmd As New MySqlCommand(lockQuery, conn)
+                            lockCmd.Parameters.AddWithValue("@username", username)
+                            lockCmd.ExecuteNonQuery()
+                        End Using
+
+                        MessageBox.Show("Too many failed attempts. Account locked.")
+                    Else
+                        MessageBox.Show($"Invalid username or password. Attempts left: {3 - attemptCount}")
+                    End If
+                End If
 
             Catch ex As Exception
                 MessageBox.Show("Database Error: " & ex.Message,
@@ -158,6 +117,7 @@ Public Class Form1
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error)
             End Try
+
         End Using
     End Sub
 

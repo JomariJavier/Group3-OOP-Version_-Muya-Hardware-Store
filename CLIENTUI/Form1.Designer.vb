@@ -101,7 +101,6 @@ Partial Class Form1
         Passwordtxt.Font = New Font("Arial", 20.25F)
         Passwordtxt.Location = New Point(103, 269)
         Passwordtxt.Name = "Passwordtxt"
-        Passwordtxt.PasswordChar = "*"c
         Passwordtxt.Size = New Size(294, 39)
         Passwordtxt.TabIndex = 2
         ' 
@@ -223,11 +222,12 @@ Partial Class Form1
         ' chkShowPassword
         ' 
         chkShowPassword.AutoSize = True
+        chkShowPassword.Font = New Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         chkShowPassword.Location = New Point(403, 269)
         chkShowPassword.Name = "chkShowPassword"
-        chkShowPassword.Size = New Size(95, 23)
+        chkShowPassword.Size = New Size(91, 36)
         chkShowPassword.TabIndex = 4
-        chkShowPassword.Text = "CheckBox1"
+        chkShowPassword.Text = "Show"
         chkShowPassword.UseVisualStyleBackColor = True
         ' 
         ' Form1

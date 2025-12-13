@@ -1,4 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports Org.BouncyCastle.Math
 Imports Org.BouncyCastle.Pqc.Crypto.Frodo
 
 Public Class Form3
@@ -88,5 +89,41 @@ Public Class Form3
 
     Private Sub dgvConfirm_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+    Private Function ParsePrice(priceText As String) As Decimal
+        If String.IsNullOrWhiteSpace(priceText) Then Return 0D
+
+        ' Remove peso sign and commas
+        priceText = priceText.Replace("₱", "").Replace(",", "").Trim()
+
+        Dim value As Decimal
+        Decimal.TryParse(priceText, value)
+        Return value
+    End Function
+
+    Private Sub txtTotalPrice_Click(sender As Object, e As EventArgs) Handles txtTotalPrice.Click
+
+    End Sub
+
+    Private Sub PesoSwap(sender As Object, e As EventArgs) Handles txtTotalPrice.TextChanged
+        Dim rawValue As String = txtTotalPrice.Text.Replace("₱", "").Trim()
+        Dim amount As Decimal
+
+        If Decimal.TryParse(rawValue, amount) Then
+            txtTotalPrice.Text = "₱" & amount.ToString("N2")
+        End If
+    End Sub
+
+    Private Sub dgvConfirm_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles dgvConfirm.CellFormatting
+        If dgvConfirm.Columns(e.ColumnIndex).Name = "colPrice" Then
+            If e.Value IsNot Nothing AndAlso IsNumeric(e.Value) Then
+                e.Value = "₱" & FormatNumber(CDec(e.Value), 2)
+                e.FormattingApplied = True
+            End If
+        End If
     End Sub
 End Class
