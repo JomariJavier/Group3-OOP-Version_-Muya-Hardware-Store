@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\g3_project.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:g3_project.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\g3_project.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:g3_project.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -58,25 +58,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "g3_project",
               "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
               "RelativeDocumentMoniker": "g3_project.vbproj",
               "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
               "RelativeToolTip": "g3_project.vbproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
-              "WhenOpened": "2025-12-13T00:06:09.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-13T00:06:09.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form4.vb",
               "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
               "RelativeDocumentMoniker": "Form4.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
-              "RelativeToolTip": "Form4.vb",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAwwKkAAAAOAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb*",
+              "RelativeToolTip": "Form4.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T23:43:43.204Z",
               "EditorCaption": ""
@@ -99,8 +98,8 @@
               "Title": "Form4.vb [Design]",
               "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
               "RelativeDocumentMoniker": "Form4.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb [Design]",
-              "RelativeToolTip": "Form4.vb [Design]",
+              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb [Design]*",
+              "RelativeToolTip": "Form4.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T23:41:24.644Z",
               "EditorCaption": " [Design]"

@@ -2,6 +2,7 @@
 Imports MySql.Data.MySqlClient
 Imports OpenCvSharp
 Imports OpenCvSharp.Extensions
+Imports System.Drawing.Drawing2D
 
 Public Class Form4
 
@@ -9,145 +10,178 @@ Public Class Form4
     Public ReturnDate As Date = Date.Now
     Public TotalPrice As Decimal = 0D
 
-    Private Sub PictureBoc11_Load9(Sender As Object, e As EventArgs) Handles MyBase.Load
+    ' ErrorProvider
+    Private ep As New ErrorProvider()
 
+    ' =========================
+    ' FORM LOAD
+    ' =========================
+    Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ep.BlinkStyle = ErrorBlinkStyle.NeverBlink
     End Sub
-    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
-        Dim ofd As New OpenFileDialog With {
-        .Title = "Select an Image",
-        .Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif",
-        .Multiselect = False
-    }
 
-        If ofd.ShowDialog() = DialogResult.OK Then
-            Try
-                PictureBox11.Image = Image.FromFile(ofd.FileName)
-                PictureBox11.SizeMode = PictureBoxSizeMode.Zoom
-            Catch ex As Exception
-                MessageBox.Show("Unable to load image: " & ex.Message)
-            End Try
+    ' =========================
+    ' NUMBERS ONLY INPUT
+    ' =========================
+    Private Sub NumbersOnly_KeyPress(sender As Object, e As KeyPressEventArgs) _
+        Handles TextBox4.KeyPress, TextBox8.KeyPress, TextBox6.KeyPress
+
+        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ControlChars.Back Then
+            e.Handled = True
         End If
     End Sub
-    ' --- INSERT CLIENT & ADDRESS DATA ---
+
+    ' =========================
+    ' PH MOBILE AUTO FORMAT
+    ' 09XX-XXX-XXXX
+    ' =========================
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+        Dim txt As String = New String(TextBox4.Text.Where(AddressOf Char.IsDigit).ToArray())
+
+        If txt.Length > 11 Then txt = txt.Substring(0, 11)
+
+        If txt.Length >= 4 AndAlso txt.Length <= 7 Then
+            txt = txt.Insert(4, "-")
+        ElseIf txt.Length > 7 Then
+            txt = txt.Insert(4, "-").Insert(8, "-")
+        End If
+
+        TextBox4.Text = txt
+        TextBox4.SelectionStart = TextBox4.Text.Length
+    End Sub
+
+    ' =========================
+    ' VALIDATION FUNCTION
+    ' =========================
+    Private Function ValidateInputs() As Boolean
+        Dim isValid As Boolean = True
+
+        ' Reset errors
+        ep.Clear()
+        ResetBorder(TextBox1)
+        ResetBorder(TextBox3)
+        ResetBorder(TextBox4)
+        ResetBorder(TextBox8)
+        ResetBorder(TextBox5)
+        ResetBorder(TextBox6)
+        ResetBorder(TextBox7)
+
+        ' Required fields
+        isValid = CheckRequired(TextBox1, "First name required") And isValid
+        isValid = CheckRequired(TextBox3, "Last name required") And isValid
+        isValid = CheckRequired(TextBox4, "Mobile number required") And isValid
+        isValid = CheckRequired(TextBox8, "Recipient number required") And isValid
+        isValid = CheckRequired(TextBox5, "Street required") And isValid
+        isValid = CheckRequired(TextBox6, "Block required") And isValid
+        isValid = CheckRequired(TextBox7, "Lot required") And isValid
+
+        ' Mobile format check
+        If TextBox4.Text.Length <> 13 Then
+            ep.SetError(TextBox4, "Invalid Philippine mobile format")
+            SetRedBorder(TextBox4)
+            isValid = False
+        End If
+
+        Return isValid
+    End Function
+
+    ' =========================
+    ' REQUIRED FIELD CHECK
+    ' =========================
+    Private Function CheckRequired(tb As TextBox, msg As String) As Boolean
+        If String.IsNullOrWhiteSpace(tb.Text) Then
+            ep.SetError(tb, msg)
+            SetRedBorder(tb)
+            Return False
+        End If
+        Return True
+    End Function
+
+    ' =========================
+    ' RED BORDER EFFECT
+    ' =========================
+    Private Sub SetRedBorder(tb As TextBox)
+        tb.BackColor = Color.MistyRose
+    End Sub
+
+    Private Sub ResetBorder(tb As TextBox)
+        tb.BackColor = Color.White
+    End Sub
+
+    ' =========================
+    ' IMAGE UPLOAD
+    ' =========================
+    Private Sub PictureBox11_Click(sender As Object, e As EventArgs) Handles PictureBox11.Click
+        Dim ofd As New OpenFileDialog With {
+            .Title = "Select an Image",
+            .Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif"
+        }
+
+        If ofd.ShowDialog() = DialogResult.OK Then
+            PictureBox11.Image = Image.FromFile(ofd.FileName)
+            PictureBox11.SizeMode = PictureBoxSizeMode.Zoom
+        End If
+    End Sub
+
+    ' =========================
+    ' SAVE BUTTON
+    ' =========================
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+
+        ' 🔒 VALIDATE FIRST
+        If Not ValidateInputs() Then Exit Sub
+
         Dim conn As New MySqlConnection("Server=localhost;Port=3306;Uid=root;Pwd=;Database=db_rent;")
         conn.Open()
 
         Try
-            ' Insert Client
             Dim clientID As Integer
+
+            ' INSERT CLIENT
             Dim qClient As String =
-                "INSERT INTO tbl_client 
-                 (FirstName, MiddleName, LastName, StreetName, Block, Lot, MobileNumber, ReceiptientNumber) 
-                 VALUES 
-                 (@FirstName, @MiddleName, @LastName,@Street, @Block, @Lot, @Mobile, @Receiptient)"
+                "INSERT INTO tbl_client
+                (FirstName, MiddleName, LastName, StreetName, Block, Lot, MobileNumber, ReceiptientNumber)
+                VALUES
+                (@FirstName, @MiddleName, @LastName, @Street, @Block, @Lot, @Mobile, @Receiptient)"
 
             Using cmd As New MySqlCommand(qClient, conn)
                 cmd.Parameters.AddWithValue("@FirstName", TextBox1.Text)
                 cmd.Parameters.AddWithValue("@MiddleName", TextBox2.Text)
                 cmd.Parameters.AddWithValue("@LastName", TextBox3.Text)
-                cmd.Parameters.AddWithValue("@Mobile", TextBox4.Text)
-                cmd.Parameters.AddWithValue("@Receiptient", TextBox8.Text)
                 cmd.Parameters.AddWithValue("@Street", TextBox5.Text)
                 cmd.Parameters.AddWithValue("@Block", TextBox6.Text)
                 cmd.Parameters.AddWithValue("@Lot", TextBox7.Text)
+                cmd.Parameters.AddWithValue("@Mobile", TextBox4.Text)
+                cmd.Parameters.AddWithValue("@Receiptient", TextBox8.Text)
                 cmd.ExecuteNonQuery()
             End Using
 
-            ' Get the last inserted ClientID
             Using cmd As New MySqlCommand("SELECT LAST_INSERT_ID()", conn)
                 clientID = Convert.ToInt32(cmd.ExecuteScalar())
             End Using
 
-            ' Save photo if available
+            ' SAVE IMAGE
             If PictureBox11.Image IsNot Nothing Then
-                MessageBox.Show("Saving image for Client_ID = " & clientID)
-
                 Using ms As New MemoryStream()
-                    PictureBox11.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
-                    Dim imgBytes() As Byte = ms.ToArray()
+                    PictureBox11.Image.Save(ms, Imaging.ImageFormat.Jpeg)
+                    Dim img() As Byte = ms.ToArray()
 
-                    Dim queryPhoto As String = "UPDATE tbl_client SET Picture=@photo WHERE Client_ID=@id"
-                    Using cmd As New MySqlCommand(queryPhoto, conn)
-                        cmd.Parameters.AddWithValue("@photo", imgBytes)
+                    Using cmd As New MySqlCommand(
+                        "UPDATE tbl_client SET Picture=@img WHERE Client_ID=@id", conn)
+                        cmd.Parameters.AddWithValue("@img", img)
                         cmd.Parameters.AddWithValue("@id", clientID)
                         cmd.ExecuteNonQuery()
-                        MessageBox.Show("Rows affected: " & cmd.ExecuteNonQuery().ToString())
-
                     End Using
                 End Using
             End If
 
-            Try
-                ' Use a transaction for rent inserts to ensure all-or-nothing for rent rows
-                Dim trans As MySqlTransaction = conn.BeginTransaction()
+            MessageBox.Show("Record saved successfully!", "Success",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information)
 
-                For Each row As DataGridViewRow In dgvFinal.Rows
-                    If row.IsNewRow Then Continue For
-                    If row.Cells("colName").Value Is Nothing Then Continue For
-
-                    Dim toolName As String = row.Cells("colName").Value.ToString()
-                    Dim price As Decimal = 0D
-                    Dim qty As Integer = 1
-
-                    If row.Cells("colPrice").Value IsNot Nothing Then
-                        Decimal.TryParse(row.Cells("colPrice").Value.ToString(), price)
-                    End If
-                    If row.Cells("colQty").Value IsNot Nothing Then
-                        Integer.TryParse(row.Cells("colQty").Value.ToString(), qty)
-                    End If
-
-                    ' Calculate days (minimum 1)
-                    Dim days As Integer = Math.Max(1, (ReturnDate.Date - BorrowDate.Date).Days)
-                    If days = 0 Then days = 1
-
-                    Dim perItemTotal As Decimal = price * qty * days
-
-                    ' Resolve Tool_ID
-                    Dim toolIdCmd As New MySqlCommand("SELECT Tool_ID FROM tbl_tools WHERE Tool_Name=@name LIMIT 1", conn, trans)
-                    toolIdCmd.Parameters.AddWithValue("@name", toolName)
-                    Dim toolIDObj As Object = toolIdCmd.ExecuteScalar()
-
-                    If toolIDObj Is Nothing OrElse IsDBNull(toolIDObj) Then
-                        ' If a tool is not found rollback and surface clear message
-                        trans.Rollback()
-                        Throw New Exception("Tool '" & toolName & "' not found in database. Rent records not saved.")
-                    End If
-
-                    Dim toolID As Integer = Convert.ToInt32(toolIDObj)
-
-                    Dim qRent As String = "
-                        INSERT INTO tbl_rent
-                        (Client_ID, Tool_ID, Date_Of_Rent, Date_Of_Return, Total_Price, Amount, Return_Status)
-                        VALUES
-                        (@Client_ID, @Tool_ID, @Date_Of_Rent, @Date_Of_Return, @Total_Price, @Amount, @Return_Status)
-                    "
-
-                    Using rentCmd As New MySqlCommand(qRent, conn, trans)
-                        rentCmd.Parameters.AddWithValue("@Client_ID", clientID)
-                        rentCmd.Parameters.AddWithValue("@Tool_ID", toolID)
-                        rentCmd.Parameters.AddWithValue("@Date_Of_Rent", BorrowDate.Date)
-                        rentCmd.Parameters.AddWithValue("@Date_Of_Return", ReturnDate.Date)
-                        rentCmd.Parameters.AddWithValue("@Total_Price", perItemTotal)
-                        rentCmd.Parameters.AddWithValue("@Amount", qty)
-                        rentCmd.Parameters.AddWithValue("@Return_Status", "Borrowed")
-                        rentCmd.ExecuteNonQuery()
-                    End Using
-
-                Next
-
-                trans.Commit()
-            Catch exRent As Exception
-                MessageBox.Show("Error saving rent records: " & exRent.Message)
-                ' Do not rethrow here to allow the rest of the save flow to continue if desired.
-            End Try
-
-
-
-            MessageBox.Show("Record Saved!")
             Dim Agreement As New Agreement
             Agreement.Show()
             Me.Hide()
+
         Catch ex As Exception
             MessageBox.Show("Error: " & ex.Message)
         Finally
@@ -155,17 +189,13 @@ Public Class Form4
         End Try
     End Sub
 
-
-    ' --- NAVIGATION BUTTON ---
+    ' =========================
+    ' BACK BUTTON
+    ' =========================
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
         Dim frm2 As New Form2
         frm2.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Dim frm1 As New Form1
-        Hide()
-        frm1.Show()
-        End Su
 End Class
