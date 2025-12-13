@@ -49,6 +49,20 @@ Public Class Form4
         TextBox4.Text = txt
         TextBox4.SelectionStart = TextBox4.Text.Length
     End Sub
+    Private Sub TextBox8_TextChanged(sender As Object, e As EventArgs) Handles TextBox8.TextChanged
+        Dim txt As String = New String(TextBox8.Text.Where(AddressOf Char.IsDigit).ToArray())
+
+        If txt.Length > 11 Then txt = txt.Substring(0, 11)
+
+        If txt.Length >= 4 AndAlso txt.Length <= 7 Then
+            txt = txt.Insert(4, "-")
+        ElseIf txt.Length > 7 Then
+            txt = txt.Insert(4, "-").Insert(8, "-")
+        End If
+
+        TextBox8.Text = txt
+        TextBox8.SelectionStart = TextBox8.Text.Length
+    End Sub
 
     ' =========================
     ' VALIDATION FUNCTION

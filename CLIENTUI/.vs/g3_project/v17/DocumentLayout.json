@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\",
+  "WorkspaceRootPath": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\agreement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:agreement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form4.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\g3_project.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:g3_project.vbproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\agreement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:agreement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\agreement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:agreement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\prince\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|c:\\users\\personal\\documents\\github\\group3-oop-version_-muya-hardware-store\\clientui\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D24B19BA-E3EF-419E-9FCE-E951E3458F51}|g3_project.vbproj|solutionrelative:form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -46,47 +46,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "g3_project",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
-              "RelativeDocumentMoniker": "g3_project.vbproj",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
-              "RelativeToolTip": "g3_project.vbproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003380|",
-              "WhenOpened": "2025-12-13T00:06:09.287Z"
+              "Title": "Agreement.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Agreement.vb",
+              "RelativeDocumentMoniker": "Agreement.vb",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Agreement.vb",
+              "RelativeToolTip": "Agreement.vb",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-12-13T00:36:17.508Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form4.vb",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
               "RelativeDocumentMoniker": "Form4.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
               "RelativeToolTip": "Form4.vb",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAYwMkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAewDgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T23:43:43.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Agreement.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Agreement.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Agreement.vb",
               "RelativeDocumentMoniker": "Agreement.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Agreement.vb [Design]",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Agreement.vb [Design]",
               "RelativeToolTip": "Agreement.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T23:41:33.548Z",
@@ -94,11 +104,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form4.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb",
               "RelativeDocumentMoniker": "Form4.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb [Design]",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form4.vb [Design]",
               "RelativeToolTip": "Form4.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T23:41:24.644Z",
@@ -106,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Form3.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form3.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form3.vb",
               "RelativeDocumentMoniker": "Form3.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form3.vb [Design]",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form3.vb [Design]",
               "RelativeToolTip": "Form3.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T23:25:22.121Z",
@@ -120,9 +130,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Form2.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb",
               "RelativeDocumentMoniker": "Form2.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb [Design]",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb [Design]",
               "RelativeToolTip": "Form2.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-01T05:24:35.926Z",
@@ -132,9 +142,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Form2.vb",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb",
               "RelativeDocumentMoniker": "Form2.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form2.vb",
               "RelativeToolTip": "Form2.vb",
               "ViewState": "AgIAAPQAAAAAAAAAAAAUwBgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
@@ -144,9 +154,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb [Design]",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb [Design]",
               "RelativeToolTip": "Form1.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-12-12T05:33:06.317Z",
@@ -156,9 +166,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb",
+              "DocumentMoniker": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb",
               "RelativeDocumentMoniker": "Form1.vb",
-              "ToolTip": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb",
+              "ToolTip": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\Form1.vb",
               "RelativeToolTip": "Form1.vb",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwCMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
