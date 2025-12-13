@@ -857,24 +857,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\personal\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\prince\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
+      "projectUniqueName": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
       "projectName": "g3_project",
-      "projectPath": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
-      "packagesPath": "C:\\Users\\personal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\personal\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\obj\\",
+      "projectPath": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\g3_project.vbproj",
+      "packagesPath": "C:\\Users\\prince\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\prince\\Documents\\GitHub\\Group3-OOP-Version_-Muya-Hardware-Store\\CLIENTUI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\personal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\prince\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -942,7 +937,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

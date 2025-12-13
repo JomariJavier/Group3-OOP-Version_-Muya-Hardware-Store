@@ -35,6 +35,7 @@ Partial Class Form1
         PictureBox5 = New PictureBox()
         Label4 = New Label()
         LoginPanel = New TableLayoutPanel()
+        chkShowPassword = New CheckBox()
         TableLayoutPanel1.SuspendLayout()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel14.SuspendLayout()
@@ -205,6 +206,7 @@ Partial Class Form1
         LoginPanel.Controls.Add(Label5, 1, 3)
         LoginPanel.Controls.Add(Passwordtxt, 1, 4)
         LoginPanel.Controls.Add(Usernametxt, 1, 2)
+        LoginPanel.Controls.Add(chkShowPassword, 2, 4)
         LoginPanel.Location = New Point(710, 240)
         LoginPanel.Name = "LoginPanel"
         LoginPanel.RowCount = 7
@@ -217,6 +219,16 @@ Partial Class Form1
         LoginPanel.RowStyles.Add(New RowStyle(SizeType.Percent, 14.3093F))
         LoginPanel.Size = New Size(501, 520)
         LoginPanel.TabIndex = 0
+        ' 
+        ' chkShowPassword
+        ' 
+        chkShowPassword.AutoSize = True
+        chkShowPassword.Location = New Point(403, 269)
+        chkShowPassword.Name = "chkShowPassword"
+        chkShowPassword.Size = New Size(95, 23)
+        chkShowPassword.TabIndex = 4
+        chkShowPassword.Text = "CheckBox1"
+        chkShowPassword.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -258,5 +270,6 @@ Partial Class Form1
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents LoginPanel As TableLayoutPanel
+    Friend WithEvents chkShowPassword As CheckBox
 
 End Class

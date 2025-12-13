@@ -212,4 +212,7 @@ Public Class Form4
         Me.Hide()
     End Sub
 
+    Private Sub dgvFinal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvFinal.CellContentClick
+
+    End Sub
 End Class
