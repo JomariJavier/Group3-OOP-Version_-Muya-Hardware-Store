@@ -30,7 +30,7 @@ Public Class Agreement
             Dim cmd As New MySqlCommand("
                 UPDATE tbl_tools
                 SET Stocks = Stocks - @qty
-                WHERE tool_name = @name
+                WHERE Tool_Name = @name
             ", con)
 
             cmd.Parameters.AddWithValue("@qty", qty)
