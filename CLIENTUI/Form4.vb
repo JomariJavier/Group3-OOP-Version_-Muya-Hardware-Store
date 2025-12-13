@@ -167,13 +167,5 @@ Public Class Form4
         Dim frm1 As New Form1
         Hide()
         frm1.Show()
-    End Sub
-
-    Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
-
-    End Sub
-
-    Private Sub dgvFinal_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvFinal.CellContentClick
-
-    End Sub
+        End Su
 End Class

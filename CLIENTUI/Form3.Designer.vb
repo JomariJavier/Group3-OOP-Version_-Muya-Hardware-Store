@@ -22,15 +22,14 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle5 As DataGridViewCellStyle = New DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
         Label26 = New Label()
         Label4 = New Label()
         TableLayoutPanel2 = New TableLayoutPanel()
         TableLayoutPanel4 = New TableLayoutPanel()
         Button2 = New Button()
         btnConfirm = New Button()
-        FlowLayoutPanel3 = New FlowLayoutPanel()
         TableLayoutPanel6 = New TableLayoutPanel()
         Label7 = New Label()
         dtReturn = New DateTimePicker()
@@ -38,36 +37,31 @@ Partial Class Form3
         Label13 = New Label()
         Label1 = New Label()
         Label2 = New Label()
-        Label12 = New Label()
         Label5 = New Label()
-        Label6 = New Label()
-        PictureBox11 = New PictureBox()
         FlowLayoutPanel2 = New FlowLayoutPanel()
         TableLayoutPanel5 = New TableLayoutPanel()
         txtTotalPrice = New Label()
         Label3 = New Label()
         TableLayoutPanel1 = New TableLayoutPanel()
-        TableLayoutPanel14 = New TableLayoutPanel()
-        PictureBox5 = New PictureBox()
-        Label8 = New Label()
-        TableLayoutPanel12 = New TableLayoutPanel()
         dgvConfirm = New DataGridView()
         ColName = New DataGridViewTextBoxColumn()
         colPrice = New DataGridViewTextBoxColumn()
         colQty = New DataGridViewTextBoxColumn()
+        TableLayoutPanel14 = New TableLayoutPanel()
+        PictureBox5 = New PictureBox()
+        Label8 = New Label()
+        TableLayoutPanel12 = New TableLayoutPanel()
         Logout = New Button()
         TableLayoutPanel2.SuspendLayout()
         TableLayoutPanel4.SuspendLayout()
-        FlowLayoutPanel3.SuspendLayout()
         TableLayoutPanel6.SuspendLayout()
-        CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         FlowLayoutPanel2.SuspendLayout()
         TableLayoutPanel5.SuspendLayout()
         TableLayoutPanel1.SuspendLayout()
+        CType(dgvConfirm, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel14.SuspendLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         TableLayoutPanel12.SuspendLayout()
-        CType(dgvConfirm, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label26
@@ -164,14 +158,6 @@ Partial Class Form3
         btnConfirm.Text = "CONFIRM"
         btnConfirm.UseVisualStyleBackColor = False
         ' 
-        ' FlowLayoutPanel3
-        ' 
-        FlowLayoutPanel3.Controls.Add(TableLayoutPanel6)
-        FlowLayoutPanel3.Location = New Point(3, 97)
-        FlowLayoutPanel3.Name = "FlowLayoutPanel3"
-        FlowLayoutPanel3.Size = New Size(392, 173)
-        FlowLayoutPanel3.TabIndex = 85
-        ' 
         ' TableLayoutPanel6
         ' 
         TableLayoutPanel6.Anchor = AnchorStyles.None
@@ -182,24 +168,23 @@ Partial Class Form3
         TableLayoutPanel6.Controls.Add(dtReturn, 0, 3)
         TableLayoutPanel6.Controls.Add(dtBorrow, 0, 1)
         TableLayoutPanel6.Controls.Add(Label13, 0, 2)
-        TableLayoutPanel6.Location = New Point(280, 3)
-        TableLayoutPanel6.Margin = New Padding(280, 3, 3, 3)
+        TableLayoutPanel6.Location = New Point(89, 97)
         TableLayoutPanel6.Name = "TableLayoutPanel6"
         TableLayoutPanel6.RowCount = 4
-        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 17.560976F))
-        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 21.95122F))
-        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 17.560976F))
-        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 42.92683F))
-        TableLayoutPanel6.Size = New Size(109, 290)
+        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 22.0779228F))
+        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 16.8831177F))
+        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 21.6450214F))
+        TableLayoutPanel6.RowStyles.Add(New RowStyle(SizeType.Percent, 39.39394F))
+        TableLayoutPanel6.Size = New Size(220, 173)
         TableLayoutPanel6.TabIndex = 78
         ' 
         ' Label7
         ' 
-        Label7.Anchor = AnchorStyles.Top
+        Label7.Anchor = AnchorStyles.None
         Label7.AutoSize = True
         Label7.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.Black
-        Label7.Location = New Point(5, 15)
+        Label7.Location = New Point(60, 17)
         Label7.Margin = New Padding(0, 15, 0, 0)
         Label7.Name = "Label7"
         Label7.Size = New Size(99, 18)
@@ -209,32 +194,34 @@ Partial Class Form3
         ' 
         ' dtReturn
         ' 
+        dtReturn.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         dtReturn.Cursor = Cursors.Hand
-        dtReturn.Location = New Point(3, 178)
+        dtReturn.Location = New Point(3, 133)
         dtReturn.Margin = New Padding(3, 15, 3, 3)
         dtReturn.Name = "dtReturn"
-        dtReturn.Size = New Size(103, 23)
+        dtReturn.Size = New Size(214, 23)
         dtReturn.TabIndex = 78
         ' 
         ' dtBorrow
         ' 
+        dtBorrow.Anchor = AnchorStyles.None
         dtBorrow.Cursor = Cursors.Hand
-        dtBorrow.Location = New Point(3, 65)
+        dtBorrow.Location = New Point(3, 53)
         dtBorrow.Margin = New Padding(3, 15, 3, 3)
         dtBorrow.Name = "dtBorrow"
-        dtBorrow.Size = New Size(103, 23)
+        dtBorrow.Size = New Size(214, 23)
         dtBorrow.TabIndex = 77
         ' 
         ' Label13
         ' 
-        Label13.Anchor = AnchorStyles.Top
+        Label13.Anchor = AnchorStyles.None
         Label13.AutoSize = True
         Label13.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = Color.Black
-        Label13.Location = New Point(24, 128)
+        Label13.Location = New Point(52, 84)
         Label13.Margin = New Padding(0, 15, 0, 0)
         Label13.Name = "Label13"
-        Label13.Size = New Size(60, 35)
+        Label13.Size = New Size(115, 18)
         Label13.TabIndex = 76
         Label13.Text = "Date of Return"
         Label13.TextAlign = ContentAlignment.MiddleCenter
@@ -269,19 +256,6 @@ Partial Class Form3
         Label2.Text = "Note: Valid ID is Required*"
         Label2.TextAlign = ContentAlignment.MiddleCenter
         ' 
-        ' Label12
-        ' 
-        Label12.Anchor = AnchorStyles.Top
-        Label12.AutoSize = True
-        Label12.Font = New Font("Arial Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.ForeColor = Color.Black
-        Label12.Location = New Point(541, 299)
-        Label12.Margin = New Padding(18, 0, 3, 0)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(127, 22)
-        Label12.TabIndex = 70
-        Label12.Text = "P100 - per day"
-        ' 
         ' Label5
         ' 
         Label5.Anchor = AnchorStyles.Top
@@ -295,31 +269,6 @@ Partial Class Form3
         Label5.Size = New Size(0, 18)
         Label5.TabIndex = 68
         Label5.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Label6
-        ' 
-        Label6.Anchor = AnchorStyles.Top
-        Label6.AutoSize = True
-        Label6.Font = New Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.MidnightBlue
-        Label6.Location = New Point(521, 273)
-        Label6.Margin = New Padding(18, 0, 3, 0)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(168, 18)
-        Label6.TabIndex = 69
-        Label6.Text = "Wood Cutting Machine"
-        ' 
-        ' PictureBox11
-        ' 
-        PictureBox11.Anchor = AnchorStyles.Top
-        PictureBox11.Image = My.Resources.Resources.wood_cutting_machine_500x500_removebg_preview
-        PictureBox11.Location = New Point(507, 109)
-        PictureBox11.Margin = New Padding(15, 15, 3, 3)
-        PictureBox11.Name = "PictureBox11"
-        PictureBox11.Size = New Size(192, 161)
-        PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox11.TabIndex = 14
-        PictureBox11.TabStop = False
         ' 
         ' FlowLayoutPanel2
         ' 
@@ -337,8 +286,8 @@ Partial Class Form3
         TableLayoutPanel5.ColumnStyles.Add(New ColumnStyle(SizeType.Absolute, 20F))
         TableLayoutPanel5.Controls.Add(txtTotalPrice, 0, 1)
         TableLayoutPanel5.Controls.Add(Label3, 0, 0)
-        TableLayoutPanel5.Location = New Point(0, 50)
-        TableLayoutPanel5.Margin = New Padding(0, 50, 3, 3)
+        TableLayoutPanel5.Location = New Point(61, 38)
+        TableLayoutPanel5.Margin = New Padding(61, 38, 0, 0)
         TableLayoutPanel5.Name = "TableLayoutPanel5"
         TableLayoutPanel5.RowCount = 3
         TableLayoutPanel5.RowStyles.Add(New RowStyle(SizeType.Percent, 50F))
@@ -382,15 +331,13 @@ Partial Class Form3
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.33333F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333359F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.33334F))
+        TableLayoutPanel1.Controls.Add(dgvConfirm, 1, 3)
         TableLayoutPanel1.Controls.Add(FlowLayoutPanel2, 2, 3)
-        TableLayoutPanel1.Controls.Add(PictureBox11, 1, 3)
-        TableLayoutPanel1.Controls.Add(Label6, 1, 4)
         TableLayoutPanel1.Controls.Add(Label5, 0, 5)
-        TableLayoutPanel1.Controls.Add(Label12, 1, 5)
         TableLayoutPanel1.Controls.Add(Label2, 1, 1)
         TableLayoutPanel1.Controls.Add(Label1, 1, 0)
-        TableLayoutPanel1.Controls.Add(FlowLayoutPanel3, 0, 3)
         TableLayoutPanel1.Controls.Add(TableLayoutPanel4, 1, 6)
+        TableLayoutPanel1.Controls.Add(TableLayoutPanel6, 0, 3)
         TableLayoutPanel1.Location = New Point(0, 344)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 7
@@ -405,23 +352,70 @@ Partial Class Form3
         TableLayoutPanel1.Size = New Size(1197, 406)
         TableLayoutPanel1.TabIndex = 67
         ' 
+        ' dgvConfirm
+        ' 
+        dgvConfirm.Anchor = AnchorStyles.None
+        dgvConfirm.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvConfirm.BackgroundColor = Color.White
+        DataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle1.BackColor = SystemColors.Control
+        DataGridViewCellStyle1.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle1.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = DataGridViewTriState.True
+        dgvConfirm.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        dgvConfirm.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvConfirm.Columns.AddRange(New DataGridViewColumn() {ColName, colPrice, colQty})
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter
+        DataGridViewCellStyle2.BackColor = SystemColors.Window
+        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
+        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.False
+        dgvConfirm.DefaultCellStyle = DataGridViewCellStyle2
+        dgvConfirm.Location = New Point(408, 116)
+        dgvConfirm.Margin = New Padding(0)
+        dgvConfirm.Name = "dgvConfirm"
+        dgvConfirm.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
+        dgvConfirm.RowHeadersWidth = 51
+        dgvConfirm.Size = New Size(379, 134)
+        dgvConfirm.TabIndex = 13
+        ' 
+        ' ColName
+        ' 
+        ColName.HeaderText = "ITEM"
+        ColName.MinimumWidth = 6
+        ColName.Name = "ColName"
+        ' 
+        ' colPrice
+        ' 
+        colPrice.HeaderText = "PRICE"
+        colPrice.MinimumWidth = 6
+        colPrice.Name = "colPrice"
+        ' 
+        ' colQty
+        ' 
+        colQty.HeaderText = "QUANTITY"
+        colQty.MinimumWidth = 6
+        colQty.Name = "colQty"
+        ' 
         ' TableLayoutPanel14
         ' 
         TableLayoutPanel14.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
         TableLayoutPanel14.AutoSize = True
         TableLayoutPanel14.BackColor = Color.FromArgb(CByte(12), CByte(43), CByte(78))
         TableLayoutPanel14.ColumnCount = 3
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 39.46711F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.2223129F))
-        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 27.22731F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel14.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel14.Controls.Add(PictureBox5, 0, 0)
         TableLayoutPanel14.Controls.Add(Label8, 1, 0)
         TableLayoutPanel14.Location = New Point(0, 0)
         TableLayoutPanel14.Name = "TableLayoutPanel14"
         TableLayoutPanel14.RowCount = 1
         TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
-        TableLayoutPanel14.RowStyles.Add(New RowStyle(SizeType.Absolute, 142F))
         TableLayoutPanel14.Size = New Size(1201, 142)
         TableLayoutPanel14.TabIndex = 92
         ' 
@@ -440,16 +434,16 @@ Partial Class Form3
         ' 
         ' Label8
         ' 
-        Label8.Anchor = AnchorStyles.Top
+        Label8.Anchor = AnchorStyles.Bottom
         Label8.AutoSize = True
         Label8.Cursor = Cursors.Hand
-        Label8.Font = New Font("Arial Black", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Font = New Font("Arial Black", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.White
         Label8.ImageAlign = ContentAlignment.TopCenter
-        Label8.Location = New Point(538, 91)
-        Label8.Margin = New Padding(0, 91, 220, 0)
+        Label8.Location = New Point(547, 102)
+        Label8.Margin = New Padding(3, 2, 3, 2)
         Label8.Name = "Label8"
-        Label8.Size = New Size(51, 18)
+        Label8.Size = New Size(106, 38)
         Label8.TabIndex = 4
         Label8.Text = "HOME"
         Label8.TextAlign = ContentAlignment.TopCenter
@@ -463,7 +457,6 @@ Partial Class Form3
         TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 36.39399F))
         TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 11.6026707F))
         TableLayoutPanel12.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 12.6878128F))
-        TableLayoutPanel12.Controls.Add(dgvConfirm, 0, 0)
         TableLayoutPanel12.Controls.Add(Logout, 3, 0)
         TableLayoutPanel12.Location = New Point(0, 234)
         TableLayoutPanel12.Name = "TableLayoutPanel12"
@@ -472,66 +465,15 @@ Partial Class Form3
         TableLayoutPanel12.Size = New Size(1198, 104)
         TableLayoutPanel12.TabIndex = 93
         ' 
-        ' dgvConfirm
-        ' 
-        dgvConfirm.Anchor = AnchorStyles.None
-        dgvConfirm.BackgroundColor = Color.White
-        DataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle5.BackColor = SystemColors.Control
-        DataGridViewCellStyle5.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle5.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle5.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle5.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle5.WrapMode = DataGridViewTriState.True
-        dgvConfirm.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
-        dgvConfirm.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvConfirm.Columns.AddRange(New DataGridViewColumn() {ColName, colPrice, colQty})
-        DataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.TopCenter
-        DataGridViewCellStyle6.BackColor = SystemColors.Window
-        DataGridViewCellStyle6.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle6.ForeColor = Color.FromArgb(CByte(16), CByte(46), CByte(80))
-        DataGridViewCellStyle6.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = DataGridViewTriState.False
-        dgvConfirm.DefaultCellStyle = DataGridViewCellStyle6
-        dgvConfirm.Location = New Point(20, 7)
-        dgvConfirm.Margin = New Padding(0)
-        dgvConfirm.Name = "dgvConfirm"
-        dgvConfirm.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single
-        dgvConfirm.RowHeadersWidth = 51
-        dgvConfirm.Size = New Size(428, 90)
-        dgvConfirm.TabIndex = 13
-        ' 
-        ' ColName
-        ' 
-        ColName.HeaderText = "ITEM"
-        ColName.MinimumWidth = 6
-        ColName.Name = "ColName"
-        ColName.Width = 125
-        ' 
-        ' colPrice
-        ' 
-        colPrice.HeaderText = "PRICE"
-        colPrice.MinimumWidth = 6
-        colPrice.Name = "colPrice"
-        colPrice.Width = 125
-        ' 
-        ' colQty
-        ' 
-        colQty.HeaderText = "QUANTITY"
-        colQty.MinimumWidth = 6
-        colQty.Name = "colQty"
-        colQty.Width = 125
-        ' 
         ' Logout
         ' 
         Logout.Anchor = AnchorStyles.Right
         Logout.BackColor = Color.AliceBlue
         Logout.Font = New Font("Arial Black", 9.75F, FontStyle.Bold)
-        Logout.Location = New Point(1044, 54)
+        Logout.Location = New Point(1045, 54)
         Logout.Margin = New Padding(0, 50, 50, 0)
         Logout.Name = "Logout"
-        Logout.Size = New Size(104, 46)
+        Logout.Size = New Size(103, 46)
         Logout.TabIndex = 5
         Logout.Text = "LOGOUT"
         Logout.UseVisualStyleBackColor = False
@@ -555,21 +497,18 @@ Partial Class Form3
         TableLayoutPanel2.ResumeLayout(False)
         TableLayoutPanel2.PerformLayout()
         TableLayoutPanel4.ResumeLayout(False)
-        FlowLayoutPanel3.ResumeLayout(False)
-        FlowLayoutPanel3.PerformLayout()
         TableLayoutPanel6.ResumeLayout(False)
         TableLayoutPanel6.PerformLayout()
-        CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         FlowLayoutPanel2.ResumeLayout(False)
         TableLayoutPanel5.ResumeLayout(False)
         TableLayoutPanel5.PerformLayout()
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()
+        CType(dgvConfirm, ComponentModel.ISupportInitialize).EndInit()
         TableLayoutPanel14.ResumeLayout(False)
         TableLayoutPanel14.PerformLayout()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         TableLayoutPanel12.ResumeLayout(False)
-        CType(dgvConfirm, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -581,7 +520,6 @@ Partial Class Form3
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents Button2 As Button
     Friend WithEvents btnConfirm As Button
-    Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents Label7 As Label
     Friend WithEvents dtReturn As DateTimePicker
@@ -589,10 +527,7 @@ Partial Class Form3
     Friend WithEvents Label13 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label12 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
     Friend WithEvents TableLayoutPanel5 As TableLayoutPanel
     Friend WithEvents txtTotalPrice As Label
